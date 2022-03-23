@@ -1,28 +1,59 @@
-import React from "react";
+import React, { Component } from "react";
+import SURAH from "../../data/SuraData";
+import axios from "axios";
 
-export default function Table() {
-  return (
-    <div className="container">
-      <div className="table-responsive py-5">
-        <table className="table table-bordered table-hover">
-          <thead className="thead-dark">
-            <tr>
-              <th scope="col">Surah No.</th>
-              <th scope="col">Surah Name</th>
-              <th scope="col">Total Ayath</th>
-              <th scope="col">Descended</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Al-Fatiha</td>
-              <td>7</td>
-              <td>Makka</td>
-            </tr>
-          </tbody>
-        </table>
+export default class Table extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      surah: SURAH,
+      suras: "",
+    };
+  }
+
+  componentDidMount() {
+    axios
+      .get("https://alquranbd.com/api/tafheem/sura/list")
+      .then((res) => {
+        this.setState({
+          suras: res.data,
+        });
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  }
+  render() {
+    return (
+      <div className="container">
+        <div className="table-responsive py-5">
+          <table className="table table-bordered table-hover">
+            <thead className="thead-dark text-center">
+              <tr>
+                <th scope="col">Surah No.</th>
+                <th colSpan={2} scope="col">
+                  Surah Name{" "}
+                </th>
+                <th scope="col">Total Ayath</th>
+                <th scope="col">Descended</th>
+              </tr>
+            </thead>
+            <tbody>
+              {this.state.surah.map((item) => {
+                return (
+                  <tr key={item.sura_no}>
+                    <th scope="row">{item.sura_no}</th>
+                    <td>{item.sura_name} </td>
+                    <td>{item.eng_name} </td>
+                    <td>{item.total_ayat}</td>
+                    <td> </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
