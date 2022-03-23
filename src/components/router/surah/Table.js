@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import SURAH from "../../data/SuraData";
+import ayatAr from "../../data/ayatAr";
 import axios from "axios";
 
 export default class Table extends Component {
@@ -7,22 +8,10 @@ export default class Table extends Component {
     super(props);
     this.state = {
       surah: SURAH,
-      suras: "",
+      ayatAr: ayatAr,
     };
   }
 
-  componentDidMount() {
-    axios
-      .get("https://alquranbd.com/api/tafheem/sura/list")
-      .then((res) => {
-        this.setState({
-          suras: res.data,
-        });
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  }
   render() {
     return (
       <div className="container">
