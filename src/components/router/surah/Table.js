@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import SURAH from "../../data/SuraData";
-import ayatAr from "../../data/ayatAr";
+import SURAH from "../../assets/data/SuraData";
+import ayatAr from "../../assets/data/ayatAr";
 import axios from "axios";
 
 export default class Table extends Component {

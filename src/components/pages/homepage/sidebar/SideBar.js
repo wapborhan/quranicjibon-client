@@ -1,78 +1,81 @@
 import React from "react";
+import {
+  FaQuran,
+  FaBookOpen,
+  FaBookReader,
+  FaBook,
+  FaCopy,
+  FaMoon,
+  FaShareAlt,
+} from "react-icons/fa";
+import { BsStopwatch } from "react-icons/bs";
 
 export default function SideBar() {
   return (
-    <div className="sidebars bg-primary">
+    <div className="sidebars bg-dark text-light">
       <div className="logo-details">
-        {/* <!-- <i className='bx bxl-c-plus-plus'></i> --> */}
-        <img src="img/logo.png" alt="L" />
-        <span className="logo_name">WebBook</span>
+        <i className="bx bxl-c-plus-plus">
+          <FaQuran />
+        </i>
+        {/* <img src="img/logo.png" alt="L" /> */}
+        <span className="logo_name">AlQuran</span>
       </div>
       <ul className="nav-links">
         <li>
           <a href="#" className="active">
-            <i className="fas fa-exclamation-triangle text-white"></i>
-            <span className="links_name">Dashboard</span>
+            <i className="text-white">
+              <FaBookOpen />
+            </i>
+            <span className="links_name">আল কুরআন (সুরা ক্রমে)</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i className="fas fa-exclamation-triangle text-white"></i>
-            <span className="links_name">Product</span>
+            <i className="text-white">
+              <FaBookReader />
+            </i>
+            <span className="links_name">সহীহ হাদিস সমুহ</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i className="fas fa-exclamation-triangle text-white"></i>
-            <span className="links_name">Order list</span>
+            <i className=" text-white">
+              <FaBook />
+            </i>
+            <span className="links_name">কালেমা</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i className="fas fa-exclamation-triangle text-white"></i>
-            <span className="links_name">Analytics</span>
+            <i className=" text-white">
+              <FaCopy />
+            </i>
+            <span className="links_name">দোয়া সমুহ</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i className="fas fa-exclamation-triangle text-white"></i>
-            <span className="links_name">Stock</span>
+            <i className="text-white">
+              <BsStopwatch />
+            </i>
+            <span className="links_name">নামাজের সময়সুচী</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i className="fas fa-exclamation-triangle text-white"></i>
-            <span className="links_name">Total order</span>
+            <i className="text-white">
+              <FaMoon />
+            </i>
+            <span className="links_name">রমজান</span>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <i className="fas fa-exclamation-triangle text-white"></i>
-            <span className="links_name">Team</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i className="fas fa-exclamation-triangle text-white"></i>
-            <span className="links_name">Messages</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i className="fas fa-exclamation-triangle text-white"></i>
-            <span className="links_name">Favrorites</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i className="fas fa-exclamation-triangle text-white"></i>
-            <span className="links_name">Setting</span>
-          </a>
-        </li>
+
         <li className="log_out">
           <a href="#">
-            <i className="fas fa-exclamation-triangle text-white"></i>
-            <span className="links_name">Log out</span>
+            <i className=" text-white">
+              <FaShareAlt />
+            </i>
+            <span className="links_name">Share</span>
           </a>
         </li>
       </ul>
