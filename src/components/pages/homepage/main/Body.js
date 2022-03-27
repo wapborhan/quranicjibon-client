@@ -1,8 +1,11 @@
 import React from "react";
-import Table from "../../../../../router/surah/Table";
+import SuraList from "../../../router/surah/SuraList";
+// import Table from "../../../router/surah/Table";
+
 // import Desc from "./Desc";
 
-export default function Body() {
+export default function Body(props) {
+  // console.log(props.sura);
   return (
     <div className="container-fluid topbarpt">
       {/* <!-- Content Row --> */}
@@ -21,7 +24,7 @@ export default function Body() {
             </div>
             {/* <!-- Card Body --> */}
             <div className="card-body">
-              <Table />
+              <SuraList sura={props.sura} />
             </div>
           </div>
         </div>

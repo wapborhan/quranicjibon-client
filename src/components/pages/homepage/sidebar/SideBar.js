@@ -23,7 +23,7 @@ export default function SideBar() {
       </div>
       <ul className="nav-links">
         <li>
-          <Link to="/" className="active">
+          <Link to="/sura" className="active">
             <i className="text-white">
               <FaBookOpen />
             </i>
