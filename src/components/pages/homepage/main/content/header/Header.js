@@ -1,4 +1,11 @@
 import React from "react";
+import {
+  FaBars,
+  FaSearch,
+  FaEnvelope,
+  FaCogs,
+  FaRegMoon,
+} from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -7,8 +14,10 @@ export default function Header() {
       className="topbar navbar navbar-expand navbar-light bg-white  mb-4 static-top shadow d-flex justify-content-between"
     >
       <div className="sidebars-button text-dark mr-auto">
-        <i className="fa fa-bars bx bx-menu sidebarsBtn"></i>
-        <span className="dashboard">WebBook</span>
+        <i className="fa fa-bars bx bx-menu sidebarsBtn">
+          <FaBars />
+        </i>
+        <span className="dashboard">AlQuran</span>
       </div>
 
       {/* <!-- Topbar Search --> */}
@@ -23,7 +32,9 @@ export default function Header() {
           />
           <div className="input-group-append">
             <button className="btn btn-primary" type="button">
-              <i className="fas fa-search fa-sm"></i>
+              <i className="fas fa-search fa-sm">
+                <FaSearch />
+              </i>
             </button>
           </div>
         </div>
@@ -42,7 +53,9 @@ export default function Header() {
             aria-haspopup="true"
             aria-expanded="false"
           >
-            <i className="fas fa-search fa-fw"></i>
+            <i className="fas fa-search fa-fw">
+              <FaSearch />
+            </i>
           </a>
           {/* <!-- Dropdown - Messages --> */}
           <div
@@ -60,77 +73,13 @@ export default function Header() {
                 />
                 <div className="input-group-append">
                   <button className="btn btn-primary" type="button">
-                    <i className="fas fa-search fa-sm"></i>
+                    <i className="fas fa-search fa-sm">
+                      <FaSearch />
+                    </i>
                   </button>
                 </div>
               </div>
             </form>
-          </div>
-        </li>
-
-        {/* <!-- Nav Item - Alerts --> */}
-        <li className="nav-item dropdown no-arrow mx-1">
-          <a
-            className="nav-link dropdown-toggle"
-            href="#"
-            id="alertsDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <i className="fas fa-bell fa-fw"></i>
-            {/* <!-- Counter - Alerts --> */}
-            <span className="badge badge-danger badge-counter">3+</span>
-          </a>
-          {/* <!-- Dropdown - Alerts --> */}
-          <div
-            className="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-            aria-labelledby="alertsDropdown"
-          >
-            <h6 className="dropdown-header">Alerts Center</h6>
-            <a className="dropdown-item d-flex align-items-center" href="#">
-              <div className="mr-3">
-                <div className="icon-circle bg-primary">
-                  <i className="fas fa-file-alt text-white"></i>
-                </div>
-              </div>
-              <div>
-                <div className="small text-gray-500">December 12, 2019</div>
-                <span className="font-weight-bold">
-                  A new monthly report is ready to download!
-                </span>
-              </div>
-            </a>
-            <a className="dropdown-item d-flex align-items-center" href="#">
-              <div className="mr-3">
-                <div className="icon-circle bg-success">
-                  <i className="fas fa-donate text-white"></i>
-                </div>
-              </div>
-              <div>
-                <div className="small text-gray-500">December 7, 2019</div>
-                $290.29 has been deposited into your account!
-              </div>
-            </a>
-            <a className="dropdown-item d-flex align-items-center" href="#">
-              <div className="mr-3">
-                <div className="icon-circle bg-warning">
-                  <i className="fas fa-exclamation-triangle text-white"></i>
-                </div>
-              </div>
-              <div>
-                <div className="small text-gray-500">December 2, 2019</div>
-                Spending Alert: We've noticed unusually high spending for your
-                account.
-              </div>
-            </a>
-            <a
-              className="dropdown-item text-center small text-gray-500"
-              href="#"
-            >
-              Show All Alerts
-            </a>
           </div>
         </li>
 
@@ -145,7 +94,9 @@ export default function Header() {
             aria-haspopup="true"
             aria-expanded="false"
           >
-            <i className="fas fa-envelope fa-fw"></i>
+            <i className="fas fa-envelope fa-fw">
+              <FaEnvelope />
+            </i>
             {/* <!-- Counter - Messages --> */}
             <span className="badge badge-danger badge-counter">7</span>
           </a>
@@ -235,52 +186,21 @@ export default function Header() {
         <div className="topbar-divider d-none d-sm-block"></div>
 
         {/* <!-- Nav Item - User Information --> */}
-        <li className="nav-item dropdown no-arrow">
-          <a
-            className="nav-link dropdown-toggle"
-            href="#"
-            id="userDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <span className="mr-2 d-none d-lg-inline text-gray-600 small">
-              Douglas McGee
+        <li className="nav-item ">
+          <a className="nav-link" href="#">
+            <FaRegMoon />
+            <span className="ms-1 d-none d-lg-inline text-gray-600 small">
+              Dark
             </span>
-            <img
-              className="img-profile rounded-circle"
-              src="img/undraw_profile.svg"
-            />
           </a>
-          {/* <!-- Dropdown - User Information --> */}
-          <div
-            className="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-            aria-labelledby="userDropdown"
-          >
-            <a className="dropdown-item" href="#">
-              <i className="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-              Profile
-            </a>
-            <a className="dropdown-item" href="#">
-              <i className="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-              Settings
-            </a>
-            <a className="dropdown-item" href="#">
-              <i className="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-              Activity Log
-            </a>
-            <div className="dropdown-divider"></div>
-            <a
-              className="dropdown-item"
-              href="#"
-              data-toggle="modal"
-              data-target="#logoutModal"
-            >
-              <i className="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-              Logout
-            </a>
-          </div>
+        </li>
+        <li className="nav-item ">
+          <a className="nav-link" href="#">
+            <FaCogs />
+            <span className="ms-1 d-none d-lg-inline text-gray-600 small">
+              Setings
+            </span>
+          </a>
         </li>
       </ul>
     </nav>
