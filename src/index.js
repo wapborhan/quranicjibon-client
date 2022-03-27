@@ -2,13 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import MainComponents from "./components/MainComponents";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./components/assets/stylesheet/styles.min.css";
 import "./components/assets/stylesheet/custom.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <MainComponents />
+    <BrowserRouter>
+      <MainComponents />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

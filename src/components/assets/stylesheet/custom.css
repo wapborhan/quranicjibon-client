@@ -39,4 +39,21 @@
   font-size: 15px;
   font-weight: 700;
   color: #000;
+
+}
+
+a.card-lin {
+  text-decoration: none;
+  color: grey;
+  transition: 0.3s;
+}
+
+.card-lin:hover {
+  border: 1px solid #f50173;
+  box-shadow: 0 0 15px -4px #53535396;
+}
+
+.card-lin:hover .shape,
+.card-lin:hover .shape:before {
+  background: #f50173;
 }

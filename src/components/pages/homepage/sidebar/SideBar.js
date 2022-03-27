@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaQuran,
   FaBookOpen,
@@ -22,61 +23,61 @@ export default function SideBar() {
       </div>
       <ul className="nav-links">
         <li>
-          <a href="#" className="active">
+          <Link to="/" className="active">
             <i className="text-white">
               <FaBookOpen />
             </i>
             <span className="links_name">আল কুরআন (সুরা ক্রমে)</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">
+          <Link to="/hadith">
             <i className="text-white">
               <FaBookReader />
             </i>
             <span className="links_name">সহীহ হাদিস সমুহ</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">
+          <Link to="/kalema">
             <i className=" text-white">
               <FaBook />
             </i>
             <span className="links_name">কালেমা</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">
+          <Link to="/dowa">
             <i className=" text-white">
               <FaCopy />
             </i>
             <span className="links_name">দোয়া সমুহ</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">
+          <Link to="/salat-time">
             <i className="text-white">
               <BsStopwatch />
             </i>
             <span className="links_name">নামাজের সময়সুচী</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">
+          <Link to="/ramjan">
             <i className="text-white">
               <FaMoon />
             </i>
             <span className="links_name">রমজান</span>
-          </a>
+          </Link>
         </li>
 
         <li className="log_out">
-          <a href="#">
+          <Link to="/about">
             <i className=" text-white">
               <FaShareAlt />
             </i>
-            <span className="links_name">Share</span>
-          </a>
+            <span className="links_name">সাইট সম্পর্কে</span>
+          </Link>
         </li>
       </ul>
     </div>

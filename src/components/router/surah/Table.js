@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import SURAH from "../../assets/data/SuraData";
 import ayatAr from "../../assets/data/ayatAr";
 
@@ -20,7 +21,12 @@ export default class Table extends Component {
         <div className="d-flex flex-wrap">
           {this.state.surah.map((item) => {
             return (
-              <div className="card m-2" style={cardW} key={item.sura_no}>
+              <Link
+                to={item.sura}
+                className="card m-2 card-lin"
+                style={cardW}
+                key={item.sura_no}
+              >
                 <div className="card-body">
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="d-flex justify-content-between">
@@ -43,8 +49,12 @@ export default class Table extends Component {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             );
+          })}
+
+          {this.state.ayatAr.map((ayat) => {
+            // console.log(ayat);
           })}
         </div>
       </div>
