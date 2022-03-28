@@ -3,14 +3,25 @@ import React, { Fragment } from "react";
 export default function AyatDetails(props) {
   // console.log(props.ayatar);
   return (
-    <div class="table-responsive py-5">
-      <table className="table table-bordered table-striped">
-        <tbody>
-          <tr className="table-dark">
-            <th scope="col">Ayat No.</th>
-            <th scope="col">Translate</th>
-            <th scope="col">Ayat</th>
+    <div class="table-responsive py-2">
+      <table
+        className="table table-bordered border-warning table-striped "
+        style={{ width: "100%" }}
+      >
+        <thead>
+          <tr className="bg-dark text-light text-center">
+            <th scope="col" className="text-center" style={{ width: "40%" }}>
+              অনুবাদ
+            </th>
+            <th scope="col" style={{ width: "55%" }}>
+              আয়াত
+            </th>
+            <th scope="col" style={{ width: "5%" }}>
+              নম্বর
+            </th>
           </tr>
+        </thead>
+        <tbody>
           {props.ayatar.map((ayatar) => {
             console.log(ayatar);
 

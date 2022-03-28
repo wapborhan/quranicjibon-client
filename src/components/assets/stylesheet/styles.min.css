@@ -7180,6 +7180,7 @@ button.bg-dark:focus {
 
 .border-warning {
   border-color: #f6c23e !important;
+  border: 1px solid #f6c23e !important;
 }
 
 .border-right-warning {
