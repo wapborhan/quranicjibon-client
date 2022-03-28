@@ -22,7 +22,7 @@ const SURAH = [
     type: "মাদানী",
   },
   {
-    sura: "",
+    sura: "3",
     sura_no: "003",
     sura_name: "আল ইমরান",
     para: "3",
@@ -33,7 +33,7 @@ const SURAH = [
     type: "মাদানী",
   },
   {
-    sura: "",
+    sura: "4",
     sura_no: "004",
     sura_name: "আন নিসা",
     para: "4",
@@ -44,7 +44,7 @@ const SURAH = [
     type: "মাদানী",
   },
   {
-    sura: "",
+    sura: "5",
     sura_no: "005",
     sura_name: "আল মায়েদা",
     para: "6",
@@ -55,7 +55,7 @@ const SURAH = [
     type: "মাদানী",
   },
   {
-    sura: "",
+    sura: "6",
     sura_no: "006",
     sura_name: "আল আন'আম",
     para: "7",
@@ -66,7 +66,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "7",
     sura_no: "007",
     sura_name: "আল আ'রাফ",
     para: "8",
@@ -77,7 +77,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "8",
     sura_no: "008",
     sura_name: "আল-আনফাল",
     para: "9",
@@ -88,7 +88,7 @@ const SURAH = [
     type: "মাদানী",
   },
   {
-    sura: "",
+    sura: "9",
     sura_no: "009",
     sura_name: "আত তাওবাহ",
     para: "10",
@@ -99,7 +99,7 @@ const SURAH = [
     type: "মাদানী",
   },
   {
-    sura: "",
+    sura: "10",
     sura_no: "010",
     sura_name: "ইউনুস",
     para: "11",
@@ -110,7 +110,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "11",
     sura_no: "011",
     sura_name: "হুদ",
     para: "12",
@@ -121,7 +121,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "12",
     sura_no: "012",
     sura_name: "ইউসূফ",
     para: "12",
@@ -132,7 +132,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "13",
     sura_no: "013",
     sura_name: "আর-রাদ",
     para: "13",
@@ -143,7 +143,7 @@ const SURAH = [
     type: "মাদানী",
   },
   {
-    sura: "",
+    sura: "14",
     sura_no: "014",
     sura_name: "ইব্রাহীম",
     para: "13",
@@ -154,7 +154,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "15",
     sura_no: "015",
     sura_name: "হিজর",
     para: "13",
@@ -165,7 +165,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "16",
     sura_no: "016",
     sura_name: "আন-নাহাল",
     para: "14",
@@ -176,7 +176,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "17",
     sura_no: "017",
     sura_name: "আল-ইসরা (বনী-ইসরাঈল)",
     para: "15",
@@ -187,7 +187,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "18",
     sura_no: "018",
     sura_name: "আল-কাহফ",
     para: "15",
@@ -198,7 +198,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "19",
     sura_no: "019",
     sura_name: "মারইয়াম",
     para: "16",
@@ -209,7 +209,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "20",
     sura_no: "020",
     sura_name: "ত্ব-হা",
     para: "16",
@@ -220,7 +220,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "21",
     sura_no: "021",
     sura_name: "আল-আম্বিয়া",
     para: "17",
@@ -231,7 +231,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "22",
     sura_no: "022",
     sura_name: "আল-হজ্জ",
     para: "17",
@@ -242,7 +242,7 @@ const SURAH = [
     type: "মাদানী",
   },
   {
-    sura: "",
+    sura: "23",
     sura_no: "023",
     sura_name: "আল মু'মিনূন",
     para: "18",
@@ -254,7 +254,7 @@ const SURAH = [
   },
 
   {
-    sura: "",
+    sura: "24",
     sura_no: "024",
     sura_name: "আন-নূর",
     para: "18",
@@ -265,7 +265,7 @@ const SURAH = [
     type: "মাদানী",
   },
   {
-    sura: "",
+    sura: "25",
     sura_no: "025",
     sura_name: "আল-ফুরকান",
     para: "18",
@@ -276,7 +276,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "26",
     sura_no: "026",
     sura_name: "আশ-শুআ'রা",
     para: "19",
@@ -287,7 +287,7 @@ const SURAH = [
     type: " মাক্কী	",
   },
   {
-    sura: "",
+    sura: "27",
     sura_no: "027",
     sura_name: "আন-নামাল",
     para: "19",
@@ -298,7 +298,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "28",
     sura_no: "028",
     sura_name: "আল কাসাস",
     para: "20",
@@ -309,7 +309,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "29",
     sura_no: "029",
     sura_name: "আল আনকাবূত",
     para: "20",
@@ -320,7 +320,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "30",
     sura_no: "030",
     sura_name: "আর-রূম",
     para: "21",
@@ -331,7 +331,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "31",
     sura_no: "031",
     sura_name: "লুকমান",
     para: "21",
@@ -342,7 +342,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "32",
     sura_no: "032",
     sura_name: "আস-সাজদাহ",
     para: "21",
@@ -353,7 +353,7 @@ const SURAH = [
     type: "মাক্কী",
   },
   {
-    sura: "",
+    sura: "33",
     sura_no: "033",
     sura_name: "আল আহযাব",
     para: "21",
@@ -364,7 +364,7 @@ const SURAH = [
     type: "মাদানী",
   },
   {
-    sura: "",
+    sura: "34",
     sura_no: "034",
     sura_name: "সাবা",
     para: "22",
@@ -375,7 +375,7 @@ const SURAH = [
     type: "",
   },
   {
-    sura: "",
+    sura: "35",
     sura_no: "035",
     sura_name: "ফাতির",
     para: "22",
@@ -386,7 +386,7 @@ const SURAH = [
     type: "",
   },
   {
-    sura: "",
+    sura: "36",
     sura_no: "036",
     sura_name: "ইয়াসীন",
     para: "22",
@@ -397,7 +397,7 @@ const SURAH = [
     type: "",
   },
   {
-    sura: "",
+    sura: "37",
     sura_no: "037",
     sura_name: "আস-সাফফাত",
     para: "23",
@@ -408,7 +408,7 @@ const SURAH = [
     type: "",
   },
   {
-    sura: "",
+    sura: "38",
     sura_no: "038",
     sura_name: "ছোয়াদ",
     para: "23",
@@ -419,7 +419,7 @@ const SURAH = [
     type: "",
   },
   {
-    sura: "",
+    sura: "39",
     sura_no: "039",
     sura_name: "আল-যুমার",
     para: "23",
@@ -430,7 +430,7 @@ const SURAH = [
     type: "",
   },
   {
-    sura: "",
+    sura: "40",
     sura_no: "040",
     sura_name: "আল-মু'মিন",
     para: "24",

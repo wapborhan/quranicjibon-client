@@ -6,7 +6,8 @@ var cardW = {
 };
 export default function SuraList(props) {
   const suras = props.sura.suras;
-  // console.log(props.sura);
+  const selectSura = props.sura.selectSura;
+  // console.log(props.sura.selectSura);
   return (
     <div className="d-flex flex-wrap">
       {suras.map((item) => {
@@ -20,7 +21,7 @@ export default function SuraList(props) {
             <Sura
               sura={item}
               selectSura={() => {
-                props.selectSura(item.sura);
+                selectSura(item.sura);
               }}
             />
           </Link>

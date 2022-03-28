@@ -38,9 +38,21 @@ export default class MainComponents extends Component {
     return (
       <div id="wrapper">
         <Routes>
-          <Route path="/sura" exact element={suras}>
-            <Route path="/sura/:sura" element={<SuraDetails />} />
-          </Route>
+          <Route
+            path="/sura"
+            exact
+            element={
+              <HomePage
+                suras={this.state.surah}
+                selectSura={this.selectedSuraHandler}
+              />
+            }
+          />
+          <Route
+            path="/sura/:sura"
+            exact
+            element={<SuraDetails sura={this.state.selectedSura} />}
+          />
           <Route path="/hadith" exact element={<HomePage />} />
           <Route path="/kalema" exact element={<HomePage />} />
           <Route path="/dowa" exact element={<HomePage />} />

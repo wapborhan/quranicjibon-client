@@ -1,9 +1,9 @@
 import React from "react";
 
 export default function Sura(props) {
-  // console.log(props);
+  // console.log(props.selectSura);
   return (
-    <div className="card-body" onClick={props.sura.selectSura}>
+    <div className="card-body" onClick={props.selectSura}>
       <div className="d-flex justify-content-between align-items-center">
         <div className="d-flex justify-content-between">
           <div className="slno mt-3">

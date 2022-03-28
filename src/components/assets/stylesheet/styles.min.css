@@ -7161,6 +7161,11 @@ button.bg-dark:focus {
   border-color: #4e73df !important;
 }
 
+.border-top-primary {
+
+  border-top: 0.25rem solid #4e73df !important;
+}
+
 .border-secondary {
   border-color: #858796 !important;
 }
@@ -7175,6 +7180,10 @@ button.bg-dark:focus {
 
 .border-warning {
   border-color: #f6c23e !important;
+}
+
+.border-right-warning {
+  border-right: 0.25rem solid #e74a3b !important;
 }
 
 .border-danger {
