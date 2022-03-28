@@ -51,7 +51,12 @@ export default class MainComponents extends Component {
           <Route
             path="/sura/:sura"
             exact
-            element={<SuraDetails sura={this.state.selectedSura} />}
+            element={
+              <SuraDetails
+                sura={this.state.selectedSura}
+                ayatAr={this.state.ayatAr}
+              />
+            }
           />
           <Route path="/hadith" exact element={<HomePage />} />
           <Route path="/kalema" exact element={<HomePage />} />

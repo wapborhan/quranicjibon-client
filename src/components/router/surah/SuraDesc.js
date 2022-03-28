@@ -10,19 +10,26 @@ export default function SuraDesc(props) {
           <div className="card-body text-center">
             <div className="row no-gutters align-items-center">
               <div className="col mr-2">
-                <div className=" font-weight-bold text-success text-uppercase mb-1">
+                <div className="h3 font-weight-bold text-success text-uppercase mb-1">
                   {sura.sura_no}. {sura.sura_name}
-                  <br />
+                </div>
+                <div className="h4 font-weight-bold text-success text-uppercase mb-1">
                   {sura.ar_name} - {sura.enbn_name} - {sura.eng_name}
                 </div>
                 <div className="h5 mb-3 mt-4 font-weight-bold text-gray-800">
                   আয়াতঃ {sura.total_ayat}, রুকুঃ {}, ({sura.type})
                 </div>
-                <div className="h5 mb-3 font-weight-bold text-gray-800">
+                <div className="play-sura mt-2 mb-3">
+                  <button>Play Sura</button>
+                </div>
+                <div className="h5 mb-3 mt-5 font-weight-bold text-gray-800">
                   بِسْمِ اللَّـهِ الرَّ‌حْمَـٰنِ الرَّ‌حِيمِ
                 </div>
                 <div className="h5 mb-3 font-weight-bold text-gray-800">
-                  দয়াময় মেহেরবান আল্লাহর নামে{" "}
+                  দয়াময় মেহেরবান আল্লাহর নামে
+                </div>
+                <div className="hed-imgd">
+                  <img src="/images/ornate-designs.png" alt="Head-Image" />
                 </div>
               </div>
               <div className="col-auto">
