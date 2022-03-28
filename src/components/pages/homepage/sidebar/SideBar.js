@@ -14,13 +14,13 @@ import { BsStopwatch } from "react-icons/bs";
 export default function SideBar() {
   return (
     <div className="sidebars bg-dark text-light">
-      <div className="logo-details">
+      <Link to="/" className="logo-details text-decoration-none">
         <i className="bx bxl-c-plus-plus">
           <FaQuran />
         </i>
         {/* <img src="img/logo.png" alt="L" /> */}
         <span className="logo_name">AlQuran</span>
-      </div>
+      </Link>
       <ul className="nav-links">
         <li>
           <Link to="/sura" className="active">

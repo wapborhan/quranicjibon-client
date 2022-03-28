@@ -8,6 +8,11 @@ import SuraList from "./router/surah/SuraList";
 
 import SURAH from "./assets/data/SuraData";
 import ayatAr from "./assets/data/ayatAr";
+import Dowa from "./pages/other/dowa/Dowa";
+import Ramjan from "./pages/other/ramjan/Ramjan";
+import SalatTime from "./pages/other/salat-time/SalatTime";
+import Kalema from "./pages/other/kalema/Kalema";
+import Hadith from "./pages/other/hadith/Hadith";
 
 export default class MainComponents extends Component {
   constructor(props) {
@@ -60,11 +65,11 @@ export default class MainComponents extends Component {
               />
             }
           />
-          <Route path="/hadith" exact element={<HomePage />} />
-          <Route path="/kalema" exact element={<HomePage />} />
-          <Route path="/dowa" exact element={<HomePage />} />
-          <Route path="/salat-time" exact element={<HomePage />} />
-          <Route path="/ramjan" exact element={<HomePage />} />
+          <Route path="/hadith" exact element={<Hadith />} />
+          <Route path="/kalema" exact element={<Kalema />} />
+          <Route path="/dowa" exact element={<Dowa />} />
+          <Route path="/salat-time" exact element={<SalatTime />} />
+          <Route path="/ramjan" exact element={<Ramjan />} />
           <Route path="/about" exact element={<HomePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
