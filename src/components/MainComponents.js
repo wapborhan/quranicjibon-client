@@ -28,11 +28,12 @@ export default class MainComponents extends Component {
   };
 
   render() {
-    let suraDetails = null;
+    let ayatardetails = null;
     if (this.state.selectedSura != null) {
       const ayatar = this.state.ayatArData.filter((ayat) => {
         return ayat.sura === this.state.selectedSura.sura;
       });
+      ayatardetails = ayatar;
     }
 
     return (
@@ -52,7 +53,12 @@ export default class MainComponents extends Component {
           <Route
             path="/sura/:sura"
             exact
-            element={<SuraDetails sura={this.state.selectedSura} />}
+            element={
+              <SuraDetails
+                sura={this.state.selectedSura}
+                ayatar={ayatardetails}
+              />
+            }
           />
           <Route path="/hadith" exact element={<HomePage />} />
           <Route path="/kalema" exact element={<HomePage />} />

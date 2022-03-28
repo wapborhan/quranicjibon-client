@@ -5,14 +5,14 @@ import SideBar from "../../pages/homepage/sidebar/SideBar";
 import SuraDesc from "./SuraDesc";
 
 export default function SuraDetails(props) {
-  console.log(props);
+  // console.log(props);
   return (
     <Fragment>
       <SideBar />
       <div id="content-wrapper" className="d-flex flex-column">
         <Header />
         <div className="container-fluid topbarpt">
-          <SuraDesc suraData={props.sura} />
+          <SuraDesc suraData={props} />
         </div>
         <Footer />
       </div>
