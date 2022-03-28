@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SuraDesc(props) {
   const sura = props.suraData;
-  console.log(props.suraData.sura_name);
+  // console.log(props.suraData.sura_name);
   return (
     <div className="row">
       <div className="col-xl-12 col-md-12 mb-4">
@@ -17,7 +17,7 @@ export default function SuraDesc(props) {
                   {sura.ar_name} - {sura.enbn_name} - {sura.eng_name}
                 </div>
                 <div className="h5 mb-3 mt-4 font-weight-bold text-gray-800">
-                  আয়াতঃ {sura.total_ayat}, রুকুঃ {}, ({sura.type})
+                  আয়াতঃ {sura.total_ayat}, রুকুঃ {sura.ruku}, ({sura.type})
                 </div>
                 <div className="play-sura mt-2 mb-3">
                   <button>Play Sura</button>

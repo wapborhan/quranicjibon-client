@@ -9,6 +9,7 @@ const SURAH = [
     eng_name: "The Opening",
     ar_name: "سورة الفاتحة",
     type: "মাক্কী",
+    ruku: "১",
   },
   {
     sura: "2",
@@ -20,6 +21,7 @@ const SURAH = [
     eng_name: "The Calf",
     ar_name: "سورة البقرة",
     type: "মাদানী",
+    ruku: "40",
   },
   {
     sura: "3",
@@ -31,6 +33,7 @@ const SURAH = [
     eng_name: "The Family of Imraan",
     ar_name: "سورة آل عمران",
     type: "মাদানী",
+    ruku: "20",
   },
   {
     sura: "4",

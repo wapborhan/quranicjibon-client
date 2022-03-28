@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import HomePage from "./pages/homepage/HomePage";
 import NotFound from "./NotFound";
 import SuraDetails from "./router/surah/SuraDetails";
@@ -15,7 +15,7 @@ export default class MainComponents extends Component {
     this.state = {
       surah: SURAH,
       selectedSura: null,
-      ayatAr: ayatAr,
+      ayatArData: ayatAr,
     };
   }
 
@@ -24,16 +24,16 @@ export default class MainComponents extends Component {
     this.setState({
       selectedSura: sura,
     });
-    console.log(sura);
+    // console.log(sura);
   };
 
   render() {
-    let suras = (
-      <HomePage
-        suras={this.state.surah}
-        selectSura={this.selectedSuraHandler}
-      />
-    );
+    let suraDetails = null;
+    if (this.state.selectedSura != null) {
+      const ayatar = this.state.ayatArData.filter((ayat) => {
+        return ayat.sura === this.state.selectedSura.sura;
+      });
+    }
 
     return (
       <div id="wrapper">
@@ -48,15 +48,11 @@ export default class MainComponents extends Component {
               />
             }
           />
+          <Route path="/" element={<Navigate replace to="/sura" />} />
           <Route
             path="/sura/:sura"
             exact
-            element={
-              <SuraDetails
-                sura={this.state.selectedSura}
-                ayatAr={this.state.ayatAr}
-              />
-            }
+            element={<SuraDetails sura={this.state.selectedSura} />}
           />
           <Route path="/hadith" exact element={<HomePage />} />
           <Route path="/kalema" exact element={<HomePage />} />

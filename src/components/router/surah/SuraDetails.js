@@ -5,7 +5,7 @@ import SideBar from "../../pages/homepage/sidebar/SideBar";
 import SuraDesc from "./SuraDesc";
 
 export default function SuraDetails(props) {
-  console.log(props.sura);
+  console.log(props);
   return (
     <Fragment>
       <SideBar />
