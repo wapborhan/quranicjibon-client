@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 // Data
 import SURAH from "./assets/data/SuraData";
 import ayatAr from "./assets/data/ayatAr";
-import ayatEnBn from "./assets/data/ayatEnBn";
+import AllAyat from "./assets/data/ayat";
 // Page
 import HomePage from "./pages/homepage/HomePage";
 import NotFound from "./NotFound";
@@ -21,7 +21,7 @@ export default class MainComponents extends Component {
       surah: SURAH,
       selectedSura: null,
       ayatArData: ayatAr,
-      ayatBrData: ayatEnBn,
+      ayatBrData: AllAyat,
     };
   }
 

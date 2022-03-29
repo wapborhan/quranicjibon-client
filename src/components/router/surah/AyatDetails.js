@@ -47,6 +47,8 @@ export default function AyatDetails(props) {
                     <tr>
                       <td className="en-aya">{ayat.text_bn}</td>
                       <td className="en-aya">{ayat.text_en}</td>
+                      <td className="en-aya">{ayat.text_ar}</td>
+                      <td className="en-aya">{ayat.aya}</td>
                     </tr>
                   );
                 })}
