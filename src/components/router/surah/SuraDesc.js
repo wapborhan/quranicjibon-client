@@ -2,9 +2,11 @@ import React, { Fragment } from "react";
 import AyatDetails from "./AyatDetails";
 
 export default function SuraDesc(props) {
-  const sura = props.suraData.sura;
-  const ayatar = props.suraData.ayatar;
-  const ayatbr = props.suraData.ayatbr;
+  const sura = props.ayatData.sura;
+  const ayat = props.ayatData.ayat;
+
+  // console.log(ayat);
+
   // console.log(props);
   return (
     <Fragment>
@@ -46,7 +48,7 @@ export default function SuraDesc(props) {
       </div>
       <div className="row">
         <div className="col-lg-12">
-          <AyatDetails ayatar={ayatar} ayatenbn={ayatbr} />
+          <AyatDetails ayat={ayat} />
         </div>
       </div>
     </Fragment>

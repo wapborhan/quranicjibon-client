@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 // Data
 import SURAH from "./assets/data/SuraData";
-import ayatAr from "./assets/data/ayatAr";
-import AllAyat from "./assets/data/ayat";
+import AllAyat from "./assets/data/AllAyat";
 // Page
 import HomePage from "./pages/homepage/HomePage";
 import NotFound from "./NotFound";
@@ -19,9 +18,8 @@ export default class MainComponents extends Component {
     super(props);
     this.state = {
       surah: SURAH,
+      ayatData: AllAyat,
       selectedSura: null,
-      ayatArData: ayatAr,
-      ayatBrData: AllAyat,
     };
   }
 
@@ -34,24 +32,16 @@ export default class MainComponents extends Component {
   };
 
   render() {
-    let ayatardetails = null;
-    let ayatbrdetails = null;
+    let ayatdetails = null;
 
     // Arbi Ayat Filter
     if (this.state.selectedSura != null) {
-      const ayatar = this.state.ayatArData.filter((ayat) => {
+      const ayat = this.state.ayatData.filter((ayat) => {
         return ayat.sura === this.state.selectedSura.sura;
       });
-      ayatardetails = ayatar;
+      ayatdetails = ayat;
     }
 
-    // Bangla Ayat Filter
-    if (this.state.selectedSura != null) {
-      const ayatbr = this.state.ayatBrData.filter((ayat) => {
-        return ayat.sura === this.state.selectedSura.sura;
-      });
-      ayatbrdetails = ayatbr;
-    }
     return (
       <div id="wrapper">
         <Routes>
@@ -70,11 +60,7 @@ export default class MainComponents extends Component {
             path="/sura/:sura"
             exact
             element={
-              <SuraDetails
-                sura={this.state.selectedSura}
-                ayatar={ayatardetails}
-                ayatbr={ayatbrdetails}
-              />
+              <SuraDetails sura={this.state.selectedSura} ayat={ayatdetails} />
             }
           />
           <Route path="/hadith" exact element={<Hadith />} />

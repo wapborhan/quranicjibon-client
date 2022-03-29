@@ -12,7 +12,7 @@ export default function SuraDetails(props) {
       <div id="content-wrapper" className="d-flex flex-column">
         <Header />
         <div className="container-fluid topbarpt">
-          <SuraDesc suraData={props} />
+          <SuraDesc ayatData={props} />
         </div>
         <Footer />
       </div>
