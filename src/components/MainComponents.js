@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
+// Data
+import SURAH from "./assets/data/SuraData";
+import ayatAr from "./assets/data/ayatAr";
+import ayatEnBn from "./assets/data/ayatEnBn";
+// Page
 import HomePage from "./pages/homepage/HomePage";
 import NotFound from "./NotFound";
 import SuraDetails from "./router/surah/SuraDetails";
-
-import SuraList from "./router/surah/SuraList";
-
-import SURAH from "./assets/data/SuraData";
-import ayatAr from "./assets/data/ayatAr";
 import Dowa from "./pages/other/dowa/Dowa";
 import Ramjan from "./pages/other/ramjan/Ramjan";
 import SalatTime from "./pages/other/salat-time/SalatTime";
@@ -21,6 +21,7 @@ export default class MainComponents extends Component {
       surah: SURAH,
       selectedSura: null,
       ayatArData: ayatAr,
+      ayatBrData: ayatEnBn,
     };
   }
 
@@ -34,6 +35,9 @@ export default class MainComponents extends Component {
 
   render() {
     let ayatardetails = null;
+    let ayatbrdetails = null;
+
+    // Arbi Ayat Filter
     if (this.state.selectedSura != null) {
       const ayatar = this.state.ayatArData.filter((ayat) => {
         return ayat.sura === this.state.selectedSura.sura;
@@ -41,6 +45,13 @@ export default class MainComponents extends Component {
       ayatardetails = ayatar;
     }
 
+    // Bangla Ayat Filter
+    if (this.state.selectedSura != null) {
+      const ayatbr = this.state.ayatBrData.filter((ayat) => {
+        return ayat.sura === this.state.selectedSura.sura;
+      });
+      ayatbrdetails = ayatbr;
+    }
     return (
       <div id="wrapper">
         <Routes>
@@ -62,6 +73,7 @@ export default class MainComponents extends Component {
               <SuraDetails
                 sura={this.state.selectedSura}
                 ayatar={ayatardetails}
+                ayatbr={ayatbrdetails}
               />
             }
           />

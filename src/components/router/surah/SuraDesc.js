@@ -4,7 +4,8 @@ import AyatDetails from "./AyatDetails";
 export default function SuraDesc(props) {
   const sura = props.suraData.sura;
   const ayatar = props.suraData.ayatar;
-  // console.log(ayatar);
+  const ayatbr = props.suraData.ayatbr;
+  // console.log(props);
   return (
     <Fragment>
       <div className="row">
@@ -45,7 +46,7 @@ export default function SuraDesc(props) {
       </div>
       <div className="row">
         <div className="col-lg-12">
-          <AyatDetails ayatar={ayatar} />
+          <AyatDetails ayatar={ayatar} ayatenbn={ayatbr} />
         </div>
       </div>
     </Fragment>

@@ -1,9 +1,11 @@
 import React, { Fragment } from "react";
 
 export default function AyatDetails(props) {
-  // console.log(props.ayatar);
+  // console.log(props);
+  const data = [{ ayatar: props.ayatar, ayatenbn: props.ayatenbn }];
+
   return (
-    <div class="table-responsive py-2">
+    <div className="table-responsive py-2">
       <table
         className="table table-bordered border-warning table-striped "
         style={{ width: "100%" }}
@@ -22,23 +24,32 @@ export default function AyatDetails(props) {
           </tr>
         </thead>
         <tbody>
-          {props.ayatar.map((ayatar) => {
-            console.log(ayatar);
+          {data.map((data, br) => {
+            console.log(data);
 
             return (
               <Fragment>
-                <tr key={ayatar.id}>
-                  <td className="bn bn-aya ">বাংলা আসছে</td>
-                  <td className="pd20 ar text-right">{ayatar.ayat}</td>
-                  <td scope="row" className="align-items-center" rowSpan={2}>
-                    {ayatar.VerseIDAr}
-                  </td>
-                </tr>
+                {data.ayatar.map((ayat) => {
+                  return (
+                    <tr>
+                      <td className="pd20 ar text-right" colSpan={2}>
+                        {ayat.ayat}
+                      </td>
+                      <td scope="row" className="align-items-center">
+                        {ayat.VerseIDAr}
+                      </td>
+                    </tr>
+                  );
+                })}
 
-                <tr>
-                  <td className="en-aya">English Cooming Soon</td>
-                  <td className="bn bn-aya text-right">banglish asbe</td>
-                </tr>
+                {data.ayatenbn.map((ayat) => {
+                  return (
+                    <tr>
+                      <td className="en-aya">{ayat.text_bn}</td>
+                      <td className="en-aya">{ayat.text_en}</td>
+                    </tr>
+                  );
+                })}
               </Fragment>
             );
           })}
