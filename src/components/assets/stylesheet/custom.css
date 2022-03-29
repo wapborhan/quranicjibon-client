@@ -57,3 +57,9 @@ a.card-lin {
 .card-lin:hover .shape:before {
   background: #f50173;
 }
+
+ul.ayat-list li {
+  list-style-type: none;
+  border: 1px solid #888;
+  width: 100%;
+}

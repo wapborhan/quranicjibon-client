@@ -3,11 +3,23 @@ import AyatDetails from "./AyatDetails";
 
 export default function SuraDesc(props) {
   const sura = props.ayatData.sura;
-  const ayat = props.ayatData.ayat;
+  const ayatar = props.ayatData.ayatar;
+  const ayatbn = props.ayatData.ayatbn;
+  const ayat = props.ayatData;
 
-  // console.log(ayat);
+  let arayat = null;
+  // Arbi Ayat
+  if (ayatar) {
+    ayatar.map((item) => {
+      arayat = item;
+    });
+  }
 
-  // console.log(props);
+  // Arbi Ayat
+  ayatbn.map((item2) => {
+    // console.log(item2);
+  });
+
   return (
     <Fragment>
       <div className="row">
@@ -46,45 +58,8 @@ export default function SuraDesc(props) {
           </div>
         </div>
       </div>
-      <div className="row">
-        <div className="col-lg-12">
-          <div className="table-responsive py-2">
-            <table
-              className="table table-bordered border-warning table-striped "
-              style={{ width: "100%" }}
-            >
-              <thead>
-                <tr className="bg-dark text-light text-center">
-                  <th
-                    scope="col"
-                    className="text-center"
-                    style={{ width: "40%" }}
-                  >
-                    অনুবাদ
-                  </th>
-                  <th scope="col" style={{ width: "55%" }}>
-                    আয়াত
-                  </th>
-                  <th scope="col" style={{ width: "5%" }}>
-                    নম্বর
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {ayat.map((ayat) => (
-                  <AyatDetails
-                    surano={ayat.sura}
-                    verse={ayat.VerseIDAr}
-                    ayatar={ayat.text_ar}
-                    ayatbn={ayat.text_bn}
-                    ayaten={ayat.text_en}
-                  />
-                ))}{" "}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+      {console.log(arayat.ayat)}
+      <AyatDetails ayatar={ayatar} ayatbn={ayatbn} />
     </Fragment>
   );
 }
