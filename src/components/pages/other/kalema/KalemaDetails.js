@@ -8,7 +8,7 @@ const KalemaDetails = (props) => {
   return (
     <div>
       <Card>
-        <CardHeader>{props.kalema.name}</CardHeader>
+        <CardHeader className="h4">{props.kalema.name}</CardHeader>
         <CardBody>
           <div className="play-sura mt-2 mb-2">
             <AudioPlayer
@@ -20,7 +20,7 @@ const KalemaDetails = (props) => {
           </div>
 
           <div className="content mt-4">
-            <h3 className="text-right mb-4">{props.kalema.kalemaAr}</h3>
+            <h3 className="text-right mb-4 font-ar">{props.kalema.kalemaAr}</h3>
             <p>
               <span>বাংলা উচ্চারণ -</span>
               <br />

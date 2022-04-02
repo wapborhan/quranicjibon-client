@@ -13,7 +13,7 @@ const Kbody = (props) => {
       <div className="col-md-3">
         <div className="kalema-list">
           <div className="card">
-            <div className="card-header">কালেমা</div>
+            <div className="card-header h4">কালেমা সমুহ</div>
             <ul className="list-group">
               {kalema.map((item) => {
                 // console.log(item);

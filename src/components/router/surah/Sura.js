@@ -17,7 +17,7 @@ export default function Sura(props) {
           </div>
         </div>
         <div className="right">
-          <div className="name-ar mb-2">{props.sura.ar_name}</div>
+          <div className="name-ar mb-2 font-ar">{props.sura.ar_name}</div>
           <div className="name-enbn">{props.sura.enbn_name}</div>
           {/* <div className="type">ধরনঃ {props.sura.type}</div> */}
         </div>

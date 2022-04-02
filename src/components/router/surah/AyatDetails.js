@@ -34,7 +34,7 @@ export default function AyatDetails(props) {
                 <Fragment key={item.id}>
                   <tr>
                     <td className="bn bn-aya ">বাংলা আসছে</td>
-                    <td className="pd20 ar text-right">{item.ayat}</td>
+                    <td className="pd20 ar text-right font-ar">{item.ayat}</td>
                     <td scope="row" className="align-items-center" rowSpan={2}>
                       {item.VerseIDAr}
                     </td>

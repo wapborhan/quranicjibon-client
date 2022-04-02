@@ -25,7 +25,8 @@ export default function SuraDesc(props) {
                     {sura.sura_no}. {sura.sura_name}
                   </div>
                   <div className="h4 font-weight-bold text-success text-uppercase mb-1">
-                    {sura.ar_name} - {sura.enbn_name} - {sura.eng_name}
+                    <span className=" font-ar">{sura.ar_name}</span> -{" "}
+                    {sura.enbn_name} - {sura.eng_name}
                   </div>
                   <div className="h5 mb-3 mt-4 font-weight-bold text-gray-800">
                     আয়াতঃ {sura.total_ayat}, রুকুঃ {sura.ruku}, ({sura.type})
@@ -39,7 +40,7 @@ export default function SuraDesc(props) {
                       // other props here
                     />
                   </div>
-                  <div className="h5 mb-3 mt-4 font-weight-bold text-gray-800">
+                  <div className="h5 mb-3 mt-4 font-weight-bold text-gray-800 font-ar">
                     بِسْمِ اللَّـهِ الرَّ‌حْمَـٰنِ الرَّ‌حِيمِ
                   </div>
                   <div className="h5 mb-3 font-weight-bold text-gray-800">
