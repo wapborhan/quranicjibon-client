@@ -1,24 +1,17 @@
 import React, { Fragment } from "react";
 import AyatDetails from "./AyatDetails";
+import AudioPlayer from "react-h5-audio-player";
+import "react-h5-audio-player/lib/styles.css";
+// import "react-h5-audio-player/lib/styles.less";
 
 export default function SuraDesc(props) {
   const sura = props.ayatData.sura;
   const ayatar = props.ayatData.ayatar;
   const ayatbn = props.ayatData.ayatbn;
   const ayat = props.ayatData;
+  const src = props.ayatData.audio[0];
 
-  let arayat = null;
-  // Arbi Ayat
-  if (ayatar) {
-    ayatar.map((item) => {
-      arayat = item;
-    });
-  }
-
-  // Arbi Ayat
-  ayatbn.map((item2) => {
-    // console.log(item2);
-  });
+  console.log(src.audio);
 
   return (
     <Fragment>
@@ -37,10 +30,16 @@ export default function SuraDesc(props) {
                   <div className="h5 mb-3 mt-4 font-weight-bold text-gray-800">
                     আয়াতঃ {sura.total_ayat}, রুকুঃ {sura.ruku}, ({sura.type})
                   </div>
-                  <div className="play-sura mt-2 mb-3">
-                    <button>Play Sura</button>
+                  <div className="play-sura mt-2 mb-2">
+                    <AudioPlayer
+                      className="w-25 mx-auto"
+                      // autoPlay
+                      src={src.audio}
+                      onPlay={(e) => console.log("onPlay")}
+                      // other props here
+                    />
                   </div>
-                  <div className="h5 mb-3 mt-5 font-weight-bold text-gray-800">
+                  <div className="h5 mb-3 mt-4 font-weight-bold text-gray-800">
                     بِسْمِ اللَّـهِ الرَّ‌حْمَـٰنِ الرَّ‌حِيمِ
                   </div>
                   <div className="h5 mb-3 font-weight-bold text-gray-800">
@@ -58,7 +57,7 @@ export default function SuraDesc(props) {
           </div>
         </div>
       </div>
-      {console.log(arayat.ayat)}
+
       <AyatDetails ayatar={ayatar} ayatbn={ayatbn} />
     </Fragment>
   );

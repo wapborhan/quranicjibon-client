@@ -5,6 +5,7 @@ import SideBar from "../../pages/homepage/sidebar/SideBar";
 import SuraDesc from "./SuraDesc";
 
 export default function SuraDetails(props) {
+  let audio = props.audio[0];
   // console.log(props);
   return (
     <Fragment>

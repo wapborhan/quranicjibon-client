@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 // Data
 import SURAH from "./assets/data/SuraData";
+import AUDIO from "./assets/data/SuraAudio";
 import ayatAr from "./assets/data/ayatAr";
 import ayatBr from "./assets/data/ayatBr";
 // Page
@@ -19,6 +20,7 @@ export default class MainComponents extends Component {
     super(props);
     this.state = {
       surah: SURAH,
+      audio: AUDIO,
       ayatArData: ayatAr,
       ayatBnData: ayatBr,
       selectedSura: null,
@@ -34,8 +36,17 @@ export default class MainComponents extends Component {
   };
 
   render() {
+    let audio = null;
     let ayatArdetails = null;
     let ayatBndetails = null;
+
+    // Audio Filter
+    if (this.state.selectedSura != null) {
+      const audios = this.state.audio.filter((audio) => {
+        return audio.sura === this.state.selectedSura.sura;
+      });
+      audio = audios;
+    }
 
     // Arbi Ayat Filter
     if (this.state.selectedSura != null) {
@@ -72,6 +83,7 @@ export default class MainComponents extends Component {
             element={
               <SuraDetails
                 sura={this.state.selectedSura}
+                audio={audio}
                 ayatar={ayatArdetails}
                 ayatbn={ayatBndetails}
               />
