@@ -7,10 +7,8 @@ import SuraList from "../../../router/surah/SuraList";
 export default function Body(props) {
   // console.log(props.sura);
   return (
-    <div className="container-fluid topbarpt">
-      {/* <!-- Content Row --> */}
-      {/* <Desc /> */}
-      {/* <!-- Content Row --> */}
+    <div className="container-fluid ">
+      {/* topbarpt */}
 
       <div className="row">
         {/* <!-- Area Chart --> */}
