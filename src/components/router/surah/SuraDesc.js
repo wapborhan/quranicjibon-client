@@ -11,7 +11,7 @@ export default function SuraDesc(props) {
   const ayat = props.ayatData;
   const src = props.ayatData.audio[0];
 
-  console.log(src.audio);
+  // console.log(src.audio);
 
   return (
     <Fragment>
