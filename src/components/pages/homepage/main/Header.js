@@ -209,7 +209,7 @@ export default function Header() {
         </ul>
       </nav>
       <div
-        class="alert alert-danger mx-4 text-center"
+        className="alert alert-danger mx-4 text-center"
         style={{ marginTop: "100px" }}
         role="alert"
       >
@@ -217,7 +217,7 @@ export default function Header() {
         পারে। আপনার মতামত দিতে{" "}
         <a
           href="https://www.facebook.com/photo?fbid=375507324584242&set=a.125115496290094"
-          class="alert-link"
+          className="alert-link"
         >
           এখানে ক্লিক করুন।
         </a>

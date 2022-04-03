@@ -35,14 +35,15 @@ export default function AyatDetails(props) {
                   <tr>
                     <td className="bn bn-aya ">বাংলা আসছে</td>
                     <td className="pd20 ar text-right font-ar">{item.ayat}</td>
-                    <td scope="row" className="align-items-center" rowSpan={2}>
+                    <td scope="row" className="align-items-center">
                       {item.VerseIDAr}
                     </td>
                   </tr>
-                  <tr>
+                  <tr></tr>
+                  {/* <tr>
                     <td className="en-aya">English Cooming Soon</td>
                     <td className="bn bn-aya text-right">banglish asbe</td>
-                  </tr>
+                  </tr> */}
                 </Fragment>
               );
             })}

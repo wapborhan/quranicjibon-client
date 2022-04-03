@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 // Data
-import SURAH from "./assets/data/SuraData";
-import AUDIO from "./assets/data/SuraAudio";
-import ayatAr from "./assets/data/ayatAr";
-import ayatBr from "./assets/data/ayatBr";
+import SURAH from "./assets/data/quran/SuraData";
+import AUDIO from "./assets/data/quran/SuraAudio";
+import ayatAr from "./assets/data/quran/ayatAr";
+import ayatBr from "./assets/data/quran/ayatBr";
 // Page
 import HomePage from "./pages/homepage/HomePage";
 import NotFound from "./NotFound";
