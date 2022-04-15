@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Sura from "./Sura";
 var cardW = {
-  width: "23rem",
+  width: "21rem",
 };
 export default function SuraList(props) {
   const suras = props.sura.suras;

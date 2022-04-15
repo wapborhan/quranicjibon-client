@@ -27,7 +27,8 @@ const SURAH = [
   },
   {
     sura: "3",
-    sura_no: "০০আলে-ইমরান",
+    sura_no: "০০৩",
+    sura_name: "আলে-ইমরান",
     para: "3",
     total_ayat: "২০০",
     enbn_name: "Al-i'Imran",

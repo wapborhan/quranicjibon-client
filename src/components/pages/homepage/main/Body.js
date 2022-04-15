@@ -21,7 +21,7 @@ export default function Body(props) {
               </h6>
             </div>
             {/* <!-- Card Body --> */}
-            <div className="card-body">
+            <div className="card-body p-0">
               <SuraList sura={props.sura} />
             </div>
           </div>
