@@ -2,6 +2,9 @@
 
 This project was bootstrapped with React.
 
+  >> [Demo:](http://alquranbd.netlify.app/)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
