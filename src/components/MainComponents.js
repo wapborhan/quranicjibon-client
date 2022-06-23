@@ -7,11 +7,12 @@ import ayatAr from "./assets/data/quran/ayatAr";
 import ayatBr from "./assets/data/quran/ayatBr";
 // Page
 import HomePage from "./pages/homepage/HomePage";
-import NewPage from "./pages/homepage/newpage/NewPage";
+import About from "./pages/other/about/About";
 import NotFound from "./NotFound";
 import SuraDetails from "./router/surah/SuraDetails";
 import Dowa from "./pages/other/dowa/Dowa";
 import Ramjan from "./pages/other/ramjan/Ramjan";
+import Qurbani from "./pages/other/qurbani/Qurbani";
 import SalatTime from "./pages/other/salat-time/SalatTime";
 import Kalema from "./pages/other/kalema/Kalema";
 import Hadith from "./pages/other/hadith/Hadith";
@@ -95,7 +96,8 @@ export default class MainComponents extends Component {
           <Route path="/dowa" exact element={<Dowa />} />
           <Route path="/salat-time" exact element={<SalatTime />} />
           <Route path="/ramjan" exact element={<Ramjan />} />
-          <Route path="/about" exact element={<NewPage />} />
+          <Route path="/qurbani" exact element={<Qurbani />} />
+          <Route path="/about" exact element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

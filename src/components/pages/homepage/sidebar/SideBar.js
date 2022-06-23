@@ -10,6 +10,7 @@ import {
   FaShareAlt,
 } from "react-icons/fa";
 import { BsStopwatch } from "react-icons/bs";
+import { GiGoat } from "react-icons/gi";
 
 export default function SideBar() {
   return (
@@ -70,7 +71,14 @@ export default function SideBar() {
             <span className="links_name">রমজান</span>
           </NavLink>
         </li>
-
+        <li>
+          <NavLink to="/qurbani">
+            <i className="text-white">
+              <GiGoat />
+            </i>
+            <span className="links_name">কুরবানি</span>
+          </NavLink>
+        </li>
         <li className="log_out">
           <NavLink to="/about">
             <i className=" text-white">
