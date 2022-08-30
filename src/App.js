@@ -1,58 +1,54 @@
-import React, { useState } from "react";
+import React, { useState, Component } from "react";
 // import MainComponents from "./components/MainComponents";
 import Sidebar from "./components/Sidebar";
+import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import { FaBars, FaUserCircle } from "react-icons/fa";
 
 import { BrowserRouter } from "react-router-dom";
 
-function App() {
-  const [isActive, setActive] = useState("false");
-  const handleToggle = () => {
-    setActive(!isActive);
-  };
-  return (
-    <BrowserRouter>
-      <div id="wrapper">
-        <div
-          className={
-            isActive
-              ? "sidebars bg-dark text-light  "
-              : "sidebars bg-dark text-light active"
-          }
-        >
-          <Sidebar />
-        </div>
-        <div id="content-wrapper" className="d-flex flex-column">
-          <div id="content">
-            <nav
-              id="topbar"
-              className="topbar navbar navbar-expand navbar-light bg-white  mb-4 static-top shadow d-flex justify-content-between px-4"
-            >
-              <div
-                className="sidebars-button text-dark mr-auto"
-                onClick={handleToggle}
-              >
-                <FaBars />
-                <div className={isActive ? "dashboard" : "dashboard-show"}>
-                  SR BOOK
-                </div>
-              </div>
-
-              <h2 id="nameTitle" className="text-center text-dark">
-                আয় ব্যয় হিসাব
-              </h2>
-              <div className="account ">
-                <FaUserCircle />
-              </div>
-            </nav>
-            {/* <MainComponents /> */}
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isActive: false,
+    };
+  }
+  // const [isActive, setActive] = useState("false");
+  // handleToggle = () => {
+  //   this.setState({ isActive: true });
+  // };
+  render() {
+    return (
+      <BrowserRouter>
+        <div id="wrapper">
+          <div
+            className={
+              this.state.isActive
+                ? "sidebars bg-dark text-light  "
+                : "sidebars bg-dark text-light active"
+            }
+          >
+            <Sidebar />
           </div>
-          <Footer />
+          <div id="content-wrapper" className="d-flex flex-column">
+            <div id="content">
+              <nav
+                id="topbar"
+                className="topbar navbar navbar-expand navbar-light bg-white  mb-4 static-top shadow d-flex justify-content-between px-4"
+              >
+                {/* <NavBar
+                  handleToggle={this.handleToggle}
+                  isActive={this.state.isActive}
+                /> */}
+              </nav>
+              {/* <MainComponents /> */}
+            </div>
+            <Footer />
+          </div>
         </div>
-      </div>
-    </BrowserRouter>
-  );
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;
