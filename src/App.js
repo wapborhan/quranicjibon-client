@@ -10,10 +10,10 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isActive: false,
+      isActive: true,
     };
   }
-  // const [isActive, setActive] = useState("false");
+
   // handleToggle = () => {
   //   this.setState({ isActive: true });
   // };
@@ -36,10 +36,7 @@ class App extends Component {
                 id="topbar"
                 className="topbar navbar navbar-expand navbar-light bg-white  mb-4 static-top shadow d-flex justify-content-between px-4"
               >
-                {/* <NavBar
-                  handleToggle={this.handleToggle}
-                  isActive={this.state.isActive}
-                /> */}
+                <NavBar isActive={this.state.isActive} />
               </nav>
               {/* <MainComponents /> */}
             </div>

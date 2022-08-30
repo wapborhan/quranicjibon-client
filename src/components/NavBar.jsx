@@ -7,12 +7,12 @@ const NavBar = (props) => {
     <Fragment>
       <div
         className="sidebars-button text-dark mr-auto"
-        onClick={props.handleToggle()}
+        // onClick={props.handleToggle()}
       >
         <FaBars />
-        {/* <div className={isActive ? "dashboard" : "dashboard-show"}>
+        <div className={props.isActive ? "dashboard" : "dashboard-show"}>
           Islam BD
-        </div> */}
+        </div>
       </div>
 
       <h2 id="nameTitle" className="text-center text-dark">
