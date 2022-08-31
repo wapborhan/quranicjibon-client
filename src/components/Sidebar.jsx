@@ -1,17 +1,20 @@
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import {
-  ImCoinDollar,
-  ImStatsBars,
-  ImEnter,
-  ImExit,
-  ImCog,
-} from "react-icons/im";
+  FaQuran,
+  FaBookOpen,
+  FaBookReader,
+  FaBook,
+  FaCopy,
+  FaMoon,
+  FaShareAlt,
+} from "react-icons/fa";
+import { FcAbout } from "react-icons/fc";
 
 const Sidebar = (props) => {
   return (
     <Fragment>
-      <divx
+      <div
         className={
           props.isActive
             ? "sidebars bg-dark text-light  "
@@ -19,22 +22,22 @@ const Sidebar = (props) => {
         }
       >
         <div className="logo-details">
-          <ImCoinDollar />
+          <FaQuran />
           <span className="logo_name">Islam BD</span>
         </div>
         <ul className="nav-links">
           <li>
             <NavLink to="/income-expense-react">
               <i className="fas fa-exclamation-triangle text-white">
-                <ImStatsBars />
+                <FaBookOpen />
               </i>
-              <span className="links_name">Dashboard</span>
+              <span className="links_name">আল কুরআন (সুরা ক্রমে) </span>
             </NavLink>
           </li>
           <li>
             <NavLink to="/income">
               <i className="fas fa-exclamation-triangle text-white">
-                <ImEnter />
+                <FaBookReader />
               </i>
               <span className="links_name">Income</span>
             </NavLink>
@@ -42,7 +45,7 @@ const Sidebar = (props) => {
           <li>
             <NavLink to="/expense">
               <i className="fas fa-exclamation-triangle text-white">
-                <ImExit />
+                <FaBook />
               </i>
               <span className="links_name">Expense</span>
             </NavLink>
@@ -51,13 +54,13 @@ const Sidebar = (props) => {
           <li className="log_out">
             <NavLink to="/setting">
               <i className="fas fa-exclamation-triangle text-white">
-                <ImCog />
+                <FcAbout />
               </i>
               <span className="links_name">About</span>
             </NavLink>
           </li>
         </ul>
-      </divx>
+      </div>
     </Fragment>
   );
 };

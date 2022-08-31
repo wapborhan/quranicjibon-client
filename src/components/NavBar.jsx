@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import { FaBars, FaUserCircle } from "react-icons/fa";
 
 const NavBar = (props) => {
-  console.log(props);
   return (
     <Fragment>
       <nav
