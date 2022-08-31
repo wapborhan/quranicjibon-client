@@ -19,7 +19,11 @@ const NavBar = (props) => {
         </div>
 
         <h2 id="nameTitle" className="text-center text-dark">
-          {/* আয় ব্যয় হিসাব */}
+          <span className="heabar">
+            {" "}
+            بِسْمِ اللَّـهِ الرَّ‌حْمَـٰنِ الرَّ‌حِيمِ
+          </span>{" "}
+          <span className="headbn">দয়াময় মেহেরবান আল্লাহর নামে</span>
         </h2>
         <div className="account ">
           <FaUserCircle />

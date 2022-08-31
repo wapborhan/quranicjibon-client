@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import KALEMA from "../../assets/data/kalema/kalema";
 import KalemaList from "./KalemaList";
 import KalemaDetails from "./KalemaDetails";
+import img1 from "../../assets/images/suratop.png";
 
 export default class index extends Component {
   state = {
@@ -31,6 +32,17 @@ export default class index extends Component {
       <div className="topbarpt">
         <div className="container">
           <div className="row">
+            <div className="col-md-12 text-center">
+              <div className="h5 mb-3 mt-4 font-weight-bold text-gray-800 font-ar">
+                بِسْمِ اللَّـهِ الرَّ‌حْمَـٰنِ الرَّ‌حِيمِ
+              </div>
+              <div className="h5 mb-3 font-weight-bold text-gray-800">
+                দয়াময় মেহেরবান আল্লাহর নামে
+              </div>
+              <div className="hed-imgd mb-3">
+                <img src={img1} alt="Head-Image" className="img-fluid" />
+              </div>
+            </div>
             <div className="col-md-3">
               <div className="kalema-list">
                 <div className="card">

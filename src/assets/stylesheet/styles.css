@@ -65,8 +65,24 @@ input {
   transition: all 0.4s ease;
 }
 .sidebars .nav-links li a.active {
-  background: #36b9cc;
+  background: #ffffff;
+  color: #000 !important;
+  border-radius: 15px 0 0px 15px;
+  transition: all linear 0.3s;
 }
+.sidebars .nav-links li a.active .links_name,
+.sidebars .nav-links li a.active i svg {
+  color: #000;
+  transition: all linear 0.3s;
+}
+.sidebars.active .nav-links li a.active .links_name {
+  color: #fff;
+  transition: all linear 0.3s;
+}
+
+/* .sidebars .nav-links li a.active {
+  background: #36b9cc;
+} */
 .sidebars .nav-links li a:hover {
   background: #fff;
   color: #000;

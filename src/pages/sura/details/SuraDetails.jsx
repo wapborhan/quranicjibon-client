@@ -1,7 +1,10 @@
 import React, { Fragment } from "react";
 import img1 from "../../../assets/images/suratop.png";
+import AudioPlayer from "react-h5-audio-player";
+import "react-h5-audio-player/lib/styles.css";
 
-const SuraDetails = () => {
+const SuraDetails = (props) => {
+  console.log(props);
   const sura = "";
   return (
     <div className="topbarpt">
@@ -14,7 +17,7 @@ const SuraDetails = () => {
             <div className="h5 mb-3 font-weight-bold text-gray-800">
               দয়াময় মেহেরবান আল্লাহর নামে
             </div>
-            <div className="hed-imgd">
+            <div className="hed-imgd mb-3">
               <img src={img1} alt="Head-Image" className="img-fluid" />
             </div>
           </div>
@@ -35,6 +38,15 @@ const SuraDetails = () => {
                     </div>
                   </div>
                 </div>
+                <div className="play-sura mt-2 mb-2">
+                  <AudioPlayer
+                    className="w-sm-100 w-lg-100 mx-auto"
+                    // autoPlay
+                    // src={src.audio}
+                    onPlay={(e) => console.log("onPlay")}
+                    // other props here
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -54,17 +66,7 @@ const SuraDetails = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-12">
-            <div className="play-sura mt-2 mb-2">
-              {/* <AudioPlayer
-                      className="w-sm-100 w-lg-100 mx-auto"
-                      // autoPlay
-                      src={src.audio}
-                      onPlay={(e) => console.log("onPlay")}
-                      // other props here
-                    /> */}
-            </div>
-          </div>
+          <div className="col-md-12"></div>
         </div>
 
         {/* <AyatDetails ayatar={ayatar} ayatbn={ayatbn} /> */}

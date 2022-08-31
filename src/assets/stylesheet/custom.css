@@ -14,18 +14,8 @@
   left: 230px;
   z-index: 1030;
 }
-.sidebars .nav-links li a.active {
-  background: #ffffff;
-  color: #000 !important;
-  border-radius: 15px 0 0px 15px;
-  transition: all linear 0.3s;
-}
-.sidebars .nav-links li a.active .links_name,
-.sidebars .nav-links li a.active i svg {
-  color: #000;
-  transition: all linear 0.3s;
-}
-.sidebars.active .nav-links li a.active .links_name {
-  color: #fff;
-  transition: all linear 0.3s;
+@media (max-width: 550px) {
+  .headbn {
+    display: none;
+  }
 }
