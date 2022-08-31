@@ -1,15 +1,7 @@
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
-import {
-  FaQuran,
-  FaBookOpen,
-  FaBookReader,
-  FaBook,
-  FaCopy,
-  FaMoon,
-  FaShareAlt,
-} from "react-icons/fa";
-import { FcAbout } from "react-icons/fc";
+import routes from "./routes";
+import { FaQuran, FaInfoCircle } from "react-icons/fa";
 
 const Sidebar = (props) => {
   return (
@@ -26,35 +18,20 @@ const Sidebar = (props) => {
           <span className="logo_name">Islam BD</span>
         </div>
         <ul className="nav-links">
-          <li>
-            <NavLink to="/">
-              <i className="fas fa-exclamation-triangle text-white">
-                <FaBookOpen />
-              </i>
-              <span className="links_name">আল কুরআন (সুরা ক্রমে) </span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/hadith">
-              <i className="fas fa-exclamation-triangle text-white">
-                <FaBookReader />
-              </i>
-              <span className="links_name">Income</span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/expense">
-              <i className="fas fa-exclamation-triangle text-white">
-                <FaBook />
-              </i>
-              <span className="links_name">Expense</span>
-            </NavLink>
-          </li>
-
+          {routes.map((data, idx) => (
+            <li key={idx}>
+              <NavLink to={data.path}>
+                <i className="fas fa-exclamation-triangle text-white">
+                  {data.iconname}
+                </i>
+                <span className="links_name">{data.tittle} </span>
+              </NavLink>
+            </li>
+          ))}
           <li className="log_out">
             <NavLink to="/setting">
               <i className="fas fa-exclamation-triangle text-white">
-                <FcAbout />
+                <FaInfoCircle />
               </i>
               <span className="links_name">About</span>
             </NavLink>
