@@ -2,6 +2,7 @@
 import Sura from "../pages/sura";
 import SuraDetails from "../pages/sura/details/SuraDetails";
 import Hadith from "../pages/hadith";
+import Kalema from "../pages/kalema";
 
 const routes = [
   {
@@ -18,7 +19,7 @@ const routes = [
   },
   {
     path: "/kalema",
-    component: <Hadith />,
+    component: <Kalema />,
   },
   {
     path: "/dowa",

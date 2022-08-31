@@ -19,7 +19,7 @@ const NavBar = (props) => {
         </div>
 
         <h2 id="nameTitle" className="text-center text-dark">
-          আয় ব্যয় হিসাব
+          {/* আয় ব্যয় হিসাব */}
         </h2>
         <div className="account ">
           <FaUserCircle />
