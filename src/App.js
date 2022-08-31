@@ -1,4 +1,4 @@
-import React, { useState, Component } from "react";
+import React, { Component } from "react";
 // import MainComponents from "./components/MainComponents";
 import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
@@ -12,32 +12,26 @@ class App extends Component {
     this.state = {
       isActive: true,
     };
+    this.handleToggle = this.handleToggle.bind(this);
+  }
+  handleToggle() {
+    this.setState((prevState) => ({
+      ...prevState,
+      isActive: !prevState.isActive,
+    }));
   }
 
-  // handleToggle = () => {
-  //   this.setState({ isActive: true });
-  // };
   render() {
     return (
       <BrowserRouter>
         <div id="wrapper">
-          <div
-            className={
-              this.state.isActive
-                ? "sidebars bg-dark text-light  "
-                : "sidebars bg-dark text-light active"
-            }
-          >
-            <Sidebar />
-          </div>
+          <Sidebar isActive={this.state.isActive} />
           <div id="content-wrapper" className="d-flex flex-column">
             <div id="content">
-              <nav
-                id="topbar"
-                className="topbar navbar navbar-expand navbar-light bg-white  mb-4 static-top shadow d-flex justify-content-between px-4"
-              >
-                <NavBar isActive={this.state.isActive} />
-              </nav>
+              <NavBar
+                isActive={this.state.isActive}
+                handleToggle={this.handleToggle}
+              />
               {/* <MainComponents /> */}
             </div>
             <Footer />

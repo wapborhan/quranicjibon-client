@@ -5,22 +5,27 @@ const NavBar = (props) => {
   console.log(props);
   return (
     <Fragment>
-      <div
-        className="sidebars-button text-dark mr-auto"
-        // onClick={props.handleToggle()}
+      <nav
+        id="topbar"
+        className="topbar navbar navbar-expand navbar-light bg-white  mb-4 static-top shadow d-flex justify-content-between px-4"
       >
-        <FaBars />
-        <div className={props.isActive ? "dashboard" : "dashboard-show"}>
-          Islam BD
+        <div
+          className="sidebars-button text-dark mr-auto"
+          onClick={props.handleToggle}
+        >
+          <FaBars />
+          <div className={props.isActive ? "dashboard" : "dashboard-show"}>
+            Islam BD
+          </div>
         </div>
-      </div>
 
-      <h2 id="nameTitle" className="text-center text-dark">
-        আয় ব্যয় হিসাব
-      </h2>
-      <div className="account ">
-        <FaUserCircle />
-      </div>
+        <h2 id="nameTitle" className="text-center text-dark">
+          আয় ব্যয় হিসাব
+        </h2>
+        <div className="account ">
+          <FaUserCircle />
+        </div>
+      </nav>
     </Fragment>
   );
 };
