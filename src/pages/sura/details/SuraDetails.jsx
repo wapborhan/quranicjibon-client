@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import img1 from "../../../assets/images/suratop.png";
 
 const SuraDetails = () => {
   const sura = "";
@@ -14,11 +15,7 @@ const SuraDetails = () => {
               দয়াময় মেহেরবান আল্লাহর নামে
             </div>
             <div className="hed-imgd">
-              <img
-                src="/images/ornate-designs.png"
-                alt="Head-Image"
-                className="img-fluid"
-              />
+              <img src={img1} alt="Head-Image" className="img-fluid" />
             </div>
           </div>
           <div className="col-md-6">
