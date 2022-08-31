@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import NotFound from "./components/NotFound";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import routes from "./components/routes";
 
 class App extends Component {
@@ -43,7 +43,7 @@ class App extends Component {
                     exact
                   />
                 ))}
-
+                <Route path="/" element={<Navigate replace to="/sura" />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </div>

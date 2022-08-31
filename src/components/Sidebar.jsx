@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
-import routes from "./routes";
+import sidenav from "./sidenav";
 import { FaQuran, FaInfoCircle } from "react-icons/fa";
 
 const Sidebar = (props) => {
@@ -18,7 +18,7 @@ const Sidebar = (props) => {
           <span className="logo_name">Islam BD</span>
         </div>
         <ul className="nav-links">
-          {routes.map((data, idx) => (
+          {sidenav.map((data, idx) => (
             <li key={idx}>
               <NavLink to={data.path}>
                 <i className="fas fa-exclamation-triangle text-white">

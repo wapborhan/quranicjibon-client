@@ -1525,3 +1525,63 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+.slno .shape {
+  background: #7e7e7e;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  text-align: center;
+  transform: rotate(20deg);
+  z-index: 0;
+}
+
+.slno .shape:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background: #7e7e7e;
+  transform: rotate(135deg);
+}
+
+.slno {
+  width: 4rem;
+  position: relative;
+}
+
+.sl {
+  color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  z-index: 99;
+  font-size: 17px;
+  line-height: 2rem;
+  font-weight: 700;
+}
+.name-ar {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  text-align: right;
+}
+a.card-lin {
+  text-decoration: none;
+  color: #000;
+  transition: all linear 0.3s;
+}
+.brdhvr {
+  transition: all linear 0.3s;
+}
+.brdhvr:hover {
+  box-shadow: 0 0 15px -4px #53535396;
+  border-color: #f50173;
+}
+
+.card-lin:hover .shape,
+.card-lin:hover .shape:before {
+  background: #f50173;
+  transition: 0.3s;
+}
