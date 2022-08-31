@@ -3,8 +3,10 @@ import React, { Component } from "react";
 import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import NotFound from "./components/NotFound";
 
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import routes from "./components/routes";
 
 class App extends Component {
   constructor(props) {
@@ -32,7 +34,18 @@ class App extends Component {
                 isActive={this.state.isActive}
                 handleToggle={this.handleToggle}
               />
-              {/* <MainComponents /> */}
+              <Routes>
+                {routes.map((data, idx) => (
+                  <Route
+                    key={idx}
+                    path={data.path}
+                    element={data.component}
+                    exact
+                  />
+                ))}
+
+                <Route path="*" element={<NotFound />} />
+              </Routes>
             </div>
             <Footer />
           </div>

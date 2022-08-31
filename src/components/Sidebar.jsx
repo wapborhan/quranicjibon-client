@@ -27,7 +27,7 @@ const Sidebar = (props) => {
         </div>
         <ul className="nav-links">
           <li>
-            <NavLink to="/income-expense-react">
+            <NavLink to="/">
               <i className="fas fa-exclamation-triangle text-white">
                 <FaBookOpen />
               </i>
@@ -35,7 +35,7 @@ const Sidebar = (props) => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/income">
+            <NavLink to="/hadith">
               <i className="fas fa-exclamation-triangle text-white">
                 <FaBookReader />
               </i>
