@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   const d = new Date();
   return (
-    <footer className="mt-1">
+    <footer className="mt-3">
       <div className="container py-3 ">
         <h6 id="nameTitle" className="text-center text-dark">
           © {d.getFullYear()}. সর্বস্বত্ব সংরক্ষিত <strong>IslamBD</strong>

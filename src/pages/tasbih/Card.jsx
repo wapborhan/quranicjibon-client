@@ -9,7 +9,7 @@ const Card = (props) => {
         return (
           <Fragment key={item.id}>
             <div className="col-lg-4">
-              <div className="card mt-4 bg-dark">
+              <div className="card mt-4 brdhvr">
                 <div className="card-body d-flex justify-content-between">
                   <div className="word">
                     <p id="text" className="t1">
@@ -25,9 +25,9 @@ const Card = (props) => {
                     </p>
                   </div>
                 </div>
-                <div className="card-footer">
+                <div className="card-footer p-0">
                   <button
-                    className="btn btn-danger text-center w-100"
+                    className="btn rounded-0 btn-success text-center w-100"
                     onClick={() => props.handleIncrement(i)}
                     disabled={props.isSubmitDisabled}
                   >

@@ -4,9 +4,9 @@ import "../../assets/stylesheet/tasbih.css";
 
 const index = () => {
   return (
-    <div className="container">
-      <div id="popups tasbih" className="mt-3 topbarpt">
-        <div className="poppup-card">
+    <div className="container topbarpt">
+      <div id="popups tasbih" className="mt-3 card ">
+        <div className="card-body">
           <div className="popup-headung">
             <span className="ortho popup-head">
               ৫ ওয়াক্ত ফরজ নামাজের পর সবচেয়ে উত্তম কাজ হলো: তাজবিহ পাঠ করা
