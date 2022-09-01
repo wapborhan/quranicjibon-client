@@ -22,7 +22,9 @@ const NameList = (props) => {
                 উচ্চারণ - <strong>{name.name_bn}</strong>
               </div>
             </div>
-            <div className="play">.</div>
+            <div className="play">
+              <strong>{name.id}</strong>
+            </div>
           </div>
           <div className="meaning">
             অর্থ - <strong>{name.meaning_bn}</strong>{" "}
