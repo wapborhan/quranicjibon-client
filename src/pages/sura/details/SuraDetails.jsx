@@ -4,7 +4,7 @@ import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 
 const SuraDetails = (props) => {
-  console.log(props);
+  // console.log(props);
   const sura = "";
   return (
     <div className="topbarpt">

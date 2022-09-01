@@ -1,43 +1,72 @@
 import React, { Component } from "react";
+
+import { ModalHeader, Modal, ModalBody, ModalFooter, Button } from "reactstrap";
+// page
 import ALLAH_NAMES from "../../assets/data/allah-name/data";
-import AudioPlayer from "react-h5-audio-player";
-import "react-h5-audio-player/lib/styles.css";
 import NameList from "./NameList";
+import NameFajilot from "./NameFajilot";
 
 class index extends Component {
   constructor(props) {
     super(props);
     this.state = {
       AllahName: ALLAH_NAMES,
+      selectedName: null,
+      modalOpen: false,
     };
   }
-  selectedNameHandler = (names) => {
-    const AllahName = this.state.AllahName.filter(
-      (item) => item.id === names
-    )[0];
+  onDishSelect = (name) => {
+    this.setState({ selectedName: name, modalOpen: !this.state.modalOpen });
+  };
+
+  toggleModal = () => {
     this.setState({
-      selectedName: AllahName,
+      modalOpen: !this.state.modalOpen,
     });
   };
   render() {
+    const names = this.state.AllahName.map((allnames) => {
+      return (
+        <NameList
+          key={allnames.id}
+          names={allnames}
+          selectName={() => {
+            this.onDishSelect(allnames);
+          }}
+        />
+      );
+    });
+
+    //
+
+    let namefojilot = null;
+    // if (this.state.selectedName != null) {
+    //   const allahnames = this.state.allahnames.filter((name) => {
+    //     return name.id === this.state.selectedName.id;
+    //   });
+    namefojilot = (
+      <NameFajilot
+        name={this.state.selectedName}
+        // names={allahnames}
+      />
+    );
+    // }
     return (
       <div className="topbarpt">
         <div className="container">
-          <div className="row">
-            {this.state.AllahName.map((allnames) => {
-              return (
-                <NameList
-                  key={allnames.id}
-                  names={allnames}
-                  selecName={() => this.selectedNameHandler(allnames.id)}
-                />
-              );
-            })}
-          </div>
+          <div className="row">{names}</div>
+          <Modal size="md" isOpen={this.state.modalOpen}>
+            <ModalHeader>ফজিলত</ModalHeader>
+            <ModalBody>{namefojilot}</ModalBody>
+            <ModalFooter>
+              <Button color="secondary" onClick={this.toggleModal}>
+                Close
+              </Button>
+            </ModalFooter>
+          </Modal>
         </div>
       </div>
     );
   }
 }
-
 export default index;
