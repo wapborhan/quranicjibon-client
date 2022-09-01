@@ -23,7 +23,7 @@ const NavBar = (props) => {
             {" "}
             بِسْمِ اللَّـهِ الرَّ‌حْمَـٰنِ الرَّ‌حِيمِ
           </span>{" "}
-          <span className="headbn">দয়াময় মেহেরবান আল্লাহর নামে</span>
+          {/* <span className="headbn">দয়াময় মেহেরবান আল্লাহর নামে</span> */}
         </h2>
         <div className="account ">
           <FaUserCircle />
