@@ -18,4 +18,26 @@
   .headbn {
     display: none;
   }
+  .popup-text {
+    padding: 0 10px !important;
+  }
+}
+
+.shapecorner {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 60px;
+  background: black;
+  right: 0;
+  z-index: 1;
+  border-radius: 0 5px 0 25px;
+  transition: all linear 0.3s;
+}
+.brdhvr:hover .shapecorner {
+  background: #f50173;
+}
+.numlis {
+  z-index: 2;
+  color: #fff;
 }

@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 const NameList = (props) => {
   // console.log(props);
   const name = props.names;
-
+  // var explen = expense.length.toLocaleString("bn-BD");
   return (
     <div
       className="col-md-4"
@@ -11,7 +11,8 @@ const NameList = (props) => {
       onClick={props.selectName}
       key={name.id}
     >
-      <div className="card mt-3 brdhvr">
+      <div className="card mt-3 brdhvr" style={{ position: "relative" }}>
+        <div className="shapecorner"></div>
         <div className="card-body">
           <div className="d-flex justify-content-between">
             <div className="name">
@@ -22,8 +23,8 @@ const NameList = (props) => {
                 উচ্চারণ - <strong>{name.name_bn}</strong>
               </div>
             </div>
-            <div className="play">
-              <strong>{name.id}</strong>
+            <div className="numlis h4">
+              <strong>{name.id.toLocaleString("bn-BD")}</strong>
             </div>
           </div>
           <div className="meaning">
