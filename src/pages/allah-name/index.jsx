@@ -30,19 +30,7 @@ class index extends Component {
                             উচ্চারণ - <strong>{name.name_bn}</strong>
                           </div>
                         </div>
-                        <div className="play">
-                          <AudioPlayer
-                            autoPlay
-                            src={name.path}
-                            // onPlay={(e) => console.log("onPlay")}
-                            showSkipControls={false}
-                            showJumpControls={false}
-                            showDownloadProgress={false}
-                            showFilledVolume={false}
-                            hasDefaultKeyBindings={false}
-                            autoPlayAfterSrcChange={false}
-                          />
-                        </div>
+                        <div className="play">play </div>
                       </div>
                       <div className="meaning">
                         অর্থ - <strong>{name.meaning_bn}</strong>{" "}
