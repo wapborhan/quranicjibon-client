@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ALLAH_NAMES from "../../assets/data/allah-name/data";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
+import NameList from "./NameList";
 
 class index extends Component {
   constructor(props) {
@@ -10,34 +11,26 @@ class index extends Component {
       AllahName: ALLAH_NAMES,
     };
   }
+  selectedNameHandler = (names) => {
+    const AllahName = this.state.AllahName.filter(
+      (item) => item.id === names
+    )[0];
+    this.setState({
+      selectedName: AllahName,
+    });
+  };
   render() {
-    // console.log(this.state.AllahName);
     return (
       <div className="topbarpt">
         <div className="container">
           <div className="row">
-            {this.state.AllahName.map((name) => {
+            {this.state.AllahName.map((allnames) => {
               return (
-                <div className="col-md-4" key={name.id}>
-                  <div className="card mt-3">
-                    <div className="card-body">
-                      <div className="d-flex justify-content-between">
-                        <div className="name">
-                          <div className="name-ar mb-2 text-start font-ar">
-                            {name.name_ar}
-                          </div>
-                          <div className="translate">
-                            উচ্চারণ - <strong>{name.name_bn}</strong>
-                          </div>
-                        </div>
-                        <div className="play">play </div>
-                      </div>
-                      <div className="meaning">
-                        অর্থ - <strong>{name.meaning_bn}</strong>{" "}
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <NameList
+                  key={allnames.id}
+                  names={allnames}
+                  selecName={() => this.selectedNameHandler(allnames.id)}
+                />
               );
             })}
           </div>
