@@ -5,6 +5,7 @@ import Hadith from "../pages/hadith";
 import Kalema from "../pages/kalema";
 import Tasbih from "../pages/tasbih";
 import AllahName from "../pages/allah-name";
+import SalatTime from "../pages/salat/salat-time/index";
 
 const routes = [
   {
@@ -35,6 +36,7 @@ const routes = [
     path: "/salat",
     component: <Hadith />,
   },
+
   {
     path: "/ramjan",
     component: <Hadith />,

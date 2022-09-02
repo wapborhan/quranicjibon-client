@@ -30,6 +30,7 @@ const sidenav = [
     tittle: "কালেমা",
     iconname: <FaBook />,
   },
+
   // {
   //   path: "/dowa",
   //   tittle: "দোয়া সমুহ",
