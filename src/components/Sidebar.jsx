@@ -29,11 +29,11 @@ const Sidebar = (props) => {
             </li>
           ))}
           <li className="log_out">
-            <NavLink to="/setting">
+            <NavLink to="/about">
               <i className="fas fa-exclamation-triangle text-white">
                 <FaInfoCircle />
               </i>
-              <span className="links_name">About</span>
+              <span className="links_name">সাইট সম্পর্কে</span>
             </NavLink>
           </li>
         </ul>

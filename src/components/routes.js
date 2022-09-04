@@ -49,6 +49,10 @@ const routes = [
     path: "/tasbih",
     component: <Tasbih />,
   },
+  {
+    path: "/about",
+    component: <Tasbih />,
+  },
 ];
 
 export default routes;
