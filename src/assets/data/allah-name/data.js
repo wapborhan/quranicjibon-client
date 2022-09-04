@@ -291,6 +291,42 @@ const ALLAH_NAMES = [
     name_bn: "আল-হা'লীম",
     path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_33_al_halim.mp3",
   },
+  {
+    fojilot:
+      "নিয়মিত এ নামের যিকির করলে তার মর্যাদা, সম্মান ও শ্রেষ্ঠত্ব লাভ হবে।  ",
+    id: "34",
+    meaning_bn: "সর্বোচ্চ-মর্যাদাশীল",
+    name_ar: "العظيم",
+    name_bn: "আল-আ'জীম",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_34_al_azim.mp3",
+  },
+  {
+    fojilot:
+      "অধিকহারে এই নাম পাঠ করলে, সব রোগবালাই, দুঃখ ও দুর্দশা অপসারণ করা হয়, আল্লাহ্‌র দোয়া তার সম্পদ এবং সন্তানাদির উপর পরবে। ইনশাআল্লাহ্‌  ",
+    id: "35",
+    meaning_bn: "পরম ক্ষমাশীল",
+    name_ar: "الغفور",
+    name_bn: "আল-গফুর",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_35_al_gofur.mp3",
+  },
+  {
+    fojilot:
+      "কোন ব্যক্তি যদি, আর্থিক, মানসিক, শারীরিক ও আধ্যাত্মিক সমস্যার সম্মুখিন হন, ৪১ বার আল্লাহ্‌ এর এই নাম পাঠ করলে, আল্লাহ্‌ শীঘ্রই উদ্ধার প্রদান করবেন। ইনশাআল্লাহ্‌ ",
+    id: "36",
+    meaning_bn: "গুনগ্রাহী",
+    name_ar: "الشكور",
+    name_bn: "আশ্-শাকুর",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_36_as_shakoor.mp3",
+  },
+  {
+    fojilot:
+      "এ নাম সর্বদা পাঠ করলে ও লিখে সঙ্গে রাখলে ইনশাআল্লাহ্‌ মর্যাদার উচ্চতা, সচ্ছলতা ও উদ্দেশ্যে সফলতা লাভ করবে। ",
+    id: "37",
+    meaning_bn: "উচ্চ-মর্যাদাশীল",
+    name_ar: "العلي",
+    name_bn: "আল-আ'লিইউ",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_37_al_ali.mp3",
+  },
 ];
 
 export default ALLAH_NAMES;
