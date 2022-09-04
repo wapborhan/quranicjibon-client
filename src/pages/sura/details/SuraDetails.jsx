@@ -2,60 +2,44 @@ import React, { Fragment } from "react";
 import img1 from "../../../assets/images/suratop.png";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
+import { FaKaaba, FaMosque } from "react-icons/fa";
 
 const SuraDetails = (props) => {
-  // console.log(props);
-  const sura = "";
+  const sura = props.sura;
+  const src = props.audio[0].audio;
+  const types = sura.type;
+  console.log(types);
+  const makka = types == "মাক্কী" ? <FaKaaba /> : <FaMosque />;
   return (
     <div className="topbarpt">
       <div className="container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="h5 mb-3 mt-4 font-weight-bold text-gray-800 font-ar">
+            {/* <div className="h5 mb-3 mt-4 font-weight-bold text-gray-800 font-ar">
               بِسْمِ اللَّـهِ الرَّ‌حْمَـٰنِ الرَّ‌حِيمِ
-            </div>
+            </div> */}
             <div className="h5 mb-3 font-weight-bold text-gray-800">
               দয়াময় মেহেরবান আল্লাহর নামে
             </div>
-            <div className="hed-imgd mb-3">
-              <img src={img1} alt="Head-Image" className="img-fluid" />
-            </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-7">
             <div className="card">
               <div className="card-body">
                 <div className="d-flex">
-                  <div className="surano w-25">1{sura.sura_no}</div>
-                  <div className="suraname w-75">
+                  <div className="surano w-25">{makka}</div>
+                  <div className="suraname w-50">
                     <div className="d-block">
                       <div className="banglaname">
-                        <span className=" font-ar">{sura.ar_name}AR</span>
+                        {sura.sura_no} -
+                        <span className="name-ar font-ar"> {sura.ar_name}</span>
                       </div>
                       <div className="banglaname">
-                        {sura.sura_name} - {sura.enbn_name} - {sura.eng_name} -{" "}
-                        {sura.bn_name}{" "}
+                        {sura.sura_name} - {sura.enbn_name} <br />{" "}
+                        {sura.eng_name} - {sura.bn_name}{" "}
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="play-sura mt-2 mb-2">
-                  <AudioPlayer
-                    className="w-sm-100 w-lg-100 mx-auto"
-                    // autoPlay
-                    // src={src.audio}
-                    onPlay={(e) => console.log("onPlay")}
-                    // other props here
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="card">
-              <div className="card-body">
-                <div className="d-flex">
-                  <div className="surano w-25">Icon</div>
-                  <div className="suraname w-75">
+                  <div className="suraname w-25">
                     <div className="d-block">
                       <div className="banglaname">আয়াতঃ {sura.total_ayat}</div>
                       <div className="banglaname">রুকুঃ {sura.ruku}</div>
@@ -66,7 +50,26 @@ const SuraDetails = (props) => {
               </div>
             </div>
           </div>
-          <div className="col-md-12"></div>
+          <div className="col-md-5">
+            <div className="card">
+              <div className="card-body">
+                <AudioPlayer
+                  className="w-sm-100 w-lg-100 mx-auto"
+                  // autoPlay
+                  src={src}
+                  onPlay={(e) => console.log("onPlay")}
+                  // other props here
+                />
+              </div>
+            </div>
+          </div>
+          <div className="col-md-12">
+            <div className="text-center">
+              <div className="hed-imgd mt-3 mb-2">
+                <img src={img1} alt="Head-Image" className="img-fluid" />
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* <AyatDetails ayatar={ayatar} ayatbn={ayatbn} /> */}

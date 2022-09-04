@@ -1,17 +1,30 @@
 import React, { Component } from "react";
-// import MainComponents from "./components/MainComponents";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+// Data
+import SURAH from "./assets/data/quran/SuraData";
+import AUDIO from "./assets/data/quran/SuraAudio";
+//Components
 import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import NotFound from "./components/NotFound";
-
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import routes from "./components/routes";
+//Pages
+import {
+  About,
+  SuraMainPage,
+  SuraDetails,
+  AllahName,
+  Kalema,
+  Tasbih,
+  NotFound,
+} from "./pages";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      surah: SURAH,
+      audio: AUDIO,
+      selectedSura: null,
       isActive: true,
     };
     this.handleToggle = this.handleToggle.bind(this);
@@ -23,7 +36,42 @@ class App extends Component {
     }));
   }
 
+  selectedSuraHandler = (surano) => {
+    const sura = this.state.surah.filter((item) => item.sura === surano)[0];
+    this.setState({
+      selectedSura: sura,
+    });
+    // console.log(sura);
+  };
+
   render() {
+    let audio = null;
+    // let ayatArdetails = null;
+    // let ayatBndetails = null;
+
+    // Audio Filter
+    if (this.state.selectedSura != null) {
+      const audios = this.state.audio.filter((audio) => {
+        return audio.sura === this.state.selectedSura.sura;
+      });
+      audio = audios;
+    }
+
+    // // Arbi Ayat Filter
+    // if (this.state.selectedSura != null) {
+    //   const ayat = this.state.ayatArData.filter((ayat) => {
+    //     return ayat.sura === this.state.selectedSura.sura;
+    //   });
+    //   ayatArdetails = ayat;
+    // }
+    // // Bangla Ayat Filter
+    // if (this.state.selectedSura != null) {
+    //   const ayat = this.state.ayatBnData.filter((ayat) => {
+    //     return ayat.sura === this.state.selectedSura.sura;
+    //   });
+    //   ayatBndetails = ayat;
+    // }
+
     return (
       <BrowserRouter>
         <div id="wrapper">
@@ -35,15 +83,34 @@ class App extends Component {
                 handleToggle={this.handleToggle}
               />
               <Routes>
-                {routes.map((data, idx) => (
-                  <Route
-                    key={idx}
-                    path={data.path}
-                    element={data.component}
-                    exact
-                  />
-                ))}
                 <Route path="/" element={<Navigate replace to="/sura" />} />
+                <Route
+                  path="/sura"
+                  exact
+                  element={
+                    <SuraMainPage
+                      suras={this.state.surah}
+                      selectSura={this.selectedSuraHandler}
+                    />
+                  }
+                />
+                <Route
+                  path="/sura/:sura"
+                  element={
+                    <SuraDetails
+                      sura={this.state.selectedSura}
+                      audio={audio}
+                      // ayatar={ayatArdetails}
+                      // ayatbn={ayatBndetails}
+                    />
+                  }
+                  exact
+                />
+                <Route path="/allah-names" element={<AllahName />} exact />
+                <Route path="/kalema" element={<Kalema />} exact />
+                <Route path="/tasbih" element={<Tasbih />} exact />
+                <Route path="/about" element={<About />} exact />
+
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </div>
