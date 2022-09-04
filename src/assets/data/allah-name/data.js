@@ -372,6 +372,85 @@ const ALLAH_NAMES = [
     name_bn: "আল-জালীল",
     path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_42_al_jalil.mp3",
   },
+  {
+    fojilot: "ঘুমানোর পূবে এ নামের যিকির করলে আলেম ও সৎ লোকের মর্যাদা লাভ হয়।",
+    id: "43",
+    meaning_bn: "সুমহান দাতা",
+    name_ar: "الكريم",
+    name_bn: "আল-কারীম",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_43_al_karim.mp3",
+  },
+  {
+    fojilot:
+      "এই নাম ৭ বার প্রতিদিন পাঠ করলে এবং নিজের ও তার পরিবারের উপর ফুঁ দিলে, আল্লাহ্‌ ধ্বংস ও বিপর্যয় থেকে আপনাকে এবং আপনার সম্পদ রক্ষা করবেন। ইনশাআল্লাহ্‌  ",
+    id: "44",
+    meaning_bn: "তত্ত্বাবধায়ক",
+    name_ar: "الرقيب",
+    name_bn: "আর-রক্বীব",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_44_ar_rakib.mp3",
+  },
+  {
+    fojilot:
+      "সর্বদা এই নাম পাঠ করলে আল্লাহ্‌ তায়ালা তার দোয়া কবুল করেন আর নামটি লিখে নিজের কাছে রাখলে সে বিপদ থেকে মুক্তি পাবে।  ",
+    id: "45",
+    meaning_bn: "জবাব-দানকারী, কবুলকারী",
+    name_ar: "المجيب",
+    name_bn: "আল-মুজীব",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_45_al_muzib.mp3",
+  },
+  {
+    fojilot:
+      "অধিক পরিমাণে এ নামের যিকির করলে আল্লাহ্‌ তায়ালা তাকে প্রকাশ্য ও ভিতরগত অমুখাপেক্ষিতা ও বরকত দান করবে। ",
+    id: "46",
+    meaning_bn: "সর্ব-ব্যাপী, সর্বত্র-বিরাজমান",
+    name_ar: "الواسع",
+    name_bn: "আল-ওয়াসি'",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_46_al_washi.mp3",
+  },
+  {
+    fojilot:
+      "ক্রমাগত এই নাম পাঠ করলে, আল্লাহ্‌ তায়ালা তার জন্য জ্ঞান বিজ্ঞানের দ্বার খুলে দিবেন। ",
+    id: "47",
+    meaning_bn: "পরম-প্রজ্ঞাময়",
+    name_ar: "الحكيم",
+    name_bn: "আল-হাকীম",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_47__al_hakim.mp3",
+  },
+  {
+    fojilot:
+      "১০০ বার পড়ে খাদ্যে ফু দিয়ে স্বামী স্ত্রী থেলে তাদের মধ্যে ভালবাসা সৃষ্টি হয়। ",
+    id: "48",
+    meaning_bn: "(বান্দাদের প্রতি) সদয়",
+    name_ar: "الودود",
+    name_bn: "আল-ওয়াদুদ",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_48_al_wadud.mp3",
+  },
+  {
+    fojilot:
+      "প্রত্যহ সকালে ও সন্ধ্যায় ১০০ বার পড়ে শরীরে ফু দিলে সমাজে মর্যাদা বৃদ্ধি পায়।  ",
+    id: "49",
+    meaning_bn: "সকল-মর্যাদার-অধিকারী",
+    name_ar: "المجيد",
+    name_bn: "আল-মাজীদ",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_49_al_majid.mp3",
+  },
+  {
+    fojilot:
+      "নিদ্রার পূর্বে বুকের উপর হাত রেখে ১০০০ বার পড়লে জ্ঞান ও হেকমত বৃদ্ধি পায়।  ",
+    id: "50",
+    meaning_bn: "পুনুরুজ্জীবিতকারী",
+    name_ar: "الباعث",
+    name_bn: "আল-বাই'ছ'",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_50_al_ba_ith.mp3",
+  },
+  {
+    fojilot: "এ নামের যিকির বেশী বেশী পড়লে অন্তরের খারাপ বাসনা দূর হয়। ",
+    id: "51",
+    meaning_bn: "সর্বজ্ঞ-স্বাক্ষী",
+    name_ar: "الشهيد",
+    name_bn: "আশ্-শাহীদ",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_51_as_sahid.mp3",
+  },
 ];
 
 export default ALLAH_NAMES;
