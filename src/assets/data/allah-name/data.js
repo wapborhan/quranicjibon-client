@@ -477,6 +477,407 @@ const ALLAH_NAMES = [
     name_bn: "আল-ক্বউইউ",
     path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_54_al_qawiy.mp3",
   },
+  {
+    fojilot:
+      "যে কোন ভদ্রমহিলা এর বুকের দুধের না থাকলে এক টুকরো কাগজের উপর আল্লাহ্‌ এর এই নাম লিখে পানিতে ডুবিয়ে রেখে তারপর এটি পান করলে তার বুকের মধ্যে দুধ আসবে ইনশাআল্লাহ্‌",
+    id: "55",
+    meaning_bn: "সুদৃঢ়",
+    name_ar: "المتين",
+    name_bn: "আল-মাতীন",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_55_al_matin.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি অধিক হারে এই নামটি পড়বে সে সৃষ্ট জীবের গোপন তথ্য সম্পর্কে জানবে।",
+    id: "56",
+    meaning_bn: "অভিভাবক ও সাহায্যকারী",
+    name_ar: "الولي",
+    name_bn: "আল-ওয়ালিইউ",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_56_al_waali.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি ৪৫ দিন পর্যন্ত ধারাবাহিক ৯৩ বার নির্জনতায় নামটি পাঠ করবে, ইনশাআল্লাহ্‌ সকল অসৎ স্বভাব দূর হয়ে যাবে এবং তার থেকে উত্তম কার্যাবলী প্রকাশ পাবে। ",
+    id: "57",
+    meaning_bn: "সকল প্রশংসার অধিকারী",
+    name_ar: "الحميد",
+    name_bn: "আল-হা'মীদ",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_57_al_hamid.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি রুটির ২০ টি টুকরোর উপর প্রতিদিন ২০ বার এই নামটি পড়ে ফু দিবে এবং খাবে তাহলে ইনশাআল্লাহ্‌ সৃষ্টি জগত তার অনুগত হয়ে যাবে।",
+    id: "58",
+    meaning_bn: "সকল সৃষ্টির ব্যপারে অবগত",
+    name_ar: "المحصي",
+    name_bn: "আল-মুহছী",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_58_al_muhsi.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি সেহরীর সময় গর্ভবতি নারীর পেটের উপর হাত রেখে ৯৯ বার এই নামটি পাঠ করবে, ইনশাআল্লাহ্‌ না তার গর্ভপাত হবে, না সময়ের আগে বাচ্চা ভূমিষ্ঠ হবে। ",
+    id: "59",
+    meaning_bn: "প্রথমবার-সৃষ্টিকর্তা",
+    name_ar: "المبدئ",
+    name_bn: "আল-মুব্দি'",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_59_al_mubdi.mp3",
+  },
+  {
+    fojilot:
+      "কোন ব্যক্তি হারিয়ে গেলে যখন গৃহের সকল ব্যক্তি ঘুমিয়ে পড়বে তখন হারানো ব্যক্তিকে ফেরত আনার জন্য গৃহের ৪ কোণে ৭০ বার নামটি পড়বে, ইনশাআল্লাহ্‌ হারানো ব্যক্তি ৭ দিনের মধ্যে ফেরত আসবে অথবা তার কোন খবর পাওয়া",
+    id: "60",
+    meaning_bn: "পুনরায়-সৃষ্টিকর্তা",
+    name_ar: "المعيد",
+    name_bn: "আল-মুঈ'দ",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_60_al_mueed.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি অসুস্থ হবে সে অধিক হারে পাঠ করবে অথবা কোন রোগীর উপর ফু দিবে তাহলে ইনশাআল্লাহ্‌ সুস্থ হয়ে যাবে।",
+    id: "61",
+    meaning_bn: "জীবন-দানকারী",
+    name_ar: "المحيي",
+    name_bn: "আল-মুহ'য়ী",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_61_al_muhi.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি আত্মার নিয়ন্ত্রনে না থাকে সে শয়ন কালে বক্ষদেশে হাত রেখে এই নামটি পড়তে পড়তে ঘুমিয়ে পড়বে। আল্লাহ্‌ চান তো তার নফস বাধ্য ও অনুগত হয়ে যাবে।  ",
+    id: "62",
+    meaning_bn: "মৃত্যু-দানকারী",
+    name_ar: "المميت",
+    name_bn: "আল-মুমীত",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_62_al_mumit.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি প্রতিদিন ৩০০০ বার এই নামটি পাঠ করবে ইনশাআল্লাহ্‌ সে কখনও অসুস্থ হবেনা।",
+    id: "63",
+    meaning_bn: "চিরঞ্জীব",
+    name_ar: "الحي",
+    name_bn: "আল-হাইয়্যু",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_63_al_haiyou.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি এই নামটি শেষ রাতে অধিকবার পড়বে, ইনশাআল্লাহ্‌ মানুষের হৃদয়ে তার মর্যাদা বৃদ্ধি পাবে।",
+    id: "64",
+    meaning_bn: "সমস্তকিছুর ধারক ও সংরক্ষণকারী",
+    name_ar: "القيوم",
+    name_bn: "আল-ক্বাইয়্যুম",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_64_al_kaiyoum.mp3",
+  },
+  {
+    fojilot: "খাওয়ার সময় পড়লে ওই খাদ্য কলবের শক্তি ও নূর সৃষ্টির সহায়ক হবে। ",
+    id: "65",
+    meaning_bn: "অফুরন্ত ভান্ডারের অধিকারী",
+    name_ar: "الواجد",
+    name_bn: "আল-ওয়াজিদ",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_65_al_wazid.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি নির্জনতায় এই নামটি অধিক পাঠ করলে, ইনশাআল্লাহ্‌ তার অন্তরের ভিতর আল্লাহ্‌ এর জ্যোতি প্রকাশ হতে শুরু করবে।",
+    id: "66",
+    meaning_bn: "শ্রেষ্ঠত্বের অধিকারী",
+    name_ar: "الماجد",
+    name_bn: "আল-মাজিদ",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_66_al_mazid.mp3",
+  },
+  {
+    fojilot: "প্রত্যহ ১০০০ বার পাঠ করলে মন থেকে ভয় ভীতি দূর হয়ে যাবে।।  ",
+    id: "67",
+    meaning_bn: "এক ও অদ্বিতীয়",
+    name_ar: "الواحد",
+    name_bn: "আল-ওয়াহি'দ",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_67_al_wahid.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি ভোর রাতে অথবা কিছু রাত থাকতে সেজদায় মাথা রেখে ১১৫ অথবা ১২৫ বার এই নামটি পড়বে, তার বাহ্যিক ও ভিতরগত ভাবে সত্যবাদিতা লাভ হবে এবং কোন অত্যাচারি দ্বারা পিষ্ট হবেনা।",
+    id: "68",
+    meaning_bn: "অমুখাপেক্ষী",
+    name_ar: "الصمد",
+    name_bn: "আছ্-ছমাদ",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_69_as_samad.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি ওজু করার সময় অঙ্গ প্রত্যঙ্গ ধৌত করার সময় প্রতিটি জোড়ার উপর এই নামটি পড়বে, সে কখন জালিমের থাবায় আবদ্ধ হবেনা। কোন শত্রু তার উপর বিজয় লাভ করতে পারবেনা।",
+    id: "69",
+    meaning_bn: "সর্বশক্তিমান",
+    name_ar: "القادر",
+    name_bn: "আল-ক্বদির",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_70_al_qaadir.mp3",
+  },
+  {
+    fojilot:
+      "যদি কেউ এই নামটি সর্বদা পড়ে তবে তার উদাসীনতা স্মরনের দ্বারা পরিবর্তিত হবে। যে ব্যক্তি নিদ্রা থেকে উঠার পর ২০ বার এই নামটি পড়বে, তবে তার সব কাজ ঠিক এবং সমাধান হয়ে যাবে।  ",
+    id: "70",
+    meaning_bn: "নিরঙ্কুশ-সিদ্বান্তের-অধিকারী",
+    name_ar: "المقتدر",
+    name_bn: "আল-মুক্ব্তাদির",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_71_al_muktadir.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি যুদ্ধের সময় অধিক হারে পরবে অথবা লিখে নিজের কাছে রাখবে, আল্লাহ্‌ তায়ালা তাকে সামনে অগ্রসর হওয়ার ক্ষমতা দান করবেন এবং শত্রুদের থেকে নিরাপদ রাখবেন। ",
+    id: "71",
+    meaning_bn: "অগ্রসারক",
+    name_ar: "المقدم",
+    name_bn: "আল-মুক্বদ্দিম",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_72_al_mu_koddim.mp3",
+  },
+  {
+    fojilot:
+      "প্রতিদিন ১০০ বার আল্লাহ্‌ এর নাম পাঠ করলে, তিনি দুর্মূল্য এবং আল্লাহর প্রিয় হয়ে যাবেন । ইনশাআল্লাহ্‌",
+    id: "72",
+    meaning_bn: "অবকাশ দানকারী",
+    name_ar: "المؤخر",
+    name_bn: "আল-মুয়াক্খির",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_73_al_muakhir.mp3",
+  },
+  {
+    fojilot:
+      "কোন ব্যক্তি পুত্র সন্তান এর ইচ্ছা  পোষণ করলে, ৪০ দিনের জন্য ৪০ বার নামটি পাঠ করলে ইনশাআল্লাহ্‌ তার উদ্দেশ্য পুরন হবে। ",
+    id: "73",
+    meaning_bn: "সর্বপ্রথম ",
+    name_ar: "الأول",
+    name_bn: "আল-আউয়াল",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_74_al_auwal.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি প্রতিদিন ১০০০ বার পরবে, তার অন্তর থেকে আল্লাহ্‌ ছাড়া অন্য কিছুর ভালবাসা দূর হয়ে যাবে। ",
+    id: "74",
+    meaning_bn: "অনন্ত, সর্বশেষ",
+    name_ar: "الأخر",
+    name_bn: "আল-আখির",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_75_al_akhir.mp3",
+  },
+  {
+    fojilot:
+      "প্রত্যহ ইশরাক এর পর ৫০০ বার পড়লে চোখের দৃষ্টি শক্তি ও অন্তরে নূর লাভ হয় । ",
+    id: "75",
+    meaning_bn: "সম্পূর্নরূপে-প্রকাশিত",
+    name_ar: "الظاهر",
+    name_bn: "আজ-জ'হির",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_76_azjohir.mp3",
+  },
+  {
+    fojilot:
+      "প্রত্যহ ৩৩ বার পড়লে গোপন রহস্য জানা যাবে। তার অন্তরে আল্লাহ্‌র ভালবাসা সৃষ্টি হবে। ",
+    id: "76",
+    meaning_bn: "দৃষ্টি হতে অদৃশ্য",
+    name_ar: "الباطن",
+    name_bn: "আল-বাত্বিন",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_77_al_batin.mp3",
+  },
+  {
+    fojilot: "এ নামের নিয়মিত যিকির করলে আল্লাহ বিপদ আপদ থেকে রক্ষা করে । ",
+    id: "77",
+    meaning_bn: "সমস্ত-কিছুর-অনিভাব্ক",
+    name_ar: "الوالي",
+    name_bn: "আল-ওয়ালি",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_78_al_wali.mp3",
+  },
+  {
+    fojilot: "যে ব্যক্তি অধিক বার পরবে, ইনশাআল্লাহ্‌ তার সমস্যা দূর হবে। ",
+    id: "78",
+    meaning_bn: "সৃষ্টির গুনাবলীর উর্দ্ধে",
+    name_ar: "المتعالي",
+    name_bn: "আল-মুতাআ'লি",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_79_al_muta_ali.mp3",
+  },
+  {
+    fojilot:
+      "কোন ব্যক্তি ৭ বার আল্লাহ্‌র এই নাম পাঠ করে সন্তান জন্মের পর তার সন্তানের উপর ফুঁ দিলে, আল্লাহ্‌ বিপর্যয় থেকে তার সন্তান কে সুরক্ষা করবে। ইনশাআল্লাহ্‌",
+    id: "79",
+    meaning_bn: "পরম-উপকারী, অণুগ্রহশীল",
+    name_ar: "البر",
+    name_bn: "আল-বার্",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_80_al_barr.mp3",
+  },
+  {
+    fojilot:
+      "চাশতের নামাযের পর সেজদায় গিয়ে এ নামটি ৩০০ বার পড়বে, ইনশাআল্লাহ্‌ তার সত্য তওবা লাভ হবে। যে ব্যাক্তি এ নামটি বার বার পাঠ করবে, তার সকল কর্ম সহজ হবে। যদি কোন অত্যাচারীর উপর ফুঁ দেয়া হয় তবে ইনশাআল্লাহ্‌ ",
+    id: "80",
+    meaning_bn: "তাওবার তাওফিক দানকারী এবং কবুলকারী",
+    name_ar: "التواب",
+    name_bn: "আত্-তাওয়াব",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_81_attaowad.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি ন্যায়ের উপর থাকে এবং শত্রু থেকে প্রতিশোধ নেয়ার ক্ষমতা না থাকে, সে তিন জুম্মা পর্যন্ত অধিকহারে (ইয়া মুনতাক্বিমু) পড়বে, আল্লাহ তায়ালা স্বয়ং তার থেকে প্রতিশোধ নিয়ে নিবেন। ",
+    id: "81",
+    meaning_bn: "প্রতিশোধ-গ্রহণকারী",
+    name_ar: "المنتقم",
+    name_bn: "আল-মুনতাক্বিম",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_82_al_muntakim.mp3",
+  },
+  {
+    fojilot:
+      "যার প্রচুর গুনাহ আছে, সে লোকটি প্রতিনিয়ত এ নামটি পড়লে আল্লাহ তায়ালা তার গুনাহ ক্ষমা করে দিবেন। ",
+    id: "82",
+    meaning_bn: "পরম-উদার",
+    name_ar: "العفو",
+    name_bn: "আল-আ'ফঊ",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_83_al_afu.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি দশবার দুরুদ শরীফ এবং দশবার এ নামটি পড়বে, তবে ইনশালাআল্লাহ তার ক্রোধ দূর হয়ে যাবে। অন্য রাগান্বিত  ব্যাক্তির উপর ফুঁ দিলে তবে তার রাগ দূর হবে। ",
+    id: "83",
+    meaning_bn: "পরম-স্নেহশীল",
+    name_ar: "الرؤوف",
+    name_bn: "আর-রউফ",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_84_al_ra_oof.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি (ইয়া মালিকাল মুলক) সর্বদা পাঠ করবে, আল্লাহ তায়ালা তাকে লোকদের থেকে অমুখাপেক্ষী করে দিবেন। সে কার মুখাপেক্ষী থাকবে না।  ",
+    id: "84",
+    meaning_bn: "সমগ্র জগতের বাদশাহ্",
+    name_ar: "مالك الملك",
+    name_bn: "মালিকুল-মুলক",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_85_malikul_mulk.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি অধিকহারে পড়বে, আল্লাহ তায়ালা তাকে শ্রেষ্ঠত্ব ও সম্মান এবং সৃষ্টজগত থেকে অমুখাপেক্ষীতা দান করবেন। ",
+    id: "85",
+    meaning_bn: "মহিমান্বিত ও দয়াবান সত্তা",
+    name_ar: "ذو الجلال والإكرام",
+    name_bn: "যুল-জালালি-ওয়াল-ইকরাম",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_86_zul_jalali_wal_ikrom.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যাক্তি এ নামটি প্রতিদিন ১০০ বার পড়বে, শয়তানের আনিদিষ্টতা ও কুমন্ত্রণা থেকে নিরাপদ থাকবে। যদি ৭ বার পড়ে তবে সে উদ্দেশ্য অর্জন হবে।  ",
+    id: "86",
+    meaning_bn: "হকদারের হক-আদায়কারী",
+    name_ar: "المقسط",
+    name_bn: "আল-মুক্ব্সিত",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_87_al_muksit.mp3",
+  },
+  {
+    fojilot:
+      "যার আত্মীয়-স্বজন ও বন্ধু বান্ধব বিক্ষিপ্ত হয়ে থাকে, সে চাশতের সময় গোসল করে আকাশের দিকে তাকিয়ে আল্লাহ্‌র এই নাম ১০০ বার পাঠ করলে তার পরিবারের হারানো সদস্য শিগ্রই খুঁজে পাবেন। ইনশাআল্লাহ্‌",
+    id: "87",
+    meaning_bn: "একত্রকারী, সমবেতকারী",
+    name_ar: "الجامع",
+    name_bn: "আল-জামিই'",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_88_al_jami.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যাক্তি প্রতিদিন ৭০ বার এই নামটি পড়বে, আল্লাহ তাআলা তার অর্থ-সম্পদ বরকত দান করবেন। ইনশাল্লাল্লাহ সে কারো মুখাপেক্ষী হবে না। ",
+    id: "88",
+    meaning_bn: "অমুখাপেক্ষী ধনী",
+    name_ar: "الغني",
+    name_bn: "আল-গণিই'",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_89_al_goni.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যাক্তি শুরু ও শেষে ১১ বার দুরুদ শরীফ পড়ে এগার শত এগার বার ওযীফার ন্যায় এ নামটি পড়বে, তবে আল্লাহ তায়ালা তাকে বাহিরগত ও ভিতরগত ধনী করে দিবেন।",
+    id: "89",
+    meaning_bn: "পরম-অভাবমোচনকারী",
+    name_ar: "المغني",
+    name_bn: "আল-মুগণিই'",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_90_al_mugni.mp3",
+  },
+  {
+    fojilot:
+      "যদি স্ত্রির সাথে ঝগড়া-বিবাদ অথবা তিক্ততা সৃষ্টি হয়ে থাকে, তবে বিছানায় শোয়ার সময় ২০ বার এ নামটি পড়বে, ইনশাল্লাহ ঝগড়া-বিবাদ ও তিক্ততা দূর হয়ে যাবে এবং পরস্পর ভালবাসা সৃষ্টি হয়ে যাবে।  ",
+    id: "90",
+    meaning_bn: "অকল্যানরোধক",
+    name_ar: "المانع",
+    name_bn: "আল-মানিই'",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_91_al_mani.mp3",
+  },
+  {
+    fojilot:
+      "সকাল সন্ধা এ নামের ‍যিকির করলে সকল ভাল কাজে সফলতা আসবে ইনশাআল্লাহ। ",
+    id: "91",
+    meaning_bn: "ক্ষতিসাধনকারী",
+    name_ar: "الضار",
+    name_bn: "আয্-যর",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_92_addhor.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি কোন পরিচিত স্থানে পোঁছাবে এবং শুক্রবার রাতে যে ব্যক্তি নৌকা অথবা অন্য কোন যানবাহনে আরোহণের পর অধিকহারে পড়তে থাকবে,  ইনশাআল্লাহ্‌ ইচ্ছানুযায়ী কাজ হবে।",
+    id: "92",
+    meaning_bn: "কল্যাণকারী",
+    name_ar: "النافع",
+    name_bn: "আন্-নাফিই'",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_93_an_nafi.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি জুমার রাতে সাত বার সুরা নুর এবং এক হাজার বার এ নামটি পড়বে, তবে ইনশাআল্লাহ্‌ তার অন্তর আল্লাহর জ্যোতি দারা আলকিত হয়ে যাবে।",
+    id: "93",
+    meaning_bn: "পরম-আলো",
+    name_ar: "النور",
+    name_bn: "আন্-নূর",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_94_an_nur.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি হাত উঠিয়ে আকাশ পানে মূখ করে এ নামটি অধিক হারে পড়বে,  অবশেষে মুখমন্ডলে হাত মুছে নিবে, ইনশাআল্লাহ্‌ তার পূর্ণ হেদায়েত লাভ হবে,  আর মারেফাত পন্থীদের মধ্যে অন্তভুক্ত হয়ে যাবে।  ",
+    id: "94",
+    meaning_bn: "পথ-প্রদর্শক",
+    name_ar: "الهادي",
+    name_bn: "আল-হাদী",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_95_al_hadi.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি কোন দুশ্চিন্তা বিপদাপদ অথবা কোন সমস্যা সম্মুখে আসে,  সে ১০০০ বার এ নামটি পড়বে ইনশাআল্লাহ্‌ সমস্যার সমাধান লাভ হবে।  ",
+    id: "95",
+    meaning_bn: "অতুলনীয়",
+    name_ar: "البديع",
+    name_bn: "আল-বাদীই'",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_96_al_badi_i.mp3",
+  },
+  {
+    fojilot:
+      "জুম্মার রাতে যে ব্যক্তি এ নামটি ১০০ বার পড়বে, আল্লাহ তায়ালা তাকে সব ধরনের অনিষ্ট ও ক্ষতি থেকে নিরাপরাদ রাখবেন। ",
+    id: "96",
+    meaning_bn: "চিরস্থায়ী, অবিনশ্বর",
+    name_ar: "الباقي",
+    name_bn: "আল-বাক্বী",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_97_al_baki.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি প্রত্যহ সূর্যোদয়ের পূর্বক্ষণে ১০১ বার পড়বে, ইনশাআল্লাহ্‌ সে যাবতীয় দুঃখ- বেদনা, চিন্তা- ভাবনা, কঠোরতা ও বিপদ থেকে মুক্তি থাকবে।",
+    id: "97",
+    meaning_bn: "উত্তরাধিকারী",
+    name_ar: "الوارث",
+    name_bn: "আল-ওয়ারিস'",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_98_al_waris.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি নিজের কোন কাজ বা উদ্দেশ্য সমাধানের কোন তদবির বুঝে না আসে, মাগরিব ও এশার মাঝে সে (আর-রাশীদু) নামটি ১০০০ বার পড়বে, তবে ইনশাআল্লাহ্‌ স্বপ্নে তদ্বির দেখা যাবে, অথবা অন্তরে ঢেলে দেয়া হবে।  ",
+    id: "98",
+    meaning_bn: "সঠিক পথ-প্রদর্শক",
+    name_ar: "الرشيد",
+    name_bn: "আর-রাশীদ",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_99_ar_rashid.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি সূর্যোদয়ের পূর্বে এ নামটি একশত বার পড়বে, ইনশাআল্লাহ্‌ সেদিন সে সকল বিপদাপদ থেকে নিরাপদ থাকবে ও বরকত লাভ হয়। শত্রু ও হিংসুকদের মুখ বন্ধ থাকবে। ",
+    id: "99",
+    meaning_bn: "অত্যধিক ধৈর্যধারণকারী",
+    name_ar: "الصبور",
+    name_bn: "আস-সবুর",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_100_as_sobur.mp3",
+  },
 ];
 
 export default ALLAH_NAMES;

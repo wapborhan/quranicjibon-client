@@ -29,8 +29,9 @@
   height: 60px;
   width: 60px;
   background: black;
-  right: 0;
+  right: -1px;
   z-index: 1;
+  top: -1px;
   border-radius: 0 5px 0 25px;
   transition: all linear 0.3s;
 }
