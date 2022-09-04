@@ -1,11 +1,13 @@
-import React, { Component } from "react";
+import React, { Component, useState, createContext } from "react";
 import Alert from "./Alert";
 import SuraList from "./SuraList";
 // Data
 import SURAH from "../../assets/data/quran/SuraData";
 import AUDIO from "../../assets/data/quran/SuraAudio";
 
-class index extends Component {
+const SuraContex = createContext();
+
+export default class index extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,6 +25,9 @@ class index extends Component {
     // console.log(sura);
   };
   render() {
+    const [surah, selectedSura] = this.state;
+    const [selectedSuraHandler] = this;
+
     let audio = null;
     // Audio Filter
     if (this.state.selectedSura != null) {
@@ -58,5 +63,3 @@ class index extends Component {
     );
   }
 }
-
-export default index;

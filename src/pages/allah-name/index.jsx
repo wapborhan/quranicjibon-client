@@ -56,13 +56,10 @@ class index extends Component {
         <div className="container">
           <div className="row">{names}</div>
           <Modal size="md" isOpen={this.state.modalOpen}>
-            <ModalHeader>ফজিলত</ModalHeader>
+            <ModalHeader toggle={this.toggleModal} charCode="close">
+              <span>ফজিলত</span>
+            </ModalHeader>
             <ModalBody>{namefojilot}</ModalBody>
-            <ModalFooter>
-              <Button color="secondary" onClick={this.toggleModal}>
-                Close
-              </Button>
-            </ModalFooter>
           </Modal>
         </div>
       </div>
