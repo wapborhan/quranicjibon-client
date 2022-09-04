@@ -451,6 +451,32 @@ const ALLAH_NAMES = [
     name_bn: "আশ্-শাহীদ",
     path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_51_as_sahid.mp3",
   },
+  {
+    fojilot:
+      "যদি, পরিবারের কোন সদস্য নিখোঁজ বা পলাতক বা জিনিসপত্র চুরি হয়ে থাকলে, চারকোণ বিশিষ্ট কাগজের চতুষ্কোণে নামটি লিখে সেহরীর সময় হাতের তালুর উপর রেখে আকাশের দিকে উঠিয়ে দোয়া করবে, ইনশাআল্লাহ্‌ যে কোন ব্যক্তি",
+    id: "52",
+    meaning_bn: "পরম সত্য",
+    name_ar: "الحق",
+    name_bn: "আল-হা'ক্ব",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_52_al_hakk.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি বিপদ আপদের সময় ভয়ে অধিক হারে এই নামটি পাঠ করবে, ইনশাআল্লাহ্‌ বিপদ আপদ থেকে নিরাপদ থাকবে।",
+    id: "53",
+    meaning_bn: "পরম নির্ভরযোগ্য কর্ম-সম্পাদনকারী",
+    name_ar: "الوكيل",
+    name_bn: "আল-ওয়াকিল",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_53_al_wakil.mp3",
+  },
+  {
+    fojilot: "জুম্মার পর এ নামের যিকির করলে যুলুম থেকে বাচা যায়। ",
+    id: "54",
+    meaning_bn: "পরম-শক্তির-অধিকারী",
+    name_ar: "القوي",
+    name_bn: "আল-ক্বউইউ",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_54_al_qawiy.mp3",
+  },
 ];
 
 export default ALLAH_NAMES;
