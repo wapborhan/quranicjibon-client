@@ -327,6 +327,51 @@ const ALLAH_NAMES = [
     name_bn: "আল-আ'লিইউ",
     path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_37_al_ali.mp3",
   },
+  {
+    fojilot:
+      "কোন ব্যক্তি কে যদি তার পদ থেকে বরখাস্ত করা হয়, তাহলে ৭ দিন রোযা রেখে এবং প্রতি দিন এই নাম ১০০০ বার পাঠ করলে, আল্লাহ্‌ তার পদ কে সম্মান এবং মর্যাদা দিয়ে পুনরায় ফিরিয়ে দিবেন। ইনশাআল্লাহ্‌   ",
+    id: "38",
+    meaning_bn: "সুমহান",
+    name_ar: "الكبير",
+    name_bn: "আল-কাবিইর",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_38_al_kabir.mp3",
+  },
+  {
+    fojilot:
+      "যে ব্যক্তি অধিক হারে পাঠ করবে এবং লিখে নিজের কাছে রেখে দিবে, ইনশাআল্লাহ্‌ সে সব ধরনের ভয়-ভীতি ও অনিষ্ঠ থেকে নিরাপদে থাকবে। ",
+    id: "39",
+    meaning_bn: "সংরক্ষণকারী",
+    name_ar: "الحفيظ",
+    name_bn: "আল-হা'ফীজ",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_39_al_hafiz.mp3",
+  },
+  {
+    fojilot:
+      "৭ বার পড়ে পানিতে ফু দিয়ে সে পানি শিশুকে খাওয়ালে তার কান্না বন্ধ হয়।  ",
+    id: "40",
+    meaning_bn: "সকলের জীবনোপকরণ-দানকারী",
+    name_ar: "المقيت",
+    name_bn: "আল-মুক্বীত",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_40_al_muqeet.mp3",
+  },
+  {
+    fojilot:
+      "কোন ব্যক্তি যদি কোন মানুষ বা কোন জিনিস কে ভয় পান, তাহলে বৃহস্পতিবার থেকে শুরু আট দিনের জন্য রাতে ও সকালে ৭০ বার এবং ৭০ বার (হাসবিয়াল্লাহুল-সাসিবু) পাঠ করলে, আল্লাহ্‌ তার ভয় ও মন্দ জিনিসের বিরুদ্ধে সুর",
+    id: "41",
+    meaning_bn: "হিসাব-গ্রহণকারী",
+    name_ar: "الحسيب",
+    name_bn: "আল-হাসীব",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_41_al_hasib.mp3",
+  },
+  {
+    fojilot:
+      "এই নামটি মেশক ও জাফরান দিয়ে লিখে নিজের কাছে রাখবে বা ধুয়ে খেলে, তার সম্মান, মহিমা এবং মর্যাদা দিবে। ইনশাআল্লাহ্‌   ",
+    id: "42",
+    meaning_bn: "পরম মর্যাদার অধিকারী",
+    name_ar: "الجليل",
+    name_bn: "আল-জালীল",
+    path: "https://ninety-nine-names-of-allah.sgp1.cdn.digitaloceanspaces.com/a_42_al_jalil.mp3",
+  },
 ];
 
 export default ALLAH_NAMES;
