@@ -11,6 +11,7 @@ const SURAH = [
     ar_name: "سورة الفاتحة",
     type: "মাক্কী",
     ruku: "১",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/001.mp3",
   },
   {
     sura: "2",
@@ -24,6 +25,7 @@ const SURAH = [
     ar_name: "سورة البقرة",
     type: "মাদানী",
     ruku: "৪০",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/002.mp3",
   },
   {
     sura: "3",
@@ -37,6 +39,7 @@ const SURAH = [
     ar_name: "سورة آل عمران",
     type: "মাদানী",
     ruku: "২০",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/003.mp3",
   },
   {
     sura: "4",
@@ -50,6 +53,7 @@ const SURAH = [
     ar_name: "سورة النساء",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/004.mp3",
   },
   {
     sura: "5",
@@ -63,6 +67,7 @@ const SURAH = [
     ar_name: "سورة المائدة",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/005.mp3",
   },
   {
     sura: "6",
@@ -76,6 +81,7 @@ const SURAH = [
     ar_name: "سورة الأنعام",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/006.mp3",
   },
   {
     sura: "7",
@@ -89,6 +95,7 @@ const SURAH = [
     ar_name: "سورة الأعراف",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/007.mp3",
   },
   {
     sura: "8",
@@ -102,6 +109,7 @@ const SURAH = [
     ar_name: "سورة الأنفال",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/008.mp3",
   },
   {
     sura: "9",
@@ -115,6 +123,7 @@ const SURAH = [
     ar_name: "سورة التوبة",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/009.mp3",
   },
   {
     sura: "10",
@@ -128,6 +137,7 @@ const SURAH = [
     ar_name: "سورة يونس",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/010.mp3",
   },
   {
     sura: "11",
@@ -141,6 +151,7 @@ const SURAH = [
     ar_name: "سورة هود",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/011.mp3",
   },
   {
     sura: "12",
@@ -154,6 +165,7 @@ const SURAH = [
     ar_name: "سورة يوسف",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/012.mp3",
   },
   {
     sura: "13",
@@ -167,6 +179,7 @@ const SURAH = [
     ar_name: " سورة الرعد",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/013.mp3",
   },
   {
     sura: "14",
@@ -180,6 +193,7 @@ const SURAH = [
     ar_name: "سورة ابراهيم ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/014.mp3",
   },
   {
     sura: "15",
@@ -193,6 +207,7 @@ const SURAH = [
     ar_name: "سورة الحجر",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/015.mp3",
   },
   {
     sura: "16",
@@ -206,6 +221,7 @@ const SURAH = [
     ar_name: " سورة النحل",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/016.mp3",
   },
   {
     sura: "17",
@@ -219,6 +235,7 @@ const SURAH = [
     ar_name: " سورة الإسراء",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/017.mp3",
   },
   {
     sura: "18",
@@ -232,6 +249,7 @@ const SURAH = [
     ar_name: " سورة الكهف",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/018.mp3",
   },
   {
     sura: "19",
@@ -245,6 +263,7 @@ const SURAH = [
     ar_name: " سورة مريم",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/019.mp3",
   },
   {
     sura: "20",
@@ -258,6 +277,7 @@ const SURAH = [
     ar_name: " سورة طه",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/020.mp3",
   },
   {
     sura: "21",

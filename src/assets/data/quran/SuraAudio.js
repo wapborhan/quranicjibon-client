@@ -1,27 +1,21 @@
 const AUDIO = [
   {
     sura: "1",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/001.mp3",
   },
   {
     sura: "2",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/002.mp3",
   },
   {
     sura: "3",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/003.mp3",
   },
   {
     sura: "4",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/004.mp3",
   },
   {
     sura: "5",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/005.mp3",
   },
   {
     sura: "6",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/006.mp3",
   },
   {
     sura: "114",
@@ -401,59 +395,45 @@ const AUDIO = [
   },
   {
     sura: "20",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/020.mp3",
   },
   {
     sura: "19",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/019.mp3",
   },
   {
     sura: "18",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/018.mp3",
   },
   {
     sura: "17",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/017.mp3",
   },
   {
     sura: "16",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/016.mp3",
   },
   {
     sura: "15",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/015.mp3",
   },
   {
     sura: "14",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/014.mp3",
   },
   {
     sura: "13",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/013.mp3",
   },
   {
     sura: "12",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/012.mp3",
   },
   {
     sura: "11",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/011.mp3",
   },
   {
     sura: "10",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/010.mp3",
   },
   {
     sura: "9",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/009.mp3",
   },
   {
     sura: "8",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/008.mp3",
   },
   {
     sura: "7",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/007.mp3",
   },
 ];
 
