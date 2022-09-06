@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import img1 from "../../../assets/images/suratop.png";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
@@ -6,10 +6,10 @@ import { FaKaaba, FaMosque } from "react-icons/fa";
 
 const SuraDetails = (props) => {
   const sura = props.sura;
-  const src = props.audio[0].audio;
-  const types = sura.type;
-  console.log(types);
-  const makka = types == "মাক্কী" ? <FaKaaba /> : <FaMosque />;
+  const src = "";
+  // const types = sura.type;
+
+  // const makka = types === "মাক্কী" ? <FaKaaba /> : <FaMosque />;
   return (
     <div className="topbarpt">
       <div className="container">
@@ -26,7 +26,7 @@ const SuraDetails = (props) => {
             <div className="card">
               <div className="card-body">
                 <div className="d-flex">
-                  <div className="surano w-25">{makka}</div>
+                  <div className="surano w-25">{/* {makka} */}</div>
                   <div className="suraname w-50">
                     <div className="d-block">
                       <div className="banglaname">
