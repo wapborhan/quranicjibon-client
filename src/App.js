@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 // Data
 import SURAH from "./assets/data/quran/SuraData";
-import AUDIO from "./assets/data/quran/SuraAudio";
+import AYATH from "./assets/data/quran/SuraAudio";
 //Components
 import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
@@ -23,7 +23,7 @@ class App extends Component {
     super(props);
     this.state = {
       surah: SURAH,
-      audio: AUDIO,
+      ayath: AYATH,
       selectedSura: null,
       isActive: true,
     };
@@ -45,17 +45,17 @@ class App extends Component {
   };
 
   render() {
-    let audio = null;
+    // let audio = null;
     // let ayatArdetails = null;
     // let ayatBndetails = null;
 
     // Audio Filter
-    if (this.state.selectedSura != null) {
-      const audios = this.state.audio.filter((audio) => {
-        return audio.sura === this.state.selectedSura.sura;
-      });
-      audio = audios;
-    }
+    // if (this.state.selectedSura != null) {
+    //   const audios = this.state.audio.filter((audio) => {
+    //     return audio.sura === this.state.selectedSura.sura;
+    //   });
+    //   audio = audios;
+    // }
 
     // // Arbi Ayat Filter
     // if (this.state.selectedSura != null) {
@@ -99,7 +99,7 @@ class App extends Component {
                   element={
                     <SuraDetails
                       sura={this.state.selectedSura}
-                      audio={audio}
+                      // audio={audio}
                       // ayatar={ayatArdetails}
                       // ayatbn={ayatBndetails}
                     />

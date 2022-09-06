@@ -1,4 +1,4 @@
-const AYAT = [
+const AYATH = [
   {
     id: "1",
     sura: "1",
@@ -40692,4 +40692,4 @@ const AYAT = [
   },
 ];
 
-export default AYAT;
+export default AYATH;

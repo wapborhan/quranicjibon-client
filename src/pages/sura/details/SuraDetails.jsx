@@ -1,15 +1,27 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import img1 from "../../../assets/images/suratop.png";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import { FaKaaba, FaMosque } from "react-icons/fa";
 
 const SuraDetails = (props) => {
-  const sura = props.sura;
-  const src = "";
-  // const types = sura.type;
+  console.log(props.sura);
 
-  // const makka = types === "মাক্কী" ? <FaKaaba /> : <FaMosque />;
+  const sura = props.sura;
+  if (sura == null) {
+    return (
+      <div className="topbarpt d-flex justify-content-center mt-5 mb-5">
+        <NavLink to="/" className="btn  btn-success mt-5 mb-5">
+          HomePage
+        </NavLink>
+      </div>
+    );
+  }
+  const src = sura.audio;
+  const types = sura.type;
+
+  const makka = types === "মাক্কী" ? <FaKaaba /> : <FaMosque />;
   return (
     <div className="topbarpt">
       <div className="container">
@@ -26,7 +38,7 @@ const SuraDetails = (props) => {
             <div className="card">
               <div className="card-body">
                 <div className="d-flex">
-                  <div className="surano w-25">{/* {makka} */}</div>
+                  <div className="surano w-25"> {makka} </div>
                   <div className="suraname w-50">
                     <div className="d-block">
                       <div className="banglaname">
