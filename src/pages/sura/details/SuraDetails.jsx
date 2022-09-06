@@ -4,9 +4,10 @@ import img1 from "../../../assets/images/suratop.png";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import { FaKaaba, FaMosque } from "react-icons/fa";
+import AyatDetails from "./AyatDetails";
 
 const SuraDetails = (props) => {
-  console.log(props.sura);
+  console.log(props.ayatar);
 
   const sura = props.sura;
   if (sura == null) {
@@ -84,7 +85,7 @@ const SuraDetails = (props) => {
           </div>
         </div>
 
-        {/* <AyatDetails ayatar={ayatar} ayatbn={ayatbn} /> */}
+        <AyatDetails ayatar={props.ayatar} />
       </div>
     </div>
   );

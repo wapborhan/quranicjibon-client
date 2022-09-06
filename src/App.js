@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 // Data
 import SURAH from "./assets/data/quran/SuraData";
-import AYATH from "./assets/data/quran/SuraAudio";
+import AYATH from "./assets/data/quran/ayat";
 //Components
 import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
@@ -45,32 +45,15 @@ class App extends Component {
   };
 
   render() {
-    // let audio = null;
-    // let ayatArdetails = null;
-    // let ayatBndetails = null;
+    let ayatArdetails = null;
 
-    // Audio Filter
-    // if (this.state.selectedSura != null) {
-    //   const audios = this.state.audio.filter((audio) => {
-    //     return audio.sura === this.state.selectedSura.sura;
-    //   });
-    //   audio = audios;
-    // }
-
-    // // Arbi Ayat Filter
-    // if (this.state.selectedSura != null) {
-    //   const ayat = this.state.ayatArData.filter((ayat) => {
-    //     return ayat.sura === this.state.selectedSura.sura;
-    //   });
-    //   ayatArdetails = ayat;
-    // }
-    // // Bangla Ayat Filter
-    // if (this.state.selectedSura != null) {
-    //   const ayat = this.state.ayatBnData.filter((ayat) => {
-    //     return ayat.sura === this.state.selectedSura.sura;
-    //   });
-    //   ayatBndetails = ayat;
-    // }
+    // Arbi Ayat Filter
+    if (this.state.selectedSura != null) {
+      const ayat = this.state.ayath.filter((ayat) => {
+        return ayat.sura === this.state.selectedSura.sura;
+      });
+      ayatArdetails = ayat;
+    }
 
     return (
       <BrowserRouter>
@@ -99,8 +82,7 @@ class App extends Component {
                   element={
                     <SuraDetails
                       sura={this.state.selectedSura}
-                      // audio={audio}
-                      // ayatar={ayatArdetails}
+                      ayatar={ayatArdetails}
                       // ayatbn={ayatBndetails}
                     />
                   }
