@@ -54,7 +54,8 @@ class App extends Component {
       });
       ayatArdetails = ayat;
     }
-
+    console.log(this.state.ayath);
+    console.log(this.state.selectedSura);
     return (
       <BrowserRouter>
         <div id="wrapper">
