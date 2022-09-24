@@ -56,6 +56,11 @@ const sidenav = [
     tittle: "তাসবিহ",
     iconname: <FaCalculator />,
   },
+  {
+    path: "/prayer-time",
+    tittle: "নামাজের সময়",
+    iconname: <FaCalculator />,
+  },
 ];
 
 export default sidenav;

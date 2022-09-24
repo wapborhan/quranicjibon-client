@@ -5,6 +5,7 @@ import AllahName from "./allah-name";
 import Kalema from "./kalema";
 import Tasbih from "./tasbih";
 import NotFound from "../components/NotFound";
+import PrayerTime from "../pages/prayer-time";
 
 export {
   About,
@@ -13,5 +14,6 @@ export {
   AllahName,
   Kalema,
   Tasbih,
+  PrayerTime,
   NotFound,
 };
