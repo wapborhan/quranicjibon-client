@@ -7,7 +7,7 @@ const QuestList = (props) => {
   return (
     <div className="col-md-12 mb-5">
       <Link
-        to={"/question/" + item.id}
+        to={"/qurbani-question/" + item.id}
         className="text-decoration-none text-dark"
       >
         <div

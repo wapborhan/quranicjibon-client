@@ -10,7 +10,10 @@ const QuestionDetails = (props) => {
       <div className="topbarpt d-flex justify-content-center mt-5 mb-5">
         <h2>
           Something Wrong Goto{" "}
-          <NavLink to="/question" className="btn  btn-success mt-5 mb-5">
+          <NavLink
+            to="/qurbani-question"
+            className="btn  btn-success mt-5 mb-5"
+          >
             HomePages
           </NavLink>
         </h2>

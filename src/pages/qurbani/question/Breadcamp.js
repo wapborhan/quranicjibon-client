@@ -7,10 +7,10 @@ const Breadcamp = () => {
       <nav aria-label="breadcrumb topbarpt">
         <ol className="breadcrumb ">
           <li className="breadcrumb-item">
-            <Link to="/">মূল পাতা</Link>
+            <Link to="/qurbani">মূল পাতা</Link>
           </li>
           <li className="breadcrumb-item">
-            <Link to="/question">মাসায়েল</Link>
+            <Link to="/qurbani-question">প্রশ্ন সমূহ</Link>
           </li>
           <li className="breadcrumb-item active" aria-current="page">
             উত্তর

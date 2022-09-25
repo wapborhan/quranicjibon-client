@@ -123,7 +123,7 @@ class App extends Component {
                   exact
                 />
                 <Route
-                  path="/question/:id"
+                  path="/qurbani-question/:id"
                   element={<Answer data={this.state.selectedQues} />}
                   exact
                 />
