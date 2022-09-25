@@ -14,6 +14,7 @@ import {
   SuraDetails,
   AllahName,
   Kalema,
+  Qurbani,
   Tasbih,
   PrayerTime,
   NotFound,
@@ -92,6 +93,7 @@ class App extends Component {
                 />
                 <Route path="/allah-names" element={<AllahName />} exact />
                 <Route path="/kalema" element={<Kalema />} exact />
+                <Route path="/qurbani" element={<Qurbani />} exact />
                 <Route path="/tasbih" element={<Tasbih />} exact />
                 <Route path="/prayer-time" element={<PrayerTime />} exact />
                 <Route path="/about" element={<About />} exact />

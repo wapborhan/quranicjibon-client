@@ -1,15 +1,18 @@
 import {
   FaBookOpen,
-  FaBookReader,
+  FaHome,
   FaBook,
-  FaCopy,
-  FaStopwatch,
-  FaMoon,
   FaCalculator,
+  FaStopwatch,
 } from "react-icons/fa";
 import { GiGoat } from "react-icons/gi";
 
 const sidenav = [
+  // {
+  //   path: "/",
+  //   tittle: "মূল পাতা",
+  //   iconname: <FaHome />,
+  // },
   {
     path: "/sura",
     tittle: "আল কুরআন (সুরা ক্রমে)",
@@ -46,11 +49,11 @@ const sidenav = [
   //   tittle: "রমজান ",
   //   iconname: <FaMoon />,
   // },
-  // {
-  //   path: "/kurbani",
-  //   tittle: "কুরবানি",
-  //   iconname: <GiGoat />,
-  // },
+  {
+    path: "/qurbani",
+    tittle: "কুরবানি",
+    iconname: <GiGoat />,
+  },
   {
     path: "/tasbih",
     tittle: "তাসবিহ",
@@ -59,7 +62,7 @@ const sidenav = [
   {
     path: "/prayer-time",
     tittle: "নামাজের সময়",
-    iconname: <FaCalculator />,
+    iconname: <FaStopwatch />,
   },
 ];
 
