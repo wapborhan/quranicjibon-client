@@ -6,6 +6,8 @@ import AllahName from "./allah-name";
 import Kalema from "./kalema";
 import Qurbani from "./qurbani";
 import QurbaniDetails from "./qurbani/QurbaniDetails";
+import QurbaniQuestion from "./qurbani/question";
+import Answer from "./qurbani/question/QuestionDetails";
 import Tasbih from "./tasbih";
 import NotFound from "../components/NotFound";
 import PrayerTime from "../pages/prayer-time";
@@ -21,5 +23,7 @@ export {
   PrayerTime,
   Qurbani,
   QurbaniDetails,
+  QurbaniQuestion,
+  Answer,
   NotFound,
 };

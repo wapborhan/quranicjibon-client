@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 // Data
 import SURAH from "./assets/data/quran/SuraData";
 import AYATH from "./assets/data/quran/ayat";
+import QurbaniQuestionData from "./assets/data/qurbani/index";
 //Components
 import Sidebar from "./components/Sidebar";
 import NavBar from "./components/NavBar";
@@ -16,6 +17,8 @@ import {
   Kalema,
   Qurbani,
   QurbaniDetails,
+  QurbaniQuestion,
+  Answer,
   Tasbih,
   PrayerTime,
   NotFound,
@@ -28,6 +31,8 @@ class App extends Component {
       surah: SURAH,
       ayath: AYATH,
       selectedSura: null,
+      question: QurbaniQuestionData,
+      selectedQues: null,
       isActive: true,
     };
     this.handleToggle = this.handleToggle.bind(this);
@@ -47,6 +52,13 @@ class App extends Component {
     // console.log(sura);
   };
 
+  selectedQuesHandler = (ques) => {
+    const question = this.state.question.filter((item) => item.id === ques)[0];
+    this.setState({
+      selectedQues: question,
+    });
+  };
+
   render() {
     let ayatArdetails = null;
 
@@ -58,7 +70,7 @@ class App extends Component {
       ayatArdetails = ayat;
     }
     // console.log(this.state.ayath);
-    // console.log(this.state.selectedSura);
+    // console.log(this.state.QRquestion);
     return (
       <BrowserRouter>
         <div id="wrapper">
@@ -99,11 +111,25 @@ class App extends Component {
                   path="/qurbani-details"
                   element={<QurbaniDetails />}
                   exact
+                />{" "}
+                <Route
+                  path="/qurbani-question"
+                  element={
+                    <QurbaniQuestion
+                      data={this.state.question}
+                      selectedQuesHandler={this.selectedQuesHandler}
+                    />
+                  }
+                  exact
+                />
+                <Route
+                  path="/question/:id"
+                  element={<Answer data={this.state.selectedQues} />}
+                  exact
                 />
                 <Route path="/tasbih" element={<Tasbih />} exact />
                 <Route path="/prayer-time" element={<PrayerTime />} exact />
                 <Route path="/about" element={<About />} exact />
-
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </div>
