@@ -72,71 +72,69 @@ class App extends Component {
     // console.log(this.state.ayath);
     // console.log(this.state.QRquestion);
     return (
-      <BrowserRouter>
-        <div id="wrapper">
-          <Sidebar isActive={this.state.isActive} />
-          <div id="content-wrapper" className="d-flex flex-column">
-            <div id="content">
-              <NavBar
-                isActive={this.state.isActive}
-                handleToggle={this.handleToggle}
+      <div id="wrapper">
+        <Sidebar isActive={this.state.isActive} />
+        <div id="content-wrapper" className="d-flex flex-column">
+          <div id="content">
+            <NavBar
+              isActive={this.state.isActive}
+              handleToggle={this.handleToggle}
+            />
+            <Routes>
+              <Route path="/" element={<Navigate replace to="/sura" />} />
+              <Route
+                path="/sura"
+                exact
+                element={
+                  <SuraMainPage
+                    suras={this.state.surah}
+                    selectSura={this.selectedSuraHandler}
+                  />
+                }
               />
-              <Routes>
-                <Route path="/" element={<Navigate replace to="/sura" />} />
-                <Route
-                  path="/sura"
-                  exact
-                  element={
-                    <SuraMainPage
-                      suras={this.state.surah}
-                      selectSura={this.selectedSuraHandler}
-                    />
-                  }
-                />
-                <Route
-                  path="/sura/:sura"
-                  element={
-                    <SuraDetails
-                      sura={this.state.selectedSura}
-                      ayatar={ayatArdetails}
-                      // ayatbn={ayatBndetails}
-                    />
-                  }
-                  exact
-                />
-                <Route path="/allah-names" element={<AllahName />} exact />
-                <Route path="/kalema" element={<Kalema />} exact />
-                <Route path="/qurbani" element={<Qurbani />} exact />
-                <Route
-                  path="/qurbani-details"
-                  element={<QurbaniDetails />}
-                  exact
-                />{" "}
-                <Route
-                  path="/qurbani-question"
-                  element={
-                    <QurbaniQuestion
-                      data={this.state.question}
-                      selectedQuesHandler={this.selectedQuesHandler}
-                    />
-                  }
-                  exact
-                />
-                <Route
-                  path="/qurbani-question/:id"
-                  element={<Answer data={this.state.selectedQues} />}
-                  exact
-                />
-                <Route path="/tasbih" element={<Tasbih />} exact />
-                <Route path="/prayer-time" element={<PrayerTime />} exact />
-                <Route path="/about" element={<About />} exact />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </div>
-            <Footer />
+              <Route
+                path="/sura/:sura"
+                element={
+                  <SuraDetails
+                    sura={this.state.selectedSura}
+                    ayatar={ayatArdetails}
+                    // ayatbn={ayatBndetails}
+                  />
+                }
+                exact
+              />
+              <Route path="/allah-names" element={<AllahName />} exact />
+              <Route path="/kalema" element={<Kalema />} exact />
+              <Route path="/qurbani" element={<Qurbani />} exact />
+              <Route
+                path="/qurbani-details"
+                element={<QurbaniDetails />}
+                exact
+              />{" "}
+              <Route
+                path="/qurbani-question"
+                element={
+                  <QurbaniQuestion
+                    data={this.state.question}
+                    selectedQuesHandler={this.selectedQuesHandler}
+                  />
+                }
+                exact
+              />
+              <Route
+                path="/qurbani-question/:id"
+                element={<Answer data={this.state.selectedQues} />}
+                exact
+              />
+              <Route path="/tasbih" element={<Tasbih />} exact />
+              <Route path="/prayer-time" element={<PrayerTime />} exact />
+              <Route path="/about" element={<About />} exact />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
           </div>
+          <Footer />
         </div>
-      </BrowserRouter>
+      </div>
     );
   }
 }

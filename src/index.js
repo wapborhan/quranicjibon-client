@@ -1,15 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/stylesheet/styles.css";
 import "./assets/stylesheet/custom.css";
 import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+import HomePage from "./home/HomePage";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
-  <App />
+  <BrowserRouter>
+    {/* <App /> */}
+    <HomePage />
+  </BrowserRouter>
+
   // </React.StrictMode>
 );
 
