@@ -316,6 +316,7 @@ footer {
 .overlap45 {margin-top: -2.8125rem;}
 .overlap155 {margin-top: -9.6875rem;}
 .overlap245 {margin-top: -15.3125rem;}
+.overlap2589 {margin-top: -7rem;}
 
 /*=== Default Colors ===*/
 .dark-bg {background-color: #272727;}
@@ -1702,7 +1703,7 @@ body.sticky .sticky-menu {
 
 /*===== Featured Area Style 1 =====*/
 .feat-caro {
-  max-height: 30rem;
+  max-height: 35rem;
   position: relative;
   overflow: hidden;
 }
@@ -1743,7 +1744,7 @@ body.sticky .sticky-menu {
   transform: scale(1);
 }
 .feat-cap-wrap {
-  top: 60%;
+  top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -3706,20 +3707,20 @@ span.proj-loc i {font-style: normal;}
 }
 
 /*===== Quote & Pillers Style =====*/
-.quote-pillars-wrap > div.row > div.col-lg-5 {
+/* .quote-pillars-wrap > div.row > div.col-lg-5 {
   flex: 0 0 48.4375rem;
   max-width: 48.4375rem;
-}
-.quote-pillars-wrap > div.row > div.col-lg-7 {
+} */
+/* .quote-pillars-wrap > div.row > div.col-lg-7 {
   flex: 0 0 calc(100% - 48.4375rem);
   max-width: calc(100% - 48.4375rem);
-}
+} */
 .quote-wrap {
   padding: 3.75rem 4.375rem;
   height: 100%;
 }
 .quote-box .fixed-bg {opacity: .88;}
-.pillars-wrap2 {padding: 7.5rem 7.5rem 8.75rem 9.375rem;}
+/* .pillars-wrap2 {padding: 7.5rem 7.5rem 8.75rem 9.375rem;} */
 .sec-title.v2 {margin-bottom: 3.4375rem;}
 .sec-title.v2.left-icon .sec-title-inner {padding-left: 7.1875rem;}
 .sec-title.v2.left-icon .sec-title-inner > i {font-size: 5.75rem;}

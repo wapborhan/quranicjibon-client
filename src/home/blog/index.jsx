@@ -1,12 +1,12 @@
 import React from "react";
-import BottomIMG from "../../assets/images/sec-botm-mckp.png";
+import BottomIMG from "../../assets/images/sec-botm-mckp2.png";
 
 const index = () => {
   return (
     <section>
       <div class="w-100 pt-90 pb-235 position-relative">
         <img
-          class="sec-botm-rgt-mckp img-fluid position-absolute"
+          class="sec-btm-mckp img-fluid position-absolute"
           src={BottomIMG}
           alt="Sec Bottom Mockup"
         />
