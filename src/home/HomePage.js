@@ -6,6 +6,7 @@ import "../assets/stylesheet/homepage/slick.css";
 import "../assets/stylesheet/homepage/style.css";
 import Header from "./header";
 import Banner from "./banner";
+import Blog from "./blog";
 import Footer from "./footer";
 
 export default class HomePage extends Component {
@@ -15,6 +16,7 @@ export default class HomePage extends Component {
         <Header />
         <main>
           <Banner />
+          <Blog />
           <Footer />
         </main>
       </Fragment>
