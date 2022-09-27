@@ -5,7 +5,7 @@ body {
   font-family: "SolaimanLipi", sans-serif;
 }
 body::-webkit-scrollbar {
-  width: 0.5em;
+  width: 0.7em;
 }
 
 body::-webkit-scrollbar-track {
@@ -15,8 +15,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: linear-gradient(145deg, #000, #fff, #000);
-  border-radius: 10px;
+  background: linear-gradient(145deg, #0a993c, #0a993c);
+  /* border-radius: 10px; */
   outline: 1px solid rgb(126, 165, 205);
 }
 .amount {

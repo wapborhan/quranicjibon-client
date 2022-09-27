@@ -1,5 +1,6 @@
 import React from "react";
 import Slide1 from "../../assets/images/resources/slide1.jpg";
+import { GiRubElHizb } from "react-icons/gi";
 
 const index = () => {
   return (
@@ -13,18 +14,20 @@ const index = () => {
                 style={{
                   backgroundImage: `url(${Slide1})`,
                 }}
-                // style="background-image: url(assets/images/resources/slide1.jpg);"
               ></div>
               <div class="feat-cap-wrap position-absolute d-inline-block">
                 <div class="feat-cap d-inline-block">
-                  <i class="d-inline-block flaticon-rub-el-hizb thm-clr"></i>
+                  <i class="d-inline-block flaticon-rub-el-hizb thm-clr">
+                    <GiRubElHizb />
+                  </i>
                   <h2 class="mb-0">Nothing Is Impossible With Allah</h2>
                   <p class="mb-0">
                     Consectetur adipiscing elit duis volutpat ligula nulla
                     dapibus.
                   </p>
-                  <a class="thm-btn thm-bg" href="about.html" title="">
-                    Take A Tour<span></span>
+                  <a class="thm-btn thm-bg rounded" href="about.html" title="">
+                    Take A Tour
+                    <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
