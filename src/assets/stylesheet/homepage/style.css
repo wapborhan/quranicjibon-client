@@ -1431,12 +1431,12 @@ header.style3 .topbar-left .topbar-info-list > li:before {display: none;}
 header.style3 .topbar-info-list > li:not(:first-child)::before {background-color: #fff;}
 .logo-menu-wrap.v3 .logo {
   margin-top: -3.18854375rem;
-  flex: 0 0 20.625rem;
+  flex: 0 0 18.625rem;
   max-width: 20.625rem;
 }
-.logo-menu-wrap.v3 .logo a {padding: 2.90625rem 1rem;}
+/* .logo-menu-wrap.v3 .logo a {padding: 2.90625rem 1rem;} */
 .logo-menu-wrap.v3 .logo a img {max-width: 11.5625rem;}
-.logo-menu-wrap.v3 .logo + .container {margin-left: 2.5rem;}
+.logo-menu-wrap.v3 .logo + .container {margin-left: 1.5rem;}
 header.style3 nav > div > ul > li {color: #fff;}
 
 /*=== Sticky Header ===*/
