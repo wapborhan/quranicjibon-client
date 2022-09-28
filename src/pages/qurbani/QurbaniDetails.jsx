@@ -29,7 +29,10 @@ const QurbaniDetails = () => {
       <br />
 
       <div className="btn btn-primary text-white text-center">
-        <NavLink to="/qurbani" className="text-light text-decoration-none">
+        <NavLink
+          to="/pages/qurbani"
+          className="text-light text-decoration-none"
+        >
           {" "}
           হিসেব করুন{" "}
         </NavLink>

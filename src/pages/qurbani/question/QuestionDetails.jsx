@@ -11,7 +11,7 @@ const QuestionDetails = (props) => {
         <h2>
           Something Wrong Goto{" "}
           <NavLink
-            to="/qurbani-question"
+            to="/pages/qurbani/qurbani-question"
             className="btn  btn-success mt-5 mb-5"
           >
             HomePages

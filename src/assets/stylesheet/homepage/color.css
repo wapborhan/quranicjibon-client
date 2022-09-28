@@ -36,16 +36,16 @@
 .post-share-social > a:focus,
 .course-box3:hover:before,
 .white-layer .fact-box > span:after,
-ul.pagination > li.page-item.prev a.page-link:hover, 
+ul.pagination > li.page-item.prev a.page-link:hover,
 ul.pagination > li.page-item.next a.page-link:hover,
-ul.pagination > li.page-item.prev a.page-link:focus, 
+ul.pagination > li.page-item.prev a.page-link:focus,
 ul.pagination > li.page-item.next a.page-link:focus,
-ul.pagination > li.page-item.active a.page-link, 
-ul.pagination > li.page-item a.page-link:hover, 
+ul.pagination > li.page-item.active a.page-link,
+ul.pagination > li.page-item a.page-link:hover,
 ul.pagination > li.page-item a.page-link:focus,
 .social-links4 > a:hover,
 .social-links4 > a:focus,
-.sermons-btns2 > a:hover i, 
+.sermons-btns2 > a:hover i,
 .sermons-btns2 > a:focus i,
 .sermon-video > a:hover,
 .sermon-video > a:focus,
@@ -64,9 +64,12 @@ ul.pagination > li.page-item a.page-link:focus,
 .rspn-mnu-btn:hover,
 .rspn-mnu-btn:focus,
 .rspn-mnu-cls:hover,
-.rspn-mnu-cls:focus
-{
-	background-color: var(--theme-color);
+.rspn-mnu-cls:focus,
+.sidebars,
+.shapecorner,
+.slno .shape:before,
+.slno .shape {
+  background-color: var(--theme-color);
 }
 
 /*===== Text Color =====*/
@@ -179,9 +182,8 @@ ol.breadcrumb > li.breadcrumb-item a:focus,
 .rspn-srch > button:hover,
 .rspn-srch > button:focus,
 .rspn-cnt > span a:hover,
-.rspn-cnt > span a:focus
-{
-	color: var(--theme-color);
+.rspn-cnt > span a:focus {
+  color: var(--theme-color);
 }
 
 /*===== Border Color =====*/
@@ -195,15 +197,14 @@ ol.breadcrumb > li.breadcrumb-item a:focus,
 .post-share:hover > i,
 .pillar-box2 > span:before,
 .pillar-box2 > span:after,
-ul.pagination > li.page-item.active a.page-link, 
-ul.pagination > li.page-item a.page-link:hover, 
+ul.pagination > li.page-item.active a.page-link,
+ul.pagination > li.page-item a.page-link:hover,
 ul.pagination > li.page-item a.page-link:focus,
 .sermons-btns2 > a i,
 .prod-detail-tabs ul.nav-tabs li.nav-item a.nav-link:hover,
 .prod-detail-tabs ul.nav-tabs li.nav-item a.nav-link:focus,
-.prod-detail-tabs ul.nav-tabs li.nav-item a.nav-link.active
-{
-	border-color: var(--theme-color);
+.prod-detail-tabs ul.nav-tabs li.nav-item a.nav-link.active {
+  border-color: var(--theme-color);
 }
 
 /* 
@@ -216,9 +217,8 @@ ul.pagination > li.page-item a.page-link:focus,
 	border-bottom-color: var(--theme-color);
 } */
 
-.prod-detail-tabs ul.nav-tabs li.nav-item a.nav-link::before
-{
-	border-left-color: var(--theme-color);
+.prod-detail-tabs ul.nav-tabs li.nav-item a.nav-link::before {
+  border-left-color: var(--theme-color);
 }
 
 /* 

@@ -114,7 +114,7 @@ class App extends Component {
                 exact
               />{" "}
               <Route
-                path="/qurbani-question"
+                path="/qurbani/qurbani-question"
                 element={
                   <QurbaniQuestion
                     data={this.state.question}
@@ -124,7 +124,7 @@ class App extends Component {
                 exact
               />
               <Route
-                path="/qurbani-question/:id"
+                path="/qurbani/qurbani-question/:id"
                 element={<Answer data={this.state.selectedQues} />}
                 exact
               />

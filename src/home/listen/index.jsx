@@ -1,5 +1,7 @@
 import React from "react";
 import parallaxBG from "../../assets/images/parallax-bg5.jpg";
+import AudioCover from "../../assets/images/parallax-bg5.jpg";
+import AudioPlayer from "react-h5-audio-player";
 
 const index = () => {
   return (
@@ -28,7 +30,7 @@ const index = () => {
                       backgroundImage: `url("${parallaxBG}")`,
                     }}
                   >
-                    Listen to Quran Audio
+                    <span>কুরআন অডিও শুনুন</span>
                   </h3>
                   <div
                     class="plyr-inner w-100 pat-bg thm-layer opc65 back-blend-multiply thm-bg"
@@ -40,12 +42,21 @@ const index = () => {
                     <div class="plyr v3 w-100">
                       <ul class="playlist mb-0 list-unstyled">
                         <li
-                          data-cover="assets/images/audio-cover.jpg"
+                          data-cover={AudioCover}
                           data-artist="(Abd-ur Rahman)"
                         >
-                          <a href="assets/audio/surah-fateh.mp3" title="">
-                            Surah Fath
-                          </a>
+                          <AudioPlayer
+                            autoPlay
+                            // src={AllahNames.path}
+                            onPlay={(e) => console.log("onPlay")}
+                            // showJumpControls={false}
+                            showFilledProgress={false}
+                            customVolumeControls={[]}
+                            customAdditionalControls={[]}
+                            defaultCurrentTime=" "
+                            defaultDuration=" "
+                            // layout="horizontal-reverse"
+                          />
                         </li>
                       </ul>
                     </div>
@@ -57,7 +68,9 @@ const index = () => {
                   <span class="d-block thm-clr">
                     Ethical & Moral Beliefs That Guides
                   </span>
-                  <h2 class="mb-0">Welcome To Maktab</h2>
+                  <h2 class="mb-0">
+                    <span>স্বাগতম IslamBD তে </span>
+                  </h2>
                   <p class="mb-0">
                     Donec id elit non mi porta gravida at eget metus. Fusce
                     dapibus, tellus ac cursus commodo, tortor mauris condimentum

@@ -16,7 +16,7 @@ class index extends Component {
               <div className="card-body text-center">
                 <h2>
                   কুরবানীর সংক্রান্ত কিছু প্রশ্ন উত্তর{" "}
-                  <NavLink className="text-danger" to="/qurbani-question">
+                  <NavLink className="text-danger" to="qurbani-question">
                     এখানে
                   </NavLink>
                 </h2>

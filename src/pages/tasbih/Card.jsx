@@ -12,12 +12,12 @@ const Card = (props) => {
               <div className="card mt-4 brdhvr">
                 <div className="card-body d-flex justify-content-between">
                   <div className="word">
-                    <p id="text" className="t1">
+                    <div id="text" className="t1">
                       {" "}
                       <span className="d-block">{item.tittleAR} </span>{" "}
                       {item.tittleEN}{" "}
                       <span className="d-block">{item.tittleBN} </span>{" "}
-                    </p>
+                    </div>
                   </div>
                   <div className="count">
                     <p id="counter1" className="number-count">

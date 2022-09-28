@@ -174,7 +174,11 @@ nav ul ul ul {
 
 
 @media (max-width: 1210px) {
-.container {padding: 0 0.9375rem;max-width: 100%;}
+.feat-cap {
+    max-width: 20rem;
+    position: relative;
+}
+/* .container {padding: 0 0.9375rem;max-width: 100%;} */
 .container-fluid .container {padding: 0;}
 .wide-sec, 
 .wide-sec2 {

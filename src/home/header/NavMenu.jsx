@@ -48,12 +48,12 @@ const NavMenu = () => {
               </li>
             </ul> */}
           </li>
-          <li>
+          <li class="menu-item-has-children">
             <NavLink to="/pages/tasbih" title="তাসবিহ">
               তাসবিহ
             </NavLink>
           </li>
-          <li>
+          <li class="menu-item-has-children">
             <NavLink to="/pages/prayer-time" title="নামাজের সময়">
               নামাজের সময়
             </NavLink>

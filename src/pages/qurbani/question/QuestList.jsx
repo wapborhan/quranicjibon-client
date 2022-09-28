@@ -6,10 +6,7 @@ const QuestList = (props) => {
   const item = props.item;
   return (
     <div className="col-md-12 mb-5">
-      <Link
-        to={"/qurbani-question/" + item.id}
-        className="text-decoration-none text-dark"
-      >
+      <Link to={"" + item.id} className="text-decoration-none text-dark">
         <div
           className="card shadow"
           style={{

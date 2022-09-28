@@ -30,7 +30,7 @@ const index = () => {
                         </a>
                       </h1>
                     </div>
-                    <div class="mb-0 h5">
+                    <div class="mb-0 h5 text-center">
                       তোমরা আমার পক্ষ থেকে একটি আয়াত হলেও পৌঁছে দাও। <br /> -
                       জামে তিরমিযি।
                     </div>
@@ -40,9 +40,10 @@ const index = () => {
             </div>
           </div>
           <div class="bottom-bar2 text-center w-100">
-            <p class="mb-0">
+            <p class="mb-0 text-center">
               IslamBD - Copyright 2022. Design by{" "}
               <a
+                className="text-light"
                 href="https://srdreamlab.com"
                 title="SR Dream Lab"
                 target="_blank"

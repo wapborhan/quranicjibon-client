@@ -128,7 +128,7 @@ export default class Form extends Component {
           </ModalBody>
           <ModalFooter className="text-center justify-content-center">
             বিস্তারিত জানতে{" "}
-            <NavLink to="/qurbani-details">এখানে ক্লিক </NavLink>
+            <NavLink to="/pages/qurbani-details">এখানে ক্লিক </NavLink>
             করুন
           </ModalFooter>
         </Modal>
