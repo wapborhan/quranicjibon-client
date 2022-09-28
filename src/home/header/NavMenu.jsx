@@ -7,22 +7,22 @@ const NavMenu = () => {
       <div class="header-left">
         <ul class="mb-0 list-unstyled d-inline-flex">
           <li class="menu-item-has-children">
-            <NavLink to="/" title="আল কুরআন">
+            <NavLink to="/pages/sura" title="আল কুরআন">
               আল কুরআন
             </NavLink>
           </li>
           <li class="menu-item-has-children">
-            <NavLink to="/" title="আল্লাহর নাম">
+            <NavLink to="/pages/allah-names" title="আল্লাহর নাম">
               আল্লাহর নাম
             </NavLink>
           </li>
           <li class="menu-item-has-children">
-            <NavLink to="#" title="কালেমা">
+            <NavLink to="/pages/kalema" title="কালেমা">
               কালেমা
             </NavLink>
           </li>
           <li class="menu-item-has-children">
-            <NavLink to="#" title="কুরবানি">
+            <NavLink to="/pages/qurbani" title="কুরবানি">
               কুরবানি
             </NavLink>
             {/* <ul class="mb-0 list-unstyled">
@@ -49,12 +49,12 @@ const NavMenu = () => {
             </ul> */}
           </li>
           <li>
-            <NavLink to="#" title="তাসবিহ">
+            <NavLink to="/pages/tasbih" title="তাসবিহ">
               তাসবিহ
             </NavLink>
           </li>
           <li>
-            <NavLink to="#" title="নামাজের সময়">
+            <NavLink to="/pages/prayer-time" title="নামাজের সময়">
               নামাজের সময়
             </NavLink>
           </li>

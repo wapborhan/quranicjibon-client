@@ -13,10 +13,12 @@ const Sidebar = (props) => {
             : "sidebars bg-dark text-light active"
         }
       >
-        <div className="logo-details">
-          <FaQuran />
-          <span className="logo_name">Islam BD</span>
-        </div>
+        <NavLink to="/">
+          <div className="logo-details">
+            <FaQuran />
+            <span className="logo_name">Islam BD</span>
+          </div>
+        </NavLink>
         <ul className="nav-links">
           {sidenav.map((data, idx) => (
             <li key={idx}>
@@ -29,7 +31,7 @@ const Sidebar = (props) => {
             </li>
           ))}
           <li className="log_out">
-            <NavLink to="/about">
+            <NavLink to="/pages/about">
               <i className="fas fa-exclamation-triangle text-white">
                 <FaInfoCircle />
               </i>

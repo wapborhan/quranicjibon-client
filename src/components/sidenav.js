@@ -8,18 +8,18 @@ import {
 import { GiGoat } from "react-icons/gi";
 
 const sidenav = [
-  // {
-  //   path: "/",
-  //   tittle: "মূল পাতা",
-  //   iconname: <FaHome />,
-  // },
   {
-    path: "/sura",
+    path: "/",
+    tittle: "মূল পাতা",
+    iconname: <FaHome />,
+  },
+  {
+    path: "/pages/sura",
     tittle: "আল কুরআন (সুরা ক্রমে)",
     iconname: <FaBookOpen />,
   },
   {
-    path: "/allah-names",
+    path: "/pages/allah-names",
     tittle: "আল্লাহর ৯৯ নাম",
     iconname: <FaBookOpen />,
   },
@@ -29,7 +29,7 @@ const sidenav = [
   //   iconname: <FaBookReader />,
   // },
   {
-    path: "/kalema",
+    path: "/pages/kalema",
     tittle: "কালেমা",
     iconname: <FaBook />,
   },
@@ -50,17 +50,17 @@ const sidenav = [
   //   iconname: <FaMoon />,
   // },
   {
-    path: "/qurbani",
+    path: "/pages/qurbani",
     tittle: "কুরবানি",
     iconname: <GiGoat />,
   },
   {
-    path: "/tasbih",
+    path: "/pages/tasbih",
     tittle: "তাসবিহ",
     iconname: <FaCalculator />,
   },
   {
-    path: "/prayer-time",
+    path: "/pages/prayer-time",
     tittle: "নামাজের সময়",
     iconname: <FaStopwatch />,
   },

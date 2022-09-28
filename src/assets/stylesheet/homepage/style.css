@@ -331,7 +331,7 @@ footer {
 
 /*=== Container ===*/
 .container {
-  padding: 0;
+  /* padding: 0; */
   max-width: 73.125rem;
 }
 
@@ -3523,7 +3523,7 @@ span.proj-loc i {font-style: normal;}
 .time-list3 > li {
   flex: 0 0 16.66667%;
   max-width: 16.66667%;
-  font-family: Philosopher;
+  font-family: Philosopher,"SolaimanLipi";
   text-transform: uppercase;
   font-size: 1.25rem;
   font-weight: 700;

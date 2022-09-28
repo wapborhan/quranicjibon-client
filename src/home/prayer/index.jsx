@@ -14,7 +14,7 @@ const index = () => {
                   backgroundImage: `url("${PatternBG}")`,
                 }}
               >
-                <span>Fajr:</span> 04:06 AM<i>Iqamah: 4:00 AM</i>
+                <span>ফজর:</span> ০০:০০ AM<i>ইকামাহ: ০০:০০ AM</i>
               </li>
               <li
                 class="pat-bg grn-layer2 opc7 back-blend-multiply bg-color2"
@@ -22,7 +22,7 @@ const index = () => {
                   backgroundImage: `url("${PatternBG}")`,
                 }}
               >
-                <span>Sunrise:</span> 05:30 AM<i>Iqamah: 4:00 AM</i>
+                <span>সূর্যোদয়:</span> ০০:০০ AM<i>ইকামাহ: ০০:০০ AM</i>
               </li>
               <li
                 class="pat-bg thm-layer opc7 back-blend-multiply thm-bg"
@@ -30,7 +30,7 @@ const index = () => {
                   backgroundImage: `url("${PatternBG}")`,
                 }}
               >
-                <span>Dhuhr:</span> 12:23 PM<i>Iqamah: 4:00 AM</i>
+                <span>যোহর:</span> ০০:০০ PM<i>ইকামাহ: ০০:০০ AM</i>
               </li>
               <li
                 class="pat-bg grn-layer2 opc7 back-blend-multiply bg-color2"
@@ -38,7 +38,7 @@ const index = () => {
                   backgroundImage: `url("${PatternBG}")`,
                 }}
               >
-                <span>Asr:</span> 03:43 PM<i>Iqamah: 4:00 AM</i>
+                <span>আসর:</span> ০০:০০ PM<i>ইকামাহ: ০০:০০ AM</i>
               </li>
               <li
                 class="pat-bg thm-layer opc7 back-blend-multiply thm-bg"
@@ -46,7 +46,7 @@ const index = () => {
                   backgroundImage: `url("${PatternBG}")`,
                 }}
               >
-                <span>Maghrib:</span> 07:10 PM<i>Iqamah: 4:00 AM</i>
+                <span>মাগরিব:</span> ০০:০০ PM<i>ইকামাহ: ০০:০০ AM</i>
               </li>
               <li
                 class="pat-bg grn-layer2 opc7 back-blend-multiply bg-color2"
@@ -54,7 +54,7 @@ const index = () => {
                   backgroundImage: `url("${PatternBG}")`,
                 }}
               >
-                <span>Isha'a:</span> 08:35 PM<i>Iqamah: 4:00 AM</i>
+                <span>এশা:</span> ০০:০০ PM<i>ইকামাহ: ০০:০০ AM</i>
               </li>
             </ul>
             {/* <div class="sec-title text-center w-100 mt-3">

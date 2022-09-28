@@ -23,6 +23,7 @@ import {
   PrayerTime,
   NotFound,
 } from "./pages";
+import HomePage from "./home/HomePage";
 
 class App extends Component {
   constructor(props) {
@@ -80,10 +81,11 @@ class App extends Component {
               isActive={this.state.isActive}
               handleToggle={this.handleToggle}
             />
+            {/* <Route path="/pages" element={<Navigate replace to="/sura" />} /> */}
+            {/* <Route path="/" exact element={<HomePage />} /> */}
             <Routes>
-              <Route path="/" element={<Navigate replace to="/sura" />} />
               <Route
-                path="/sura"
+                path="sura"
                 exact
                 element={
                   <SuraMainPage
