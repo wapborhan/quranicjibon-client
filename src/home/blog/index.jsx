@@ -11,7 +11,7 @@ const index = () => {
           alt="Sec Bottom Mockup"
         />
         <div class="container">
-          <div class="sec-title text-center w-100">
+          {/* <div class="sec-title text-center w-100">
             <div class="sec-title-inner d-inline-block">
               <i class="flaticon-rub-el-hizb thm-clr"></i>
               <h2 class="mb-0">Recent News & Updates</h2>
@@ -19,8 +19,8 @@ const index = () => {
                 Adipiscing elit duis volutpat ligula nulla dapibus.
               </p>
             </div>
-          </div>
-          <div class="blog-wrap res-row w-100">
+          </div> */}
+          {/* <div class="blog-wrap res-row w-100">
             <div class="row">
               <div class="col-md-6 col-sm-6 col-lg-4">
                 <div class="post-box w-100">
@@ -128,15 +128,15 @@ const index = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div class="view-more d-inline-block text-center w-100">
+          </div> */}
+          {/* <div class="view-more d-inline-block text-center w-100">
             <a class="thm-btn mini-btn thm-bg" href="blog.html" title="">
               More News & Updates<span></span>
               <span></span>
               <span></span>
               <span></span>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
