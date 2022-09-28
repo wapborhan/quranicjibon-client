@@ -30,10 +30,10 @@ const index = () => {
                         </a>
                       </h1>
                     </div>
-                    <p class="mb-0">
-                      Alienum phaedrum torquatu pe us nihil expet in mei. Mei
-                      ula wit touch markersi m phaedrum tor lorim uilmes ilmes..
-                    </p>
+                    <div class="mb-0 h5">
+                      তোমরা আমার পক্ষ থেকে একটি আয়াত হলেও পৌঁছে দাও। <br /> -
+                      জামে তিরমিযি।
+                    </div>
                   </div>
                 </div>
               </div>
@@ -41,10 +41,7 @@ const index = () => {
           </div>
           <div class="bottom-bar2 text-center w-100">
             <p class="mb-0">
-              <a href="#" title="Home">
-                Maktab
-              </a>{" "}
-              - Copyright 2022. Design by{" "}
+              IslamBD - Copyright 2022. Design by{" "}
               <a
                 href="https://srdreamlab.com"
                 title="SR Dream Lab"
