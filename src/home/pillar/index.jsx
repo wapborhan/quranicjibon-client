@@ -31,12 +31,18 @@ const index = () => {
                     }}
                   ></div>
                   <p class="mb-0">
-                    The saying fruitful were let for him all fruitful morning.
-                    Second may waters set was were there upon his he winged
-                    won’t itself there very first under seasons.
+                    মুহাম্মদ ইবনু আবদুল্লাহ ইবনু নু’মায়র আল হামদানী (রহঃ) ...
+                    ইবনু উমর (রাঃ) থেকে বর্ণনা করেন। নবী সাল্লাল্লাহু আলাইহি
+                    ওয়াসাল্লাম বলেছেন, ইসলামের বুনিয়াদ পাঁচটি বিষয়ের উপর
+                    প্রতিষ্ঠিত। আল্লাহকে এক বলে বিশ্বাস করা, সালাত (নামায/নামাজ)
+                    কায়েম করা, যাকাত দেয়া, রামাযানের রোযা পালন করা এবং হাজ্জ
+                    (হজ্জ) করা। এক ব্যাক্তি (এ ক্রম পরিবর্তন করে) বলল, হাজ্জ করা
+                    ও রামাযানের রোযা পালন করা। রাবী বললেন, না রামাযানের রোযা
+                    পালন করা ও হাজ্জ করা এভাবে রাসুলুল্লাহ সাল্লাল্লাহু আলাইহি
+                    ওয়াসাল্লাম থেকে শুনেছি।
                   </p>
-                  <h4 class="mb-0">Muhammad al-Bukhari</h4>
-                  <span class="d-block">(d. 256 AH/870 AD)</span>
+                  <h4 class="mb-0">কিতাবুল ঈমান (كتاب الإيمان) </h4>
+                  <span class="d-block">সহীহ মুসলিম (ইসলামিক ফাউন্ডেশন)</span>
                 </div>
               </div>
             </div>
@@ -45,10 +51,14 @@ const index = () => {
                 <div class="sec-title v2 left-icon w-100">
                   <div class="sec-title-inner d-inline-block">
                     <i class="flaticon-rub-el-hizb thm-clr"></i>
-                    <h2 class="mb-0">The Pillars of Islam</h2>
+                    <h2 class="mb-0">
+                      <span>ইসলামের স্তম্ভ</span>
+                    </h2>
                     <p class="mb-0">
-                      Duis aute irure dolor in reprehenit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur.
+                      ইসলাম ধর্মে পাঁচটি স্তম্ভ আছে । এই পাঁচটি বিষয়ের উপর দৃঢ়
+                      বিশ্বাস স্থাপন করা প্রত্যেক মুসলমানের জন্য ফরজ। একই সাথে
+                      প্রথম তিনটির উপর আমল করা সকল মুসলমানের জন্য ফরজ এবং শেষ
+                      দুটি সামর্থ্য অনুযায়ী আদায় করা ফরজ বা অবশ্য পালনীয় কাজ।
                     </p>
                   </div>
                 </div>
@@ -58,7 +68,7 @@ const index = () => {
                       <span class="d-inline-block thm-clr">
                         <i class="flaticon-quran-1"></i>
                       </span>
-                      <h3 class="mb-0">Shahadah</h3>
+                      <h3 class="mb-0">বিশ্বাস</h3>
                       <i class="d-block thm-clr">Faith</i>
                     </div>
                   </li>
@@ -67,7 +77,7 @@ const index = () => {
                       <span class="d-inline-block thm-clr">
                         <i class="flaticon-mosque-1"></i>
                       </span>
-                      <h3 class="mb-0">Salah</h3>
+                      <h3 class="mb-0">সালাত</h3>
                       <i class="d-block thm-clr">Prayer</i>
                     </div>
                   </li>
@@ -76,7 +86,7 @@ const index = () => {
                       <span class="d-inline-block thm-clr">
                         <i class="flaticon-star"></i>
                       </span>
-                      <h3 class="mb-0">Sawm</h3>
+                      <h3 class="mb-0">সাওম</h3>
                       <i class="d-block thm-clr">Fasting</i>
                     </div>
                   </li>
@@ -85,7 +95,7 @@ const index = () => {
                       <span class="d-inline-block thm-clr">
                         <i class="flaticon-gift-box"></i>
                       </span>
-                      <h3 class="mb-0">Zakat</h3>
+                      <h3 class="mb-0">যাকাত</h3>
                       <i class="d-block thm-clr">Almsgiving</i>
                     </div>
                   </li>
@@ -94,18 +104,18 @@ const index = () => {
                       <span class="d-inline-block thm-clr">
                         <i class="flaticon-kaaba"></i>
                       </span>
-                      <h3 class="mb-0">Hajj</h3>
+                      <h3 class="mb-0">হজ্জ্ব</h3>
                       <i class="d-block thm-clr">Pilgrimage</i>
                     </div>
                   </li>
                   <li>
                     <div class="pillar-btn">
-                      <a class="thm-btn thm-bg" href="about.html" title="">
-                        LEARN MORE<span></span>
+                      {/* <a class="thm-btn thm-bg" href="about.html" title="">
+                        আরও জানুন<span></span>
                         <span></span>
                         <span></span>
                         <span></span>
-                      </a>
+                      </a> */}
                     </div>
                   </li>
                 </ul>

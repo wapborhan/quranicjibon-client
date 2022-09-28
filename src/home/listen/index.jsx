@@ -1,6 +1,7 @@
 import React from "react";
 import parallaxBG from "../../assets/images/parallax-bg5.jpg";
-import AudioCover from "../../assets/images/parallax-bg5.jpg";
+// import AudioCover from "../../assets/images/parallax-bg5.jpg";
+import PattBG from "../../assets/images/pattern-bg.jpg";
 import AudioPlayer from "react-h5-audio-player";
 
 const index = () => {
@@ -27,7 +28,7 @@ const index = () => {
                     class="mb-0 text-center pat-bg dark-layer2 opc5 back-blend-multiply bg-color1"
                     // style="background-image: url(assets/images/pattern-bg.jpg);"
                     style={{
-                      backgroundImage: `url("${parallaxBG}")`,
+                      backgroundImage: `url("${PattBG}")`,
                     }}
                   >
                     <span>কুরআন অডিও শুনুন</span>
@@ -36,13 +37,13 @@ const index = () => {
                     class="plyr-inner w-100 pat-bg thm-layer opc65 back-blend-multiply thm-bg"
                     // style="background-image: url(assets/images/pattern-bg.jpg);"
                     style={{
-                      backgroundImage: `url("${parallaxBG}")`,
+                      backgroundImage: `url("${PattBG}")`,
                     }}
                   >
                     <div class="plyr v3 w-100">
                       <ul class="playlist mb-0 list-unstyled">
                         <li
-                          data-cover={AudioCover}
+                          // data-cover={AudioCover}
                           data-artist="(Abd-ur Rahman)"
                         >
                           <AudioPlayer
@@ -66,7 +67,7 @@ const index = () => {
               <div class="col-md-12 col-sm-12 col-lg-7">
                 <div class="about-inner3 w-100">
                   <span class="d-block thm-clr">
-                    Ethical & Moral Beliefs That Guides
+                    নৈতিক এবং নৈতিক বিশ্বাস যে গাইড
                   </span>
                   <h2 class="mb-0">
                     <span>স্বাগতম IslamBD তে </span>
