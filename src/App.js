@@ -95,7 +95,7 @@ class App extends Component {
                 }
               />
               <Route
-                path="/sura/:sura"
+                path="sura/:sura"
                 element={
                   <SuraDetails
                     sura={this.state.selectedSura}

@@ -11,7 +11,7 @@ const SuraList = (props) => {
       {suras.map((item) => {
         return (
           <Link
-            to={"/sura/" + item.sura}
+            to={"" + item.sura}
             className="col-md-4 card-lin"
             key={item.sura_no}
           >
