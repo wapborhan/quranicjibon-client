@@ -3810,14 +3810,15 @@ span.proj-loc i {
   padding: 4.0625rem 3.125rem 3.4375rem;
 }
 .quote-box::after {
-  content: "\f120";
-  font-family: Flaticon;
+  content: "❝";
   color: #fff;
   font-size: 3.75rem;
   position: absolute;
-  line-height: 1;
-  top: -2.0625rem;
+  line-height: 28px;
+  top: -1.125rem;
+  padding: 16px 12px;
   left: 3.125rem;
+  border: 1px solid #fff;
 }
 .quote-box > p {
   font-size: 1.125rem;

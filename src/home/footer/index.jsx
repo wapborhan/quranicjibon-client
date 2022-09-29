@@ -17,7 +17,7 @@ const index = () => {
               <div class="col-md-12 col-sm-12 col-lg-12">
                 <div class="widget text-center w-100">
                   <div class="widget-inner d-inline-block">
-                    <div class="logo">
+                    <div class="logo text-center">
                       <h1 class="mb-0">
                         <a href="#" title="Home">
                           {/* <img
