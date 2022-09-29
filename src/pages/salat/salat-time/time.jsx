@@ -20,7 +20,7 @@ import { Scrollbars } from "react-custom-scrollbars";
 import moment from "moment";
 // import localization from 'moment/locale/bn';
 
-class NamazTiming extends PureComponent {
+className NamazTiming extends PureComponent {
   scrollbars = React.createRef();
 
   constructor(props) {
@@ -181,12 +181,12 @@ class NamazTiming extends PureComponent {
                 {this.state.district_loading ? (
                   <div className="loading district-loading">
                     {" "}
-                    <i class="fas fa-spinner fa-spin"></i>{" "}
+                    <i className="fas fa-spinner fa-spin"></i>{" "}
                   </div>
                 ) : (
                   <select
                     onChange={(e) => this.changeHandler(e)}
-                    class="select-css"
+                    className="select-css"
                     value={this.state.defaultDistrict}
                   >
                     {this.state.allDistrict.length > 0
@@ -216,7 +216,7 @@ class NamazTiming extends PureComponent {
               {this.state.prayer_time_loading || this.state.district_loading ? (
                 <div className="loading section-loading">
                   {" "}
-                  <i class="fas fa-spinner fa-spin"></i>{" "}
+                  <i className="fas fa-spinner fa-spin"></i>{" "}
                 </div>
               ) : (
                 <div className="nano">

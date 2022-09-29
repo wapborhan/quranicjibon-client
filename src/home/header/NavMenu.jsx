@@ -3,29 +3,29 @@ import { NavLink } from "react-router-dom";
 
 const NavMenu = () => {
   return (
-    <nav class="d-flex flex-wrap align-items-center justify-content-center">
-      <div class="header-left">
-        <ul class="mb-0 list-unstyled d-inline-flex">
-          <li class="menu-item-has-children">
+    <nav className="d-flex flex-wrap align-items-center justify-content-center">
+      <div className="header-left">
+        <ul className="mb-0 list-unstyled d-inline-flex">
+          <li className="menu-item-has-children">
             <NavLink to="/pages/sura" title="আল কুরআন">
               আল কুরআন
             </NavLink>
           </li>
-          <li class="menu-item-has-children">
+          <li className="menu-item-has-children">
             <NavLink to="/pages/allah-names" title="আল্লাহর নাম">
               আল্লাহর নাম
             </NavLink>
           </li>
-          <li class="menu-item-has-children">
+          <li className="menu-item-has-children">
             <NavLink to="/pages/kalema" title="কালেমা">
               কালেমা
             </NavLink>
           </li>
-          <li class="menu-item-has-children">
+          <li className="menu-item-has-children">
             <NavLink to="/pages/qurbani" title="কুরবানি">
               কুরবানি
             </NavLink>
-            {/* <ul class="mb-0 list-unstyled">
+            {/* <ul className="mb-0 list-unstyled">
               <li>
                 <a to="products.html" title="">
                   Our Products
@@ -48,12 +48,12 @@ const NavMenu = () => {
               </li>
             </ul> */}
           </li>
-          <li class="menu-item-has-children">
+          <li className="menu-item-has-children">
             <NavLink to="/pages/tasbih" title="তাসবিহ">
               তাসবিহ
             </NavLink>
           </li>
-          <li class="menu-item-has-children">
+          <li className="menu-item-has-children">
             <NavLink to="/pages/prayer-time" title="নামাজের সময়">
               নামাজের সময়
             </NavLink>

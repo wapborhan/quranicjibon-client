@@ -12,23 +12,23 @@ import MobileMenu from "./MobileMenu";
 const index = () => {
   return (
     <Fragment>
-      <header class="stick style1 w-100">
-        <div class="topbars bg-color1 d-flex flex-wrap justify-content-center w-100">
-          <ul class="topbars-info-list mb-0 list-unstyled d-inline-flex">
+      <header className="stick style1 w-100">
+        <div className="topbars bg-color1 d-flex flex-wrap justify-content-center w-100">
+          <ul className="topbars-info-list mb-0 list-unstyled d-inline-flex">
             <li>
-              <i class="thm-clr flaticon-sun">
+              <i className="thm-clr flaticon-sun">
                 <FaSun />
               </i>
-              সূর্যোদয়: <span class="thm-clr">০০:০০</span>
+              সূর্যোদয়: <span className="thm-clr">০০:০০</span>
             </li>
             <li>
-              <i class="thm-clr flaticon-moon">
+              <i className="thm-clr flaticon-moon">
                 <FaMoon />
               </i>
-              সূর্যাস্ত : <span class="thm-clr">০০:০০</span>
+              সূর্যাস্ত : <span className="thm-clr">০০:০০</span>
             </li>
           </ul>
-          <div class="social-links d-inline-flex text-light">
+          <div className="social-links d-inline-flex text-light">
             <div className="dateshow">
               {new Intl.DateTimeFormat("bn-BD-u-ca-islamic", {
                 day: "numeric",
@@ -47,18 +47,18 @@ const index = () => {
             </div>
           </div>
         </div>
-        <div class="logo-menu-wrap d-flex flex-wrap justify-content-between w-100">
+        <div className="logo-menu-wrap d-flex flex-wrap justify-content-between w-100">
           <div
-            class="logo position-relative thm-layer opc7 back-blend-multiply thm-bg"
+            className="logo position-relative thm-layer opc7 back-blend-multiply thm-bg"
             // style="background-image: url(assets/images/pattern-bg.jpg);"
             style={{
               backgroundImage: `url("${PatternBG}")`,
             }}
           >
-            <h1 class="mb-0">
+            <h1 className="mb-0">
               <NavLink to="/" title="Home">
                 {/* <img
-                class="img-fluid"
+                className="img-fluid"
                 src={Logo}
                 alt="Logo"
                 srcset={RetinaLogo}

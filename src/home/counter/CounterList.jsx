@@ -24,18 +24,18 @@ const list = [
 
 const CounterList = () => {
   return (
-    <div class="row">
+    <div className="row">
       {list.map((item) => {
         return (
-          <div class="col-md-4 col-sm-6 col-6 col-lg-3" key={item.id}>
-            <div class="fact-box d-flex flex-wrap align-items-center w-100">
-              <span class="rounded-circle">
-                <i class="flaticon-mosque-3"></i>
+          <div className="col-md-4 col-sm-6 col-6 col-lg-3" key={item.id}>
+            <div className="fact-box d-flex flex-wrap align-items-center w-100">
+              <span className="rounded-circle">
+                <i className="flaticon-mosque-3"></i>
               </span>
-              <div class="fact-inner">
-                <h3 class="mb-0 counter">{item.count}</h3>
+              <div className="fact-inner">
+                <h3 className="mb-0 counter">{item.count}</h3>
 
-                <h5 class="mb-0">{item.tittle}</h5>
+                <h5 className="mb-0">{item.tittle}</h5>
               </div>
             </div>
           </div>
