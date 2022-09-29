@@ -67,11 +67,8 @@ const index = () => {
               </NavLink>
             </h1>
           </div>
-          <nav class="d-flex flex-wrap align-items-center justify-content-center">
-            <div class="header-left">
-              <NavMenu />
-            </div>
-          </nav>
+
+          <NavMenu />
         </div>
       </header>
       <MobileMenu />

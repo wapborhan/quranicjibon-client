@@ -4800,7 +4800,7 @@ span.proj-loc i {
   text-transform: uppercase;
   border-bottom: 1px solid;
   display: inline-block;
-  font-family: Philosopher;
+  font-family: Philosopher, "SolaimanLipi";
   font-weight: 700;
   line-height: 1;
 }

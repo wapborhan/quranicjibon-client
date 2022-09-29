@@ -3,7 +3,7 @@ import SecBG from "../../assets/images/sec-bg2.jpg";
 import QuetSecBG from "../../assets/images/quote-sec-bg.jpg";
 import PattBG from "../../assets/images/pattern-bg.jpg";
 import { FaQuran, FaMosque, FaStarOfDavid, FaKaaba } from "react-icons/fa";
-import { GiPayMoney } from "react-icons/gi";
+import { GiPayMoney, GiRubElHizb } from "react-icons/gi";
 
 const index = () => {
   return (
@@ -52,7 +52,9 @@ const index = () => {
               <div class="pillars-wrap2 w-100">
                 <div class="sec-title v2 left-icon w-100">
                   <div class="sec-title-inner d-inline-block">
-                    <i class="flaticon-rub-el-hizb thm-clr"></i>
+                    <i class="flaticon-rub-el-hizb thm-clr">
+                      <GiRubElHizb />
+                    </i>
                     <h2 class="mb-0">
                       <span>ইসলামের স্তম্ভ</span>
                     </h2>

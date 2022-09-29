@@ -1,5 +1,6 @@
 import React from "react";
 import MobileNav from "./MobileNav";
+import { FaBars, FaUserCircle } from "react-icons/fa";
 
 const MobileMenu = () => {
   return (
@@ -33,10 +34,11 @@ const MobileMenu = () => {
       <div className="lg-mn">
         <div className="logo">
           <a href="index-2.html" title="Home">
-            <img src="assets/images/logo3.png" alt="Logo" />
+            {/* <img src="assets/images/logo3.png" alt="IslamBD" /> */}
+            IslamBD
           </a>
         </div>
-        <div className="rspn-cnt">
+        {/* <div className="rspn-cnt">
           <span>
             <i className="thm-clr far fa-envelope"></i>
             <a href="javascript:void(0);" title="">
@@ -46,9 +48,9 @@ const MobileMenu = () => {
           <span>
             <i className="thm-clr fas fa-phone-alt"></i>+96 125 554 24 5
           </span>
-        </div>
+        </div> */}
         <span className="rspn-mnu-btn">
-          <i className="fa fa-list-ul"></i>
+          <FaBars />
         </span>
       </div>
       <div className="rsnp-mnu">

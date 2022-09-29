@@ -25,7 +25,7 @@ export default class HomePage extends Component {
           <Prayer />
           <Listen />
           {/* <Quran /> */}
-          {/* <Counter /> */}
+          <Counter />
           <Pillar />
           <Blog />
           <Footer />
