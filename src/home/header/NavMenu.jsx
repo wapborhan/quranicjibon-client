@@ -60,14 +60,6 @@ const NavMenu = () => {
           </li>
         </ul>
       </div>
-      {/* <div class="header-right">
-            <a class="thm-btn thm-bg" to="donation-detail.html" title="">
-              Make Donation<span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </a>
-          </div> */}
     </nav>
   );
 };

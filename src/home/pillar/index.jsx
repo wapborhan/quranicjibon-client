@@ -2,6 +2,8 @@ import React from "react";
 import SecBG from "../../assets/images/sec-bg2.jpg";
 import QuetSecBG from "../../assets/images/quote-sec-bg.jpg";
 import PattBG from "../../assets/images/pattern-bg.jpg";
+import { FaQuran, FaMosque, FaStarOfDavid, FaKaaba } from "react-icons/fa";
+import { GiPayMoney } from "react-icons/gi";
 
 const index = () => {
   return (
@@ -66,7 +68,7 @@ const index = () => {
                   <li>
                     <div class="pillar-box2 position-relative w-100">
                       <span class="d-inline-block thm-clr">
-                        <i class="flaticon-quran-1"></i>
+                        <FaQuran />
                       </span>
                       <h3 class="mb-0">বিশ্বাস</h3>
                       <i class="d-block thm-clr">Faith</i>
@@ -75,7 +77,7 @@ const index = () => {
                   <li>
                     <div class="pillar-box2 position-relative w-100">
                       <span class="d-inline-block thm-clr">
-                        <i class="flaticon-mosque-1"></i>
+                        <FaMosque />
                       </span>
                       <h3 class="mb-0">সালাত</h3>
                       <i class="d-block thm-clr">Prayer</i>
@@ -84,7 +86,7 @@ const index = () => {
                   <li>
                     <div class="pillar-box2 position-relative w-100">
                       <span class="d-inline-block thm-clr">
-                        <i class="flaticon-star"></i>
+                        <FaStarOfDavid />
                       </span>
                       <h3 class="mb-0">সাওম</h3>
                       <i class="d-block thm-clr">Fasting</i>
@@ -93,7 +95,7 @@ const index = () => {
                   <li>
                     <div class="pillar-box2 position-relative w-100">
                       <span class="d-inline-block thm-clr">
-                        <i class="flaticon-gift-box"></i>
+                        <GiPayMoney />
                       </span>
                       <h3 class="mb-0">যাকাত</h3>
                       <i class="d-block thm-clr">Almsgiving</i>
@@ -102,7 +104,7 @@ const index = () => {
                   <li>
                     <div class="pillar-box2 position-relative w-100">
                       <span class="d-inline-block thm-clr">
-                        <i class="flaticon-kaaba"></i>
+                        <FaKaaba />
                       </span>
                       <h3 class="mb-0">হজ্জ্ব</h3>
                       <i class="d-block thm-clr">Pilgrimage</i>
