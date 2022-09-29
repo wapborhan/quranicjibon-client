@@ -2247,15 +2247,17 @@ body.sticky .sticky-menu {
   width: 100% !important;
 }
 .rsnp-mnu > ul li {
-  font-family: Philosopher;
+  font-family: Philosopher, "SolaimanLipi";
 }
 .rsnp-mnu > ul > li {
   color: #fff;
-  font-size: 1.125rem;
-  font-weight: 600;
-  position: relative;
-  text-transform: uppercase;
-  width: 100%;
+    font-size: 1.7rem;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    border-bottom: 1px solid #888;
+    width: 100%;
+    margin-bottom: 20px;
 }
 .rsnp-mnu > ul > li a {
   color: inherit;
@@ -2551,9 +2553,9 @@ body.sticky .sticky-menu {
   background-position: center;
   border: 1px solid #333;
 }
-.plyr .playlist {
-  /* display: none; */
-}
+/* .plyr .playlist {
+   display: none; 
+} */
 .plyr .player .info {
   order: 1;
   flex: 0 0 100%;

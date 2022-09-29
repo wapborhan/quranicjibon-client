@@ -20,7 +20,7 @@ import { Scrollbars } from "react-custom-scrollbars";
 import moment from "moment";
 // import localization from 'moment/locale/bn';
 
-className NamazTiming extends PureComponent {
+class NamazTiming extends PureComponent {
   scrollbars = React.createRef();
 
   constructor(props) {
