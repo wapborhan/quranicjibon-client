@@ -2275,7 +2275,7 @@ body.sticky .sticky-menu {
 .rsnp-mnu ul li.menu-item-has-children.active > a {
   margin-bottom: 15px;
 }
-.rsnp-mnu > ul li.menu-item-has-children > a::before {
+/* .rsnp-mnu > ul li.menu-item-has-children > a::before {
   content: "\f107";
   font-family: "Font Awesome 5 Free";
   position: absolute;
@@ -2283,7 +2283,7 @@ body.sticky .sticky-menu {
   top: 0;
   color: inherit;
   font-weight: 900;
-}
+} */
 .rsnp-mnu > ul ul > li {
   color: #a4a4a4;
   font-size: 1rem;
