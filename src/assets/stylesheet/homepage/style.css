@@ -3455,15 +3455,15 @@ span.proj-loc i {
 }
 
 /*===== Blog Style 1 =====*/
-.blog-wrap > div.row > div:first-child .post-box,
+/* .blog-wrap > div.row > div:first-child .post-box, */
 .blog-wrap > div.row > div:nth-child(4) .post-box {
   padding-right: 1.25rem;
 }
-.blog-wrap > div.row > div:nth-child(2) .post-box,
+/* .blog-wrap > div.row > div:nth-child(2) .post-box, */
 .blog-wrap > div.row > div:nth-child(5) .post-box {
   padding: 0 10px;
 }
-.blog-wrap > div.row > div:nth-child(3) .post-box,
+/* .blog-wrap > div.row > div:nth-child(3) .post-box, */
 .blog-wrap > div.row > div:nth-child(6) .post-box {
   padding-left: 1.25rem;
 }
