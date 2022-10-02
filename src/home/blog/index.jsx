@@ -57,7 +57,7 @@ export default class index extends Component {
             </div>
             <div className="view-more d-inline-block text-center w-100">
               <a className="thm-btn mini-btn thm-bg" href="blog.html" title="">
-                More News & Updates<span></span>
+                আরও<span></span>
                 <span></span>
                 <span></span>
                 <span></span>
