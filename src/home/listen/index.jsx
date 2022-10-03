@@ -3,31 +3,9 @@ import parallaxBG from "../../assets/images/parallax-bg5.jpg";
 // import AudioCover from "../../assets/images/parallax-bg5.jpg";
 import PattBG from "../../assets/images/pattern-bg.jpg";
 import AudioPlayer from "react-h5-audio-player";
+import { FaKaaba, FaMosque } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import SuraData from "../../assets/data/quran/SuraData";
-
-// const playlist = [
-//   {
-//     name: "枝芽",
-//     src: "https://hanzluo.s3-us-west-1.amazonaws.com/music/zhiya.mp3",
-//   },
-//   {
-//     name: "自由女神",
-//     src: "https://hanzluo.s3-us-west-1.amazonaws.com/music/ziyounvshen.mp3",
-//   },
-//   {
-//     name: "无雨无晴",
-//     src: "https://hanzluo.s3-us-west-1.amazonaws.com/music/wuyuwuqing.mp3",
-//   },
-//   {
-//     name: "碎片",
-//     src: "https://hanzluo.s3-us-west-1.amazonaws.com/music/suipian.mp3",
-//   },
-//   {
-//     name: "永恒的港湾",
-//     src: "https://hanzluo.s3-us-west-1.amazonaws.com/music/yonghengdegangwan.mp3",
-//   },
-// ];
 
 export default class index extends Component {
   state = {
@@ -92,14 +70,31 @@ export default class index extends Component {
                         backgroundImage: `url("${PattBG}")`,
                       }}
                     >
-                      <div className="plyr v3 w-100">
-                        <h3>
-                          সূরা:{" "}
-                          {this.state.playlist[currentMusicIndex].sura_name}
+                      <div className="plyr text-center v3 w-100">
+                        <h1>
+                          {this.state.playlist[currentMusicIndex].type ===
+                          "মাক্কী" ? (
+                            <FaKaaba />
+                          ) : (
+                            <FaMosque />
+                          )}
+                        </h1>
+                        <h3 className="font-ar">
+                          {this.state.playlist[currentMusicIndex].ar_name}
+
+                          <br />
+                          <span>
+                            {this.state.playlist[currentMusicIndex].sura_name}
+                          </span>
+                          <br />
                         </h3>
                         <h4>
                           নম্বর:{" "}
                           {this.state.playlist[currentMusicIndex].sura_no}
+                        </h4>
+                        <h4>
+                          আয়াত:{" "}
+                          {this.state.playlist[currentMusicIndex].total_ayat}
                         </h4>
                         <ul className="playlist mb-0 list-unstyled">
                           <li

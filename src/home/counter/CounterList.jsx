@@ -2,23 +2,23 @@ import React from "react";
 const list = [
   {
     id: 1,
-    tittle: "Inspirational Sermons",
-    count: "100",
+    tittle: "সূরা",
+    count: "১১৪",
   },
   {
     id: 2,
-    tittle: "Inspirational Sermons",
-    count: "200",
+    tittle: "আয়াত",
+    count: "৬২৩৬",
   },
   {
     id: 3,
-    tittle: "Inspirational Sermons",
-    count: "300",
+    tittle: "রুকু ",
+    count: "৫৪০",
   },
   {
     id: 4,
-    tittle: "Inspirational Sermons",
-    count: "400",
+    tittle: "মানজিল",
+    count: "৭",
   },
 ];
 
@@ -35,7 +35,9 @@ const CounterList = () => {
               <div className="fact-inner">
                 <h3 className="mb-0 counter">{item.count}</h3>
 
-                <h5 className="mb-0">{item.tittle}</h5>
+                <h4 className="mb-0">
+                  <span>{item.tittle}</span>
+                </h4>
               </div>
             </div>
           </div>
