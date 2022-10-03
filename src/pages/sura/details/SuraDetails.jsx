@@ -38,25 +38,36 @@ const SuraDetails = (props) => {
           <div className="col-md-7">
             <div className="card">
               <div className="card-body">
-                <div className="d-flex">
-                  <div className="surano w-25"> {makka} </div>
-                  <div className="suraname w-50">
-                    <div className="d-block">
-                      <div className="banglaname">
-                        {sura.sura_no} -
-                        <span className="name-ar font-ar"> {sura.ar_name}</span>
-                      </div>
-                      <div className="banglaname">
-                        {sura.sura_name} - {sura.enbn_name} <br />{" "}
-                        {sura.eng_name} - {sura.bn_name}{" "}
-                      </div>
-                    </div>
+                <div className="row">
+                  <div className="col-sm-12 col-md-3">
+                    <div className="surano text-center h1"> {makka} </div>
                   </div>
-                  <div className="suraname w-25">
-                    <div className="d-block">
-                      <div className="banglaname">আয়াতঃ {sura.total_ayat}</div>
-                      <div className="banglaname">রুকুঃ {sura.ruku}</div>
-                      <div className="banglaname">ধরনঃ {sura.type}</div>
+                  <div className="col-sm-12 col-md-9">
+                    <div className="d-flex">
+                      <div className="suraname left w-75">
+                        <div className="d-block">
+                          <div className="banglaname">
+                            {sura.sura_no} -
+                            <span className="name-ar font-ar">
+                              {" "}
+                              {sura.ar_name}
+                            </span>
+                          </div>
+                          <div className="banglaname">
+                            {sura.sura_name} - {sura.enbn_name} <br />{" "}
+                            {sura.eng_name} - {sura.bn_name}{" "}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="suraname right w-25   ">
+                        <div className="d-block">
+                          <div className="banglaname">
+                            আয়াতঃ {sura.total_ayat}
+                          </div>
+                          <div className="banglaname">রুকুঃ {sura.ruku}</div>
+                          <div className="banglaname">ধরনঃ {sura.type}</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
