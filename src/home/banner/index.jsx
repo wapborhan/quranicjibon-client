@@ -22,7 +22,9 @@ const index = () => {
                     <GiRubElHizb />
                   </i>
                   {/* <h2 className="mb-0">Nothing Is Impossible With Allah</h2> */}
-                  <h2 className="mb-0">আল্লাহর কাছে কোন কিছুই অসম্ভব নয়</h2>
+                  <h2 className="mb-0">
+                    <span>আল্লাহর কাছে কোন কিছুই অসম্ভব নয়</span>
+                  </h2>
                   <p className="mb-0">
                     মুসলিম সম্প্রদায়, পবিত্র কুরআনের উপর ভিত্তি করে একটি ব্যাপক
                     ইসলামী জীবনধারা প্রচার করছে
