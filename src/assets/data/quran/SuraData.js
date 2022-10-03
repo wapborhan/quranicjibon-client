@@ -291,6 +291,7 @@ const SURAH = [
     ar_name: "سورة الأنبياء ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/021.mp3",
   },
   {
     sura: "22",
@@ -304,6 +305,7 @@ const SURAH = [
     ar_name: "سورة الحج ",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/022.mp3",
   },
   {
     sura: "23",

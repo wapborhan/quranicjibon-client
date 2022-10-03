@@ -387,11 +387,9 @@ const AUDIO = [
   },
   {
     sura: "22",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/022.mp3",
   },
   {
     sura: "21",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/021.mp3",
   },
   {
     sura: "20",
