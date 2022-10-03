@@ -2251,13 +2251,13 @@ body.sticky .sticky-menu {
 }
 .rsnp-mnu > ul > li {
   color: #fff;
-    font-size: 1.7rem;
-    font-weight: 600;
-    position: relative;
-    text-transform: uppercase;
-    border-bottom: 1px solid #888;
-    width: 100%;
-    margin-bottom: 20px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  position: relative;
+  text-transform: uppercase;
+  border-bottom: 1px solid #888;
+  width: 100%;
+  margin-bottom: 20px;
 }
 .rsnp-mnu > ul > li a {
   color: inherit;
@@ -4282,6 +4282,10 @@ span.proj-loc i {
 .fact-box {
   margin-bottom: 1.875rem;
 }
+.fact-box span img {
+  width: 50px;
+  height: 50px;
+}
 .fact-box > span {
   position: relative;
   height: 5.625rem;
@@ -4323,8 +4327,9 @@ span.proj-loc i {
 .fact-box:hover > span {
   color: #fff !important;
 }
+
 .fact-box:hover > span:after {
-  background-color: var(--color1) !important;
+  background-color: var(--color14) !important;
 }
 .fact-box > span + .fact-inner {
   padding-left: 1.5625rem;
