@@ -544,6 +544,7 @@ const SURAH = [
     ar_name: "سورة الزمر ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/039.mp3",
   },
   {
     sura: "40",
@@ -557,6 +558,7 @@ const SURAH = [
     ar_name: " سورة غافر",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/040.mp3",
   },
   {
     sura: "41",
@@ -570,6 +572,7 @@ const SURAH = [
     ar_name: "سورة فصلت ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/041.mp3",
   },
   {
     sura: "42",
@@ -583,6 +586,7 @@ const SURAH = [
     ar_name: "سورة الشورى ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/042.mp3",
   },
   {
     sura: "43",
@@ -596,6 +600,7 @@ const SURAH = [
     ar_name: "سورة الزخرف ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/043.mp3",
   },
   {
     sura: "44",
@@ -609,6 +614,7 @@ const SURAH = [
     ar_name: "سورة الدخان ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/044.mp3",
   },
   {
     sura: "45",
@@ -622,6 +628,7 @@ const SURAH = [
     ar_name: "سورة الجاثية ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/045.mp3",
   },
   {
     sura: "46",
@@ -635,6 +642,7 @@ const SURAH = [
     ar_name: " سورة الأحقاف",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/046.mp3",
   },
   {
     sura: "47",
@@ -648,6 +656,7 @@ const SURAH = [
     ar_name: "سورة محمد ",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/047.mp3",
   },
   {
     sura: "48",
@@ -661,6 +670,7 @@ const SURAH = [
     ar_name: " سورة الفتح",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/048.mp3",
   },
   {
     sura: "49",
@@ -674,6 +684,7 @@ const SURAH = [
     ar_name: "سورة الحجرات ",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/049.mp3",
   },
   {
     sura: "50",
@@ -687,6 +698,7 @@ const SURAH = [
     ar_name: "سورة ق ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/050.mp3",
   },
   {
     sura: "51",
@@ -700,6 +712,7 @@ const SURAH = [
     ar_name: "سورة الذاريات ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/051.mp3",
   },
   {
     sura: "52",
@@ -713,6 +726,7 @@ const SURAH = [
     ar_name: "سورة الطور ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/052.mp3",
   },
   {
     sura: "53",
@@ -726,6 +740,7 @@ const SURAH = [
     ar_name: "سورة النجم ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/053.mp3",
   },
   {
     sura: "54",
@@ -739,6 +754,7 @@ const SURAH = [
     ar_name: "سورة القمر ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/054.mp3",
   },
   {
     sura: "55",
@@ -752,6 +768,7 @@ const SURAH = [
     ar_name: "سورة الرحمن ",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/055.mp3",
   },
   {
     sura: "56",
@@ -765,6 +782,7 @@ const SURAH = [
     ar_name: " سورة الواقعة",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/056.mp3",
   },
   {
     sura: "57",
@@ -778,6 +796,7 @@ const SURAH = [
     ar_name: "سورة الحديد ",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/057.mp3",
   },
   {
     sura: "58",
@@ -791,6 +810,7 @@ const SURAH = [
     ar_name: " سورة المجادلة",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/058.mp3",
   },
   {
     sura: "59",
@@ -804,6 +824,7 @@ const SURAH = [
     ar_name: " سورة الحشر",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/059.mp3",
   },
   {
     sura: "60",
@@ -817,6 +838,7 @@ const SURAH = [
     ar_name: "سورة الممتحنة ",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/060.mp3",
   },
   {
     sura: "61",
@@ -830,6 +852,7 @@ const SURAH = [
     ar_name: "سورة الصف ",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/061.mp3",
   },
   {
     sura: "62",
@@ -843,6 +866,7 @@ const SURAH = [
     ar_name: " سورة الجمعة",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/062.mp3",
   },
   {
     sura: "63",
@@ -856,6 +880,7 @@ const SURAH = [
     ar_name: "سورة المنافقون ",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/063.mp3",
   },
   {
     sura: "64",
@@ -869,6 +894,7 @@ const SURAH = [
     ar_name: "سورة التغابن ",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/064.mp3",
   },
   {
     sura: "65",
@@ -882,6 +908,7 @@ const SURAH = [
     ar_name: " سورة الطلاق",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/065.mp3",
   },
   {
     sura: "66",
@@ -895,6 +922,7 @@ const SURAH = [
     ar_name: " سورة التحريم",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/066.mp3",
   },
   {
     sura: "67",
@@ -908,6 +936,7 @@ const SURAH = [
     ar_name: "سورة الملك ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/067.mp3",
   },
   {
     sura: "68",
@@ -921,6 +950,7 @@ const SURAH = [
     ar_name: " سورة القلم",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/068.mp3",
   },
   {
     sura: "69",
@@ -934,6 +964,7 @@ const SURAH = [
     ar_name: " سورة الحاقة",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/069.mp3",
   },
   {
     sura: "70",
@@ -947,6 +978,7 @@ const SURAH = [
     ar_name: " سورة المعارج",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/070.mp3",
   },
   {
     sura: "71",
@@ -960,6 +992,7 @@ const SURAH = [
     ar_name: "سورة نوح ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/071.mp3",
   },
   {
     sura: "72",
@@ -973,6 +1006,7 @@ const SURAH = [
     ar_name: " سورة الجن",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/072.mp3",
   },
   {
     sura: "73",
@@ -986,6 +1020,7 @@ const SURAH = [
     ar_name: "سورة المزمل ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/073.mp3",
   },
   {
     sura: "74",
@@ -999,6 +1034,7 @@ const SURAH = [
     ar_name: "سورة المدثر ",
     type: "মাক্কী",
     ruku: "২",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/074.mp3",
   },
   {
     sura: "75",
@@ -1012,6 +1048,7 @@ const SURAH = [
     ar_name: "سورة القيامة ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/075.mp3",
   },
   {
     sura: "76",
@@ -1025,6 +1062,7 @@ const SURAH = [
     ar_name: "سورة الانسان ",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/076.mp3",
   },
   {
     sura: "77",
@@ -1038,6 +1076,7 @@ const SURAH = [
     ar_name: " سورة المرسلات",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/077.mp3",
   },
   {
     sura: "78",
@@ -1051,6 +1090,7 @@ const SURAH = [
     ar_name: "سورة النبإ ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/078.mp3",
   },
   {
     sura: "79",
@@ -1064,6 +1104,7 @@ const SURAH = [
     ar_name: "سورة النازعات ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/079.mp3",
   },
   {
     sura: "80",
@@ -1077,6 +1118,7 @@ const SURAH = [
     ar_name: " سورة عبس",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/080.mp3",
   },
   {
     sura: "81",
@@ -1090,6 +1132,7 @@ const SURAH = [
     ar_name: "سورة التكوير ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/081.mp3",
   },
   {
     sura: "82",
@@ -1103,6 +1146,7 @@ const SURAH = [
     ar_name: " سورة الإنفطار",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/082.mp3",
   },
   {
     sura: "83",
@@ -1116,6 +1160,7 @@ const SURAH = [
     ar_name: " سورة المطففين",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/083.mp3",
   },
   {
     sura: "84",
@@ -1129,6 +1174,7 @@ const SURAH = [
     ar_name: " سورة الإنشقاق",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/084.mp3",
   },
   {
     sura: "85",
@@ -1142,6 +1188,7 @@ const SURAH = [
     ar_name: " سورة البروج",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/085.mp3",
   },
   {
     sura: "86",
@@ -1155,6 +1202,7 @@ const SURAH = [
     ar_name: "سورة الطارق ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/086.mp3",
   },
   {
     sura: "87",
@@ -1168,6 +1216,7 @@ const SURAH = [
     ar_name: "سورة الأعلى ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/087.mp3",
   },
   {
     sura: "88",
@@ -1181,6 +1230,7 @@ const SURAH = [
     ar_name: "سورة الغاشية ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/088.mp3",
   },
   {
     sura: "89",
@@ -1194,6 +1244,7 @@ const SURAH = [
     ar_name: "سورة الفجر ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/089.mp3",
   },
   {
     sura: "90",
@@ -1207,6 +1258,7 @@ const SURAH = [
     ar_name: "سورة البلد ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/090.mp3",
   },
   {
     sura: "91",
@@ -1220,6 +1272,7 @@ const SURAH = [
     ar_name: " سورة الشمس",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/091.mp3",
   },
   {
     sura: "92",
@@ -1233,6 +1286,7 @@ const SURAH = [
     ar_name: " سورة الليل",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/092.mp3",
   },
   {
     sura: "93",
@@ -1246,6 +1300,7 @@ const SURAH = [
     ar_name: "سورة الضحى ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/0093.mp3",
   },
   {
     sura: "94",
@@ -1259,6 +1314,7 @@ const SURAH = [
     ar_name: "سورة الشرح ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/094.mp3",
   },
   {
     sura: "95",
@@ -1272,6 +1328,7 @@ const SURAH = [
     ar_name: "سورة التين ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/095.mp3",
   },
   {
     sura: "96",
@@ -1285,6 +1342,7 @@ const SURAH = [
     ar_name: "سورة العلق ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/096.mp3",
   },
   {
     sura: "97",
@@ -1298,6 +1356,7 @@ const SURAH = [
     ar_name: " سورة القدر",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/097.mp3",
   },
   {
     sura: "98",
@@ -1311,6 +1370,7 @@ const SURAH = [
     ar_name: "سورة البينة ",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/098.mp3",
   },
   {
     sura: "99",
@@ -1324,6 +1384,7 @@ const SURAH = [
     ar_name: " سورة الزلزلة",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/099mp3",
   },
   {
     sura: "100",
@@ -1337,6 +1398,7 @@ const SURAH = [
     ar_name: " سورة العاديات",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/100.mp3",
   },
   {
     sura: "101",
@@ -1350,6 +1412,7 @@ const SURAH = [
     ar_name: "سورة القارعة ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/101.mp3",
   },
   {
     sura: "102",
@@ -1363,6 +1426,7 @@ const SURAH = [
     ar_name: " سورة التكاثر",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/103.mp3",
   },
   {
     sura: "103",
@@ -1376,6 +1440,7 @@ const SURAH = [
     ar_name: " سورة العصر",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/103.mp3",
   },
   {
     sura: "104",
@@ -1389,6 +1454,7 @@ const SURAH = [
     ar_name: "سورة الهمزة ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/104.mp3",
   },
   {
     sura: "105",
@@ -1402,6 +1468,7 @@ const SURAH = [
     ar_name: "سورة الفيل ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/105.mp3",
   },
   {
     sura: "106",
@@ -1415,6 +1482,7 @@ const SURAH = [
     ar_name: "سورة قريش ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/106.mp3",
   },
   {
     sura: "107",
@@ -1428,6 +1496,7 @@ const SURAH = [
     ar_name: " سورة الماعون",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/107.mp3",
   },
   {
     sura: "108",
@@ -1441,6 +1510,7 @@ const SURAH = [
     ar_name: "سورة الكوثر ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/108.mp3",
   },
   {
     sura: "109",
@@ -1454,6 +1524,7 @@ const SURAH = [
     ar_name: "سورة الكافرون ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/109.mp3",
   },
   {
     sura: "110",
@@ -1467,6 +1538,7 @@ const SURAH = [
     ar_name: "سورة النصر ",
     type: "মাদানী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/110.mp3",
   },
   {
     sura: "111",
@@ -1480,6 +1552,7 @@ const SURAH = [
     ar_name: " سورة المسد",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/111.mp3",
   },
   {
     sura: "112",
@@ -1493,6 +1566,7 @@ const SURAH = [
     ar_name: "سورة الإخلاص ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/112.mp3",
   },
   {
     sura: "113",
@@ -1506,6 +1580,7 @@ const SURAH = [
     ar_name: " سورة الفلق",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/113.mp3",
   },
   {
     sura: "114",
@@ -1519,6 +1594,7 @@ const SURAH = [
     ar_name: "سورة الناس ",
     type: "মাক্কী",
     ruku: "",
+    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/114.mp3",
   },
 ];
 

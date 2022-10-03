@@ -93,7 +93,7 @@ const index = () => {
                         <FaStarOfDavid />
                       </span>
                       <h3 className="mb-0">সাওম</h3>
-                      <i className="d-block thm-clr">Fasting</i>
+                      <i className="d-block thm-clr">Restrained</i>
                     </div>
                   </li>
                   <li>
