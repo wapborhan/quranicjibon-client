@@ -2,6 +2,7 @@ import React from "react";
 import PatterBG from "../../assets/images/pattern-bg.jpg";
 
 const index = () => {
+  const d = new Date();
   return (
     <footer>
       <div className="w-100 pt-50 thm-layer pb-30 opc8 position-relative">
@@ -18,7 +19,7 @@ const index = () => {
                 <div className="widget text-center w-100">
                   <div className="widget-inner d-inline-block">
                     <div className="logo text-center">
-                      <h1 className="mb-0">
+                      <h1 className="mb-4">
                         <a href="#" title="Home">
                           {/* <img
                             className="img-fluid"
@@ -26,7 +27,7 @@ const index = () => {
                             alt="IslamBD"
                             srcset="assets/images/retina-logo.png"
                           /> */}
-                          IslamBD
+                          <span>কুরআনিক জীবন</span>
                         </a>
                       </h1>
                     </div>
@@ -40,8 +41,8 @@ const index = () => {
             </div>
           </div>
           <div className="bottom-bar2 text-center w-100">
-            <p className="mb-0 text-center">
-              IslamBD - Copyright 2022. Design by{" "}
+            <p className="mb-0 text-center font-ar">
+              Quranic Jibon - Copyright {d.getFullYear()}. Developed by{" "}
               <a
                 className="text-light"
                 href="https://srdreamlab.com"

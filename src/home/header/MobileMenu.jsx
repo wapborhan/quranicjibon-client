@@ -49,7 +49,7 @@ export default class MobileMenu extends Component {
           <div className="logo">
             <a href="index-2.html" title="Home">
               {/* <img src="assets/images/logo3.png" alt="IslamBD" /> */}
-              IslamBD
+              <span> কুরআনিক জীবন</span>
             </a>
           </div>
           {/* <div className="rspn-cnt">

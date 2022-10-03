@@ -24,10 +24,10 @@ export default class HomePage extends Component {
           <Banner />
           <Prayer />
           <Listen />
-          {/* <Quran /> */}
+          <Quran />
           <Counter />
           <Pillar />
-          <Blog />
+          {/* <Blog /> */}
           <Footer />
         </main>
       </Fragment>

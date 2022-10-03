@@ -3814,13 +3814,12 @@ span.proj-loc i {
 .quote-box::after {
   content: "❝";
   color: #fff;
-  font-size: 3.75rem;
+  font-size: 8rem;
   position: absolute;
   line-height: 28px;
-  top: -1.125rem;
+  top: -0.8rem;
   padding: 16px 12px;
-  left: 3.125rem;
-  border: 1px solid #fff;
+  left: 1.125rem;
 }
 .quote-box > p {
   font-size: 1.125rem;
@@ -4815,6 +4814,9 @@ span.proj-loc i {
 .learn-post-info > a i {
   margin-left: 10px;
 }
+.learn-post-info h4 a {
+  color: var(--color14);
+}
 .learn-top-inner > a:hover,
 .learn-top-inner > a:focus,
 .learn-post-info > a:hover,
@@ -4830,6 +4832,10 @@ span.proj-loc i {
 .learn-post-img {
   flex: 0 0 5.125rem;
   max-width: 5.125rem;
+}
+.learn-post-img i svg {
+  font-size: 50px;
+  color: var(--theme-color);
 }
 .learn-post-img + .learn-post-info {
   flex: 0 0 calc(100% - 5.125rem);

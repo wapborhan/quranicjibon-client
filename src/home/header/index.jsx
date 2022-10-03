@@ -63,7 +63,7 @@ const index = () => {
                 alt="Logo"
                 srcset={RetinaLogo}
               /> */}{" "}
-                IslamBD
+                <span> কুরআনিক জীবন</span>
               </NavLink>
             </h1>
           </div>
