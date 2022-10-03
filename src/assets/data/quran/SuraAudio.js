@@ -323,67 +323,51 @@ const AUDIO = [
   },
   {
     sura: "38",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/038.mp3",
   },
   {
     sura: "37",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/037.mp3",
   },
   {
     sura: "36",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/036.mp3",
   },
   {
     sura: "35",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/035.mp3",
   },
   {
     sura: "34",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/034.mp3",
   },
   {
     sura: "33",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/033.mp3",
   },
   {
     sura: "32",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/032.mp3",
   },
   {
     sura: "31",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/031.mp3",
   },
   {
     sura: "30",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/030.mp3",
   },
   {
     sura: "29",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/029.mp3",
   },
   {
     sura: "28",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/028.mp3",
   },
   {
     sura: "27",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/027.mp3",
   },
   {
     sura: "26",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/026.mp3",
   },
   {
     sura: "25",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/025.mp3",
   },
   {
     sura: "24",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/024.mp3",
   },
   {
     sura: "23",
-    audio: "http://download.quranicaudio.com/quran/abdullaah_basfar/023.mp3",
   },
   {
     sura: "22",
