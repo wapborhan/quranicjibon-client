@@ -1983,8 +1983,10 @@ header.style1 .topbars ul + .social-links {
   padding-right: 2.375rem;
 }
 header.style1 .logo a {
-  padding: 1.5625rem 1.875rem;
+  padding: 0 1.875rem;
 }
+header.style1 .logo img{
+height: 100px;}
 header.style1 .logo {
   flex: 0 0 21.5625rem;
   max-width: 21.5625rem;
@@ -4570,6 +4572,8 @@ span.proj-loc i {
   content: "\f054";
   color: inherit;
 }
+a.footlogo img{
+height: 100px !important}
 .thm-layer .widget ul li,
 .thm-bg .widget ul li {
   color: #fff;

@@ -1,4 +1,5 @@
 import React from "react";
+import FootLogo from "../../assets/images/logo.png";
 import PatterBG from "../../assets/images/pattern-bg.jpg";
 
 const index = () => {
@@ -20,14 +21,13 @@ const index = () => {
                   <div className="widget-inner d-inline-block">
                     <div className="logo text-center">
                       <h1 className="mb-4">
-                        <a href="#" title="Home">
-                          {/* <img
+                        <a href="#" className="footlogo" title="Home">
+                          <img
                             className="img-fluid"
-                            src="assets/images/logo.png"
+                            src={FootLogo}
                             alt="IslamBD"
-                            srcset="assets/images/retina-logo.png"
-                          /> */}
-                          <span>কুরআনিক জীবন</span>
+                            srcset={FootLogo}
+                          />
                         </a>
                       </h1>
                     </div>

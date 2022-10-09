@@ -61,7 +61,7 @@ const index = () => {
                   className="img-fluid"
                   src={Logo}
                   alt="Logo"
-                  srcset={RetinaLogo}
+                  // srcset={RetinaLogo}
                 />
                 {/* <span> কুরআনিক জীবন</span> */}
               </NavLink>
