@@ -57,13 +57,13 @@ const index = () => {
           >
             <h1 className="mb-0">
               <NavLink to="/" title="Home">
-                {/* <img
-                className="img-fluid"
-                src={Logo}
-                alt="Logo"
-                srcset={RetinaLogo}
-              /> */}{" "}
-                <span> কুরআনিক জীবন</span>
+                <img
+                  className="img-fluid"
+                  src={Logo}
+                  alt="Logo"
+                  srcset={RetinaLogo}
+                />
+                {/* <span> কুরআনিক জীবন</span> */}
               </NavLink>
             </h1>
           </div>
