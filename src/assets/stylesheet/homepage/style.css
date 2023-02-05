@@ -1125,7 +1125,9 @@ button i {
   border-radius: 0.1875rem;
 }
 
-.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(
+    .input-group-btn
+  ) {
   width: 100%;
 }
 .dropdown-menu {
@@ -1985,8 +1987,9 @@ header.style1 .topbars ul + .social-links {
 header.style1 .logo a {
   padding: 0 1.875rem;
 }
-header.style1 .logo img{
-height: 100px;}
+header.style1 .logo img {
+  height: 100px;
+}
 header.style1 .logo {
   flex: 0 0 21.5625rem;
   max-width: 21.5625rem;
@@ -4572,8 +4575,9 @@ span.proj-loc i {
   content: "\f054";
   color: inherit;
 }
-a.footlogo img{
-height: 100px !important}
+a.footlogo img {
+  height: 100px !important;
+}
 .thm-layer .widget ul li,
 .thm-bg .widget ul li {
   color: #fff;
@@ -4669,6 +4673,7 @@ height: 100px !important}
   font-weight: 700;
   line-height: 1.2;
   padding: 2.8125rem 2.1875rem;
+  text-align: center;
 }
 .time-list3 > li span {
   font-size: 1rem;
