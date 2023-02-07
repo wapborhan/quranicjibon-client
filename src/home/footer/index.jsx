@@ -26,7 +26,7 @@ const index = () => {
                             className="img-fluid"
                             src={FootLogo}
                             alt="IslamBD"
-                            srcset={FootLogo}
+                            srcSet={FootLogo}
                           />
                         </a>
                       </h1>
