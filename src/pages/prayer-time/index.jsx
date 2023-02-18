@@ -2,10 +2,10 @@ import axios from "axios";
 import React from "react";
 
 const d = new Date();
-const month = d.getMonth();
-console.log(month);
+const month = d.getMonth() + 1;
 const year = d.getFullYear();
-const baseURL = `https://api.aladhan.com/v1/calendar?latitude=23.890699&longitude=89.109940&method=1&month=2&year=${year}`;
+
+const baseURL = `https://api.aladhan.com/v1/calendar?latitude=23.890699&longitude=89.109940&method=2&month=${month}&year=${year}`;
 
 export default function App() {
   const [post, setPost] = React.useState(null);
@@ -18,7 +18,7 @@ export default function App() {
 
   if (!post) return null;
 
-  console.log(post);
+  // console.log(post);
 
   return (
     <div className="container">
@@ -35,9 +35,9 @@ export default function App() {
             </tr>
           </thead>
           <tbody className="border">
-            {post.map((item) => {
+            {post.map((item, idx) => {
               return (
-                <tr>
+                <tr key={idx}>
                   <td scope="row">{item.date.gregorian.date}</td>
                   <td>{item.timings.Fajr}</td>
                   <td>{item.timings.Dhuhr}</td>

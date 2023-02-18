@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import parallaxBG from "../../assets/images/parallax-bg5.jpg";
 // import AudioCover from "../../assets/images/parallax-bg5.jpg";
 import PattBG from "../../assets/images/pattern-bg.jpg";
+import MockUp from "../../assets/images/sec-top-mckp5.png";
 import AudioPlayer from "react-h5-audio-player";
 import { FaKaaba, FaMosque } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -46,7 +47,7 @@ export default class index extends Component {
           ></div>
           <img
             className="img-fluid sec-top-mckp position-absolute"
-            src="assets/images/sec-top-mckp5.png"
+            src={MockUp}
             alt="Sec Top Mockup 5"
           />
           <div className="container">
@@ -56,7 +57,6 @@ export default class index extends Component {
                   <div className="plyr-wrp v3 w-100">
                     <h3
                       className="mb-0 text-center pat-bg dark-layer2 opc5 back-blend-multiply bg-color1"
-                      // style="background-image: url(assets/images/pattern-bg.jpg);"
                       style={{
                         backgroundImage: `url("${PattBG}")`,
                       }}
@@ -65,7 +65,6 @@ export default class index extends Component {
                     </h3>
                     <div
                       className="plyr-inner w-100 pat-bg thm-layer opc65 back-blend-multiply thm-bg"
-                      // style="background-image: url(assets/images/pattern-bg.jpg);"
                       style={{
                         backgroundImage: `url("${PattBG}")`,
                       }}
@@ -119,7 +118,7 @@ export default class index extends Component {
                 <div className="col-md-12 col-sm-12 col-lg-7">
                   <div className="about-inner3 w-100">
                     <div className="d-block thm-clr h2">
-                      <span>স্বাগতম IslamBD তে</span>
+                      <span>স্বাগতম Quranic Jibon এ</span>
                     </div>
                     {/* <h2 className="mb-0">
                     <span>স্বাগতম IslamBD তে </span>
