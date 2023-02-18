@@ -3,6 +3,7 @@ const ayatEnBn = [
     id: "1",
     sura: "1",
     VerseIDAr: "1",
+ayatEN: "In the name of Allah, Most Gracious, Most Merciful.",
   },
   {
     id: "2",

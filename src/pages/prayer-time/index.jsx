@@ -1,8 +1,11 @@
 import axios from "axios";
 import React from "react";
 
-const baseURL =
-  "https://api.aladhan.com/v1/calendar?latitude=23.890699&longitude=89.109940&method=1&month=9&year=2022";
+const d = new Date();
+const month = d.getMonth();
+console.log(month);
+const year = d.getFullYear();
+const baseURL = `https://api.aladhan.com/v1/calendar?latitude=23.890699&longitude=89.109940&method=1&month=2&year=${year}`;
 
 export default function App() {
   const [post, setPost] = React.useState(null);
