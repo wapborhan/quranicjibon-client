@@ -98,7 +98,7 @@ class App extends Component {
                 path="sura/:sura"
                 element={
                   <SuraDetails
-                    sura={this.state.selectedSura}
+                    sura={this.state?.selectedSura}
                     ayatar={ayatArdetails}
                     // ayatbn={ayatBndetails}
                   />

@@ -1,9 +1,9 @@
 import React from "react";
 import PatternBG from "../../assets/images/pattern-bg.jpg";
-import moment from "moment";
+// import moment from "moment";
 
-import "moment/min/locales.min";
-moment.locale("bn");
+// import "moment/min/locales.min";
+// moment.locale("bn");
 
 const Contents = (props) => {
   console.log(props.prayertime);

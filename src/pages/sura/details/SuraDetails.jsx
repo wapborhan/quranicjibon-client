@@ -7,9 +7,7 @@ import { FaKaaba, FaMosque } from "react-icons/fa";
 import AyatDetails from "./AyatDetails";
 
 const SuraDetails = (props) => {
-  console.log(props.ayatar);
-
-  const sura = props.sura;
+  const sura = props?.sura;
   if (sura == null) {
     return (
       <div className="topbarpt d-flex justify-content-center mt-5 mb-5">
@@ -19,8 +17,8 @@ const SuraDetails = (props) => {
       </div>
     );
   }
-  const src = sura.audio;
-  const types = sura.type;
+  const src = sura?.audio;
+  const types = sura?.type;
 
   const makka = types === "মাক্কী" ? <FaKaaba /> : <FaMosque />;
   return (
@@ -47,25 +45,25 @@ const SuraDetails = (props) => {
                       <div className="suraname left w-75">
                         <div className="d-block">
                           <div className="banglaname">
-                            {sura.sura_no} -
+                            {sura?.sura_no} -
                             <span className="name-ar font-ar">
                               {" "}
-                              {sura.ar_name}
+                              {sura?.ar_name}
                             </span>
                           </div>
                           <div className="banglaname">
-                            {sura.sura_name} - {sura.enbn_name} <br />{" "}
-                            {sura.eng_name} - {sura.bn_name}{" "}
+                            {sura?.sura_name} - {sura?.enbn_name} <br />{" "}
+                            {sura?.eng_name} - {sura?.bn_name}{" "}
                           </div>
                         </div>
                       </div>
                       <div className="suraname right w-25   ">
                         <div className="d-block">
                           <div className="banglaname">
-                            আয়াতঃ {sura.total_ayat}
+                            আয়াতঃ {sura?.total_ayat}
                           </div>
-                          <div className="banglaname">রুকুঃ {sura.ruku}</div>
-                          <div className="banglaname">ধরনঃ {sura.type}</div>
+                          <div className="banglaname">রুকুঃ {sura?.ruku}</div>
+                          <div className="banglaname">ধরনঃ {sura?.type}</div>
                         </div>
                       </div>
                     </div>
@@ -96,7 +94,7 @@ const SuraDetails = (props) => {
           </div>
         </div>
 
-        <AyatDetails ayatar={props.ayatar} />
+        <AyatDetails ayatar={props?.ayatar} />
       </div>
     </div>
   );
