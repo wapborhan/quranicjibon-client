@@ -1,3 +1,8 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap);
+@import "https://fonts.maateen.me/solaiman-lipi/font.css";
+
+
 /*** ======= // TABLE OF CONTENT // ============================
 01- Google Fonts
 02- General Variables
@@ -34,9 +39,6 @@
 ===================================================== ***/
 
 /*=== Google Fonts ===*/
-@import url(https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap);
-@import "https://fonts.maateen.me/solaiman-lipi/font.css";
 
 body {
   margin: 0;
@@ -2388,6 +2390,7 @@ header.style1 .logo img {
 }
 
 header.style1 .logo {
+  background-image: url(/assets/images/pattern-bg.jpg);
   flex: 0 0 21.5625rem;
   max-width: 21.5625rem;
   text-align: center;
@@ -2849,7 +2852,7 @@ body.sticky .sticky-menu {
 
 /*===== Featured Area Style 1 =====*/
 .feat-caro {
-  max-height: 35rem;
+  max-height: 90vh;
   position: relative;
   overflow: hidden;
 }
@@ -2860,6 +2863,7 @@ body.sticky .sticky-menu {
 }
 
 .feat-img {
+  background-image: url(/assets/images/resources/slide1.jpg);
   top: 0;
   background-size: cover;
   background-position: center;
@@ -3657,7 +3661,7 @@ ul.time-list>li {
 }
 
 ul.time-list>li:nth-child(2n + 1) {
-  /* background-image: url(../images/pattern-bg.jpg); */
+  background-image: url(/assets/images/pattern-bg.jpg);
   background-position: center;
   background-color: #048b33;
   background-blend-mode: multiply;

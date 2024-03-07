@@ -8,10 +8,7 @@ const Banner = () => {
         <div className="feat-wrap v1 text-center relative w-full">
           <div className="feat-caro">
             <div className="feat-item">
-              <div
-                className="feat-img absolute"
-                // style="background-image: url('${Slide1}')"
-              ></div>
+              <div className="feat-img absolute"></div>
               <div className="feat-cap-wrap absolute inline-block">
                 <div className="feat-cap inline-block">
                   <i className="inline-block flaticon-rub-el-hizb thm-clr">

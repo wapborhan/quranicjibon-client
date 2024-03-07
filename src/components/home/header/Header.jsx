@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import NavMenu from "./NavMenu";
 
 export const Header = () => {
@@ -18,7 +17,7 @@ export const Header = () => {
               সূর্যাস্ত: <span className="thm-clr">০০:০০</span>
             </li>
           </ul>
-          <div className="social-links inline-flex text-light">
+          <div className="social-links inline-flex text-white">
             <div className="dateshow">
               {new Intl.DateTimeFormat("bn-BD-u-ca-islamic", {
                 day: "numeric",
@@ -37,10 +36,19 @@ export const Header = () => {
           </div>
         </div>
         <div className="logo-menu-wrap flex flex-wrap justify-between w-full">
-          <div className="logo position-relative thm-layer opc0 back-blend-multiply thm-bg">
-            <h1 className="mb-0">
-              <Link href="/" title="Home">
-                <span className="cursor-pointer"> কুরআনিক জীবন</span>
+          <div className="logo relative thm-layer opc7 back-blend-multiply thm-bg">
+            <h1 className="mb-0 h-full">
+              <Link
+                href="/"
+                title="Home"
+                className="cursor-pointer !flex justify-center items-center text-4xl h-full"
+              >
+                <Image
+                  src="/assets/images/logo.png"
+                  alt="logo"
+                  width={230}
+                  height={100}
+                />
               </Link>
             </h1>
           </div>

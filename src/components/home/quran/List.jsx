@@ -12,8 +12,8 @@ const List = () => {
   return (
     <div className="learn-post-wrap w-full">
       <div className="flex flex-wrap">
-        {suras.map((item) => (
-          <div className="col-md-6 col-sm-6 lg:col-span-6" key={item.sura}>
+        {suras.map((item, idx) => (
+          <div className="col-md-6 col-sm-6 lg:col-span-6" key={idx}>
             <div className="learn-post mb-5 flex flex-wrap items-center">
               <div className="learn-post-img">
                 <i>
