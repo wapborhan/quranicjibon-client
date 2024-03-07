@@ -9,6 +9,7 @@ import "../assets/stylesheet/homepage/color.css";
 import "../assets/stylesheet/homepage/responsive.css";
 import "../assets/stylesheet/homepage/slick.css";
 import "../assets/stylesheet/custom.css";
+import Counter from "./home/counter/Counter";
 
 const Homepage = () => {
   return (
@@ -17,6 +18,7 @@ const Homepage = () => {
       <Banner />
       <Listen />
       <Quran />
+      <Counter />
     </div>
   );
 };

@@ -1,7 +1,8 @@
+import Image from "next/image";
 import React, { useState } from "react";
-// import parallaxBG from "../../assets/images/parallax-bg5.jpg";
-// import PattBG from "../../assets/images/pattern-bg.jpg";
-// import MockUp from "../../assets/images/sec-top-mckp5.png";
+
+// import PattBG from "../..;
+// import MockUp from "../..";
 // import AudioPlayer from "react-h5-audio-player";
 // import { FaKaaba, FaMosque } from "react-icons/fa";
 // import SuraData from "../../assets/data/quran/SuraData";
@@ -40,15 +41,17 @@ const Listen = () => {
       <div className="w-full pt-170 pb-120 relative">
         <div
           className="fixed-bg"
-          // style={{
-          //   backgroundImage: `url("${parallaxBG}")`,
-          // }}
+          style={{
+            backgroundImage: `url("/assets/images/parallax-bg5.jpg")`,
+          }}
         ></div>
-        {/* <img
+        <Image
+          height={3000}
+          width={1200}
           className="img-fluid sec-top-mckp absolute"
-          src={MockUp}
+          src="/assets/images/sec-top-mckp5.png"
           alt="Sec Top Mockup 5"
-        /> */}
+        />
         <div className="container mx-auto">
           <div className="about-wrap3 w-full">
             <div className="flex flex-wrap items-center">
@@ -56,17 +59,17 @@ const Listen = () => {
                 <div className="plyr-wrp v3 w-full">
                   <h3
                     className="mb-0 text-center pat-bg dark-layer2 opc5 back-blend-multiply bg-color1"
-                    // style={{
-                    //   backgroundImage: `url("${PattBG}")`,
-                    // }}
+                    style={{
+                      backgroundImage: `url("/assets/images/pattern-bg.jpg")`,
+                    }}
                   >
                     <span>কুরআন অডিও শুনুন</span>
                   </h3>
                   <div
                     className="plyr-inner w-full pat-bg thm-layer opc65 back-blend-multiply thm-bg"
-                    // style={{
-                    //   backgroundImage: `url("${PattBG}")`,
-                    // }}
+                    style={{
+                      backgroundImage: `url("/assets/images/pattern-bg.jpg")`,
+                    }}
                   >
                     <div className="plyr text-center v3 w-full">
                       <h1>
