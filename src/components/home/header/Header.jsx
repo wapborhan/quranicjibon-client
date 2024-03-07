@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import NavMenu from "./NavMenu";
 
-export const Header = () => {
+const Header = () => {
   return (
     <>
       <header className="stick style1 w-full">
@@ -58,3 +58,4 @@ export const Header = () => {
     </>
   );
 };
+export default Header;
