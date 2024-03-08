@@ -12,12 +12,14 @@ import Quran from "./home/quran/Quran";
 import Counter from "./home/counter/Counter";
 import Pillar from "./home/pillar/Pillar";
 import Footer from "./home/footer/Footer";
+import Prayer from "./home/prayer/Prayer";
 
 const Homepage = () => {
   return (
     <div>
       <Header />
       <Banner />
+      <Prayer />
       <Listen />
       <Quran />
       <Counter />
