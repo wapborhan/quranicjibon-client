@@ -1,8 +1,29 @@
 import Image from "next/image";
 import Link from "next/link";
 import NavMenu from "./NavMenu";
+import useTodayPrayerTime from "@/hooks/useTodayPrayerTime";
+import { useEffect, useState } from "react";
+import { timingFormatter } from "@/components/shared/timingFormatter";
 
 const Header = () => {
+  const [prayerTime, setPrayerTime] = useState();
+  const [today, setToday] = useState();
+  const latitude = "23.908775911770977";
+  const longitude = "89.12264749493718";
+  const { getTodayTimings } = useTodayPrayerTime();
+
+  useEffect(() => {
+    getTodayTimings(latitude, longitude).then((res) => {
+      setPrayerTime(res.timings);
+      setToday(res?.date?.hijri);
+    });
+  }, [latitude, longitude]);
+
+  // const hijriDay = today?.day + today?.month.en;
+
+  // console.log(today);
+  // console.log("date", hijriDay);
+
   return (
     <>
       <header className="stick style1 w-full">
@@ -10,11 +31,18 @@ const Header = () => {
           <ul className="topbars-info-list mb-0 list-unstyled inline-flex">
             <li>
               <i className="thm-clr flaticon-sun"></i>
-              সূর্যোদয়: <span className="thm-clr">০০:০০</span>
+              সূর্যোদয়:
+              <span className="thm-clr">
+                {prayerTime && timingFormatter(prayerTime?.Sunrise)}
+              </span>
             </li>
             <li>
               <i className="thm-clr flaticon-moon"></i>
-              সূর্যাস্ত: <span className="thm-clr">০০:০০</span>
+              সূর্যাস্ত:{" "}
+              <span className="thm-clr">
+                {" "}
+                {prayerTime && timingFormatter(prayerTime?.Sunset)}
+              </span>
             </li>
           </ul>
           <div className="social-links inline-flex text-white">
@@ -24,6 +52,8 @@ const Header = () => {
                 month: "long",
                 weekday: "long",
                 year: "numeric",
+                timeZone: "Asia/Dhaka",
+                // calendar: "islamic-bangla",
               }).format(Date.now())}
             </div>
             <div className="datehide">
@@ -31,6 +61,8 @@ const Header = () => {
                 day: "numeric",
                 month: "long",
                 weekday: "long",
+                timeZone: "Asia/Dhaka",
+                // calendar: "islamic-bangla",
               }).format(Date.now())}
             </div>
           </div>
