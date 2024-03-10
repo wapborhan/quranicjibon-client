@@ -12,7 +12,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-      // className={inter.className}
+        // className={inter.className}
+        className="bg-[#ebeef2] dark:bg-hadith-dark-card relative"
       >
         {children}
       </body>

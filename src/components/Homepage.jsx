@@ -16,7 +16,7 @@ import Prayer from "./home/prayer/Prayer";
 
 const Homepage = () => {
   return (
-    <div>
+    <>
       <Header />
       <Banner />
       <Prayer />
@@ -25,7 +25,7 @@ const Homepage = () => {
       <Counter />
       <Pillar />
       <Footer />
-    </div>
+    </>
   );
 };
 

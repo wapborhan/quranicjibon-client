@@ -1,45 +1,58 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+
+const headLink = [
+  {
+    id: 0,
+    title: "আল কুরআন",
+    path: "/pages/quran",
+  },
+  {
+    id: 1,
+    title: "আল্লাহর নাম",
+    path: "/pages/allah-names",
+  },
+  {
+    id: 2,
+    title: "কালেমা",
+    path: "/pages/kalema",
+  },
+  {
+    id: 3,
+    title: "কুরবানি",
+    path: "/pages/qurbani",
+  },
+];
 
 const NavMenu = () => {
   return (
     <nav className="flex flex-wrap items-center justify-center">
       <div className="header-left">
-        <ul className="mb-0 list-none inline-flex">
+        <ul className="mb-0 list-none inline-flex gap-5">
+          {headLink.map((link) => {
+            return (
+              <li className="relative group" key={link.id}>
+                <Link
+                  href="/"
+                  className="text-black relative hover:text-gray-500"
+                >
+                  {link?.title}
+                </Link>
+                <Image
+                  src="https://freepngimg.com/save/11416-coming-soon-transparent/291x294"
+                  height={20}
+                  width={50}
+                  alt="pic"
+                  className="absolute -top-1 -right-5"
+                ></Image>
+              </li>
+            );
+          })}
           <li className="relative group">
-            <a href="/pages/sura" className="text-black hover:text-gray-500">
-              আল কুরআন
-            </a>
-          </li>
-          <li className="relative group">
-            <a
-              href="/pages/allah-names"
-              className="text-black hover:text-gray-500"
-            >
-              আল্লাহর নাম
-            </a>
-          </li>
-          <li className="relative group">
-            <a href="/pages/kalema" className="text-black hover:text-gray-500">
-              কালেমা
-            </a>
-          </li>
-          <li className="relative group">
-            <a href="/pages/qurbani" className="text-black hover:text-gray-500">
-              কুরবানি
-            </a>
-          </li>
-          <li className="relative group">
-            <a href="/pages/tasbih" className="text-black hover:text-gray-500">
-              তাসবিহ
-            </a>
-          </li>
-          <li className="relative group">
-            <a
-              href="/pages/prayer-time"
-              className="text-black hover:text-gray-500"
-            >
-              নামাজের সময়
-            </a>
+            <Link href="/pages/siam" className="text-black hover:text-gray-500">
+              রোযা
+            </Link>
           </li>
         </ul>
       </div>
