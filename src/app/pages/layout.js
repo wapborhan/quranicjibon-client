@@ -1,24 +1,21 @@
 import Header from "@/components/pages/Header";
+import MobileMenu from "@/components/pages/MobileMenu";
 import SideBar from "@/components/pages/SideBar";
+import Link from "next/link";
 import React from "react";
 
 const layout = ({ children }) => {
   return (
-    <div>
-      <div className="w-full max-h-screen bg-white dark:bg-hadith-dark-card relative style-bn">
+    <div className="h-screen flex bg-white dark:bg-slate-600">
+      <div className="fixed top-0 left-0 w-full p-4 flex justify-between z-10 bg-white rorder-b shadow md:shadow-none dark:bg-slate-600 dark:text-white">
         <Header />
-        <div className="justify-between calctest xss:flex md-min:flex">
-          <div className="xss:max-w-full xss:left-0 xs:left-0 sm:left-0 md:rounded-none md:left-0 fixed right-0 left-24 h-full items-center bg-hadith-body-grey-bg dark:bg-hadith-dark-bg justify-center lg-min:rounded-tl-3xl dark:lg-min:rounded-tl-3xl ">
-            <div
-              id="scrollToTop"
-              class="px-5 xs:pb-12 sm:pb-12 md-max:px-3 md:pb-10 lg:pb-20  md-max:overflow-y-auto md-max:h-screen"
-            >
-              {children}
-            </div>
-          </div>
-          <SideBar />
-          <div class="Toastify"></div>
-        </div>
+      </div>
+
+      <SideBar />
+
+      <MobileMenu />
+      <div className="relative w-full bg-gray-100 md:rounded-tl-3xl pt-[65px] md:mt-[80px] md:p-4 dark:bg-slate-700">
+        {children}
       </div>
     </div>
   );

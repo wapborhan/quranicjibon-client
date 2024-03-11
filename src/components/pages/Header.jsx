@@ -11,7 +11,7 @@ const Header = () => {
     setTheme(colorTheme);
   };
   return (
-    <div className="md-max:fixed md-max:z-10 md-max:top-0 md-max:left-0 md-max:right-0 flex items-center justify-between w-full md-max:h-16 h-20 px-4 bg-white dark:bg-hadith-dark-card md-max:border-b md-max:dark:border-[#2F2F2F]">
+    <>
       <Link href="/" className="flex items-center cursor-pointer">
         <div className="w-11 lg-min:w-fit">
           <div className="icon text-[1.7rem] leading-7 style-Kalpurush-webKit text-[#1fa471] xss:hidden xs:text-xl">
@@ -49,7 +49,7 @@ const Header = () => {
           {colorTheme === "dark" ? <CiDark /> : <CiLight />}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

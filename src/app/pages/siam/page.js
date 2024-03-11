@@ -1,13 +1,17 @@
-import CatList from "@/components/pages/categories/CatList";
-import Answar from "@/components/pages/categories/answar/Answar";
-import React from "react";
+import MainContent from "@/components/pages/MainContent";
+import SideContentHeader from "@/components/pages/SideContentHeader";
+import SideContentList from "@/components/pages/SideContentList";
 
 const page = () => {
   return (
-    <div class="grid gap-4 xl-min:gap-6 py-5 xss:pt-24 xss:pb-9 xs:pb-6 sm:col-start-1 sm-max:pt-[5rem] sm:pb-7 md:col-start-1 md:pb-6 md:pt-20 lg:grid-cols-1 xl:grid-cols-[350px,1fr] 2xl-min:grid-cols-[350px,1fr] ">
-      <CatList />
-      <Answar />
-      {/* <AnsSide /> */}
+    <div className="px-2 h-full flex justify-between md:space-x-6 dark:px-0">
+      <div className="hidden md:w-[450px] h-full md:flex flex-col bg-white rounded-2xl dark:bg-slate-600 dark:text-gray-300">
+        <SideContentHeader />
+        <div className="p-2 h-[cal(100%-120px)] overflow-y-auto mb-2">
+          <SideContentList />
+        </div>
+      </div>
+      <MainContent />
     </div>
   );
 };

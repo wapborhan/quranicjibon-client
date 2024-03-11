@@ -1,57 +1,53 @@
 import Link from "next/link";
-import { AiOutlineHome } from "react-icons/ai";
-import { FiBookOpen } from "react-icons/fi";
-import { PiBooksLight, PiDotsNineBold } from "react-icons/pi";
-import { BsBookmark, BsSend } from "react-icons/bs";
-import { BiDonateBlood } from "react-icons/bi";
+import React from "react";
 
-const SideBar = () => {
+const MobileMenu = () => {
   return (
-    <div className="relative hidden w-24 mt-20 p-4 pb-32 md:flex flex-col justify-between items-center dark:text-gray-300">
+    <div className="md:hidden fixed bottom-0 left-0 w-full px-4 py-2 flex justify-between bg-white shadow border-t z-10 dark:bg-slate-600 dark:text-gray-300 dark:border-t-0">
       <Link
         href="/"
         className="p-4 hover:bg-gray-100 hover:text-black rounded-xl"
       >
-        <AiOutlineHome size={28} />
+        {/* <AiOutlineHome size={28} /> */}jj
       </Link>
       <Link
         href="/allhadiths"
         className="p-4 hover:bg-gray-100 hover:text-black rounded-xl"
       >
-        <FiBookOpen size={28} />
+        {/* <FiBookOpen size={28} /> */}kk
       </Link>
       <Link
         href="/hadith/subject/category"
         className="p-4 hover:bg-gray-100 hover:text-black rounded-xl"
       >
-        <PiBooksLight size={28} />
+        {/* <PiBooksLight size={28} /> */}jj
       </Link>
       <Link
         href="/bookmark"
         className="p-4 hover:bg-gray-100 hover:text-black rounded-xl"
       >
-        <BsBookmark size={28} />
+        {/* <BsBookmark size={28} /> */}jjj
       </Link>
       <button
         // onClick={() => setMenu(!menu)}
         className="p-4 hover:bg-gray-100 hover:text-black rounded-xl"
       >
-        <PiDotsNineBold size={28} />
+        {/* <PiDotsNineBold size={28} /> */}hh
       </button>
       <button
         // onClick={() => setOpen(!open)}
         className="p-4 hover:bg-gray-100 hover:text-black rounded-xl"
       >
-        <BsSend size={28} />
+        {/* <BsSend size={28} /> */}h
       </button>
       <Link
         href="/donate"
         className="absolute left-0 bottom-3 translate-x-1/4 p-4 bg-[#2b9e76] text-white rounded-xl"
       >
-        <BiDonateBlood size={28} />
+        {/* <BiDonateBlood size={28} /> */}h
       </Link>
     </div>
   );
 };
 
-export default SideBar;
+export default MobileMenu;
