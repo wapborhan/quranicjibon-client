@@ -29,23 +29,13 @@ const NavMenu = () => {
   return (
     <nav className="flex flex-wrap items-center justify-center">
       <div className="header-left">
-        <ul className="mb-0 list-none inline-flex gap-5">
+        <ul className="mb-0 list-none flex gap-5">
           {headLink.map((link) => {
             return (
-              <li className="relative group" key={link.id}>
-                <Link
-                  href="/"
-                  className="text-black relative hover:text-gray-500"
-                >
+              <li className="group" key={link.id}>
+                <Link href={link?.path} className="text-black ">
                   {link?.title}
                 </Link>
-                <Image
-                  src="https://freepngimg.com/save/11416-coming-soon-transparent/291x294"
-                  height={20}
-                  width={50}
-                  alt="pic"
-                  className="absolute -top-1 -right-5"
-                ></Image>
               </li>
             );
           })}

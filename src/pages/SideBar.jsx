@@ -15,13 +15,13 @@ const SideBar = () => {
         <AiOutlineHome size={28} />
       </Link>
       <Link
-        href="/allhadiths"
+        href="/pages/quran"
         className="p-4 hover:bg-gray-100 hover:text-black rounded-xl"
       >
         <FiBookOpen size={28} />
       </Link>
       <Link
-        href="/hadith/subject/category"
+        href="/pages/siam"
         className="p-4 hover:bg-gray-100 hover:text-black rounded-xl"
       >
         <PiBooksLight size={28} />

@@ -1,6 +1,6 @@
-import MainContent from "@/components/pages/MainContent";
-import SideContentHeader from "@/components/pages/SideContentHeader";
-import SideContentList from "@/components/pages/SideContentList";
+import MainContent from "@/pages/MainContent";
+import SideContentHeader from "@/pages/SideContentHeader";
+import SideContentList from "@/pages/SideContentList";
 
 const page = () => {
   return (

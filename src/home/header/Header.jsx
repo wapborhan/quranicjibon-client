@@ -28,7 +28,7 @@ const Header = () => {
     <>
       <header className="stick style1 w-full">
         <div className="topbars bg-color1 flex flex-wrap justify-center w-full">
-          <ul className="topbars-info-list mb-0 list-unstyled inline-flex">
+          <ul className="topbars-info-list mb-0 list-unstyled flex">
             <li>
               <i className="thm-clr flaticon-sun"></i>
               সূর্যোদয়:

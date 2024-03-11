@@ -30,7 +30,7 @@ const list = [
 
 const CounterList = () => {
   return (
-    <div className="grid grid-cols-4 gap-10">
+    <div className="grid lg:grid-cols-4 grid-cols-2 gap-10">
       {list.map((item) => {
         return (
           <div className="col-md-4 col-sm-6 col-6 col-lg-3" key={item.id}>

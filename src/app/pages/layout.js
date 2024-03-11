@@ -1,6 +1,6 @@
-import Header from "@/components/pages/Header";
-import MobileMenu from "@/components/pages/MobileMenu";
-import SideBar from "@/components/pages/SideBar";
+import Header from "@/pages/Header";
+import MobileMenu from "@/pages/MobileMenu";
+import SideBar from "@/pages/SideBar";
 import Link from "next/link";
 import React from "react";
 

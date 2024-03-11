@@ -1,9 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500&family=Noto+Serif+Bengali:wght@100;200;300;400;500&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@200&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500&family=Noto+Serif+Bengali:wght@100;200;300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@200&display=swap');
+
+.dark .dark\:bg-hadith-dark-card {
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 32 32 / var(--tw-bg-opacity));
+}
+
+
 
 
 ::-webkit-scrollbar {

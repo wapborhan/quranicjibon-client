@@ -1,31 +1,45 @@
 "use client";
 import { BsQuestionDiamondFill } from "react-icons/bs";
-import useDarkSide from "../shared/DarkMode";
+import useDarkSide from "../components/shared/DarkMode";
 import Link from "next/link";
 import { CiDark, CiLight } from "react-icons/ci";
+import { useState } from "react";
 
 const Header = () => {
   const [colorTheme, setTheme] = useDarkSide();
+  const [dark, setDark] = useState(false);
 
   const toggleDarkMode = () => {
     setTheme(colorTheme);
   };
+
+  const darkHandler = () => {
+    if (dark) {
+      const root = window.document.documentElement;
+      root.classList.remove("dark");
+      setDark(false);
+    } else {
+      const root = window.document.documentElement;
+      root.classList.add("dark");
+      setDark(true);
+    }
+  };
+
   return (
     <>
       <Link href="/" className="flex items-center cursor-pointer">
         <div className="w-11 lg-min:w-fit">
           <div className="icon text-[1.7rem] leading-7 style-Kalpurush-webKit text-[#1fa471] xss:hidden xs:text-xl">
-            {" "}
             <BsQuestionDiamondFill />
           </div>
         </div>
         <div className="ml-6 block md-max:hidden">
           <h3 className="text-xl font-bold text-black dark:text-hadith-deepoffwhite ">
-            সূচিপত্র
+            Quranic Jibon
           </h3>
-          <h6 className="text-sm text-[#404040] dark:text-hadith-deepoffwhite">
+          {/* <h6 className="text-sm text-[#404040] dark:text-hadith-deepoffwhite">
             প্রশ্ন করুণ এবং জানুন
-          </h6>
+          </h6> */}
         </div>
         <div className="ml-4 hidden xss:ml-3 md-max:block">
           <h1 className="text-[1.7rem] leading-7 style-Kalpurush-webKit text-[#1fa471] xss:hidden xs:text-xl">
@@ -43,10 +57,22 @@ const Header = () => {
           </div>
         </div>
         <div
-          className="p-3 rounded-lg bg-[#ECEEF0] dark:bg-[#383838] flex items-center justify-center cursor-pointer"
+          className="rounded-lg  flex items-center justify-center cursor-pointer"
           onClick={toggleDarkMode}
         >
-          {colorTheme === "dark" ? <CiDark /> : <CiLight />}
+          {dark ? (
+            <CiDark
+              size={35}
+              onClick={darkHandler}
+              className="bg-gray-200 p-1 rounded cursor-pointer dark:bg-slate-700 dark:text-gray-300"
+            />
+          ) : (
+            <CiLight
+              size={35}
+              onClick={darkHandler}
+              className="bg-gray-200 p-1 rounded cursor-pointer dark:bg-slate-700 dark:text-gray-300"
+            />
+          )}
         </div>
       </div>
     </>

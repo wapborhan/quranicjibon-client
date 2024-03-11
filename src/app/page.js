@@ -1,4 +1,4 @@
-import Homepage from "@/components/Homepage";
+import Homepage from "@/home/Homepage";
 // import MainTain from "./maintain";
 import "../assets/stylesheet/homepage/style.css";
 
