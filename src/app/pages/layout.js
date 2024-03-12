@@ -6,15 +6,15 @@ import React from "react";
 
 const layout = ({ children }) => {
   return (
-    <div className="h-screen flex bg-white dark:bg-slate-600">
-      <div className="fixed top-0 left-0 w-full p-4 flex justify-between z-10 bg-white rorder-b shadow md:shadow-none dark:bg-slate-600 dark:text-white">
+    <div className="h-screen flex bg-white dark:bg-darks !dark:text-white">
+      <div className="fixed top-0 left-0 w-full p-4 flex justify-between z-10  rorder-b shadow md:shadow-none  dark:text-white">
         <Header />
       </div>
 
       <SideBar />
 
       <MobileMenu />
-      <div className="relative w-full bg-gray-100 md:rounded-tl-3xl pt-[65px] md:mt-[80px] md:p-4 dark:bg-slate-700">
+      <div className="relative w-full bg-body-grey-bg dark:bg-darkz md:rounded-tl-3xl pt-[65px] md:mt-[80px] md:p-4 ">
         {children}
       </div>
     </div>

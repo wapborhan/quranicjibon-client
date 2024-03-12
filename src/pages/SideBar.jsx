@@ -7,7 +7,7 @@ import { BiDonateBlood } from "react-icons/bi";
 
 const SideBar = () => {
   return (
-    <div className="relative hidden w-24 mt-20 p-4 pb-32 md:flex flex-col justify-between items-center dark:text-gray-300">
+    <div className="relative hidden w-24 !mt-20 p-4 pb-32 md:flex flex-col justify-between items-center dark:text-dark-text">
       <Link
         href="/"
         className="p-4 hover:bg-gray-100 hover:text-black rounded-xl"

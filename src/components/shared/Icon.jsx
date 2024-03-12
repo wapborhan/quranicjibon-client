@@ -3,11 +3,11 @@ import React from "react";
 const Icon = ({ title }) => {
   return (
     <div className="h-12 w-12 group sm-max:w-10 xl:w-10  flex items-center justify-center relative">
-      <h3 className="text-gray-400 group-hover:bg-[#2b9e76] group-hover:text-white  dark:text-hadith-deepoffwhite  false style-Kalpurush absolute md-max:text-base text-xl font-medium  group-hover:opacity-100  xl:text-lg">
+      <h3 className="text-dark dark:bg-barkz group-hover:bg-[#2b9e76] group-hover:text-white  dark:text-hadith-deepoffwhite  false style-Kalpurush absolute md-max:text-base text-xl font-medium  group-hover:opacity-100  xl:text-lg">
         {title && title}
       </h3>
       <svg
-        className="fill-[#f1f5f4] group-hover:fill-[#2b9e76] dark:fill-dark-bg-lite group-hover:fill-subcat-hover false    "
+        className="fill-[#f1f5f4]  group-hover:fill-[#2b9e76] dark:fill-dark-bg-lite group-hover:fill-subcat-hover false    "
         width="56"
         height="62"
         viewBox="0 0 56 62"

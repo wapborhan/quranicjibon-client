@@ -6,7 +6,8 @@ const SuraList = ({ book }) => {
   return (
     <Link
       href={`/${book?.book_name}`}
-      className="w-full p-5 group cursor-pointer bg-white flex justify-between items-center space-x-4 rounded-2xl transition-all duration-500 dark:bg-slate-600 dark:text-gray-300"
+      key={book?.id}
+      className="w-full p-5 group cursor-pointer bg-white flex justify-between items-center space-x-4 rounded-2xl transition-all duration-500 dark:bg-darks dark:text-dark-text"
     >
       <div className="w-16">
         <div className="flex justify-center items-center  w-12 h-12">

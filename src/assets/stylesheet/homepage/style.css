@@ -278,7 +278,7 @@ h4,
 h5,
 h6 {
   font-family: Philosopher, "SolaimanLipi";
-  color: #222;
+  /* color: #222; */
   /* font-weight: 700; */
 }
 
@@ -297,9 +297,9 @@ ol li {
   font-size: 1.0625rem;
 }
 
-a {
+/* a {
   color: var(--color1);
-}
+} */
 
 a:hover,
 a:focus,

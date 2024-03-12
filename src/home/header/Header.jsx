@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import NavMenu from "./NavMenu";
@@ -17,6 +18,7 @@ const Header = () => {
       setPrayerTime(res.timings);
       setToday(res?.date?.hijri);
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [latitude, longitude]);
 
   // const hijriDay = today?.day + today?.month.en;
@@ -26,8 +28,8 @@ const Header = () => {
 
   return (
     <>
-      <header className="stick style1 w-full">
-        <div className="topbars bg-color1 flex flex-wrap justify-center w-full">
+      <header className="stick style1 w-full relative z-50">
+        <div className="topbars bg-color1 flex flex-wrap justify-center w-full pl-[26.5625rem] px-[1.25rem] bg-[#212121]">
           <ul className="topbars-info-list mb-0 list-unstyled flex">
             <li>
               <i className="thm-clr flaticon-sun"></i>

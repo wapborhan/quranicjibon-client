@@ -28,16 +28,16 @@ const Quran = () => {
   const [query, setQuery] = useState("");
   return (
     <>
-      <div className="mt-4 md:mt-0 p-4 flex flex-col md:flex-row md:justify-between items-center space-y-3 md:space-y-0 bg-white rounded-xl dark:bg-slate-600 dark:text-gray-300">
+      <div className="mt-4 md:mt-0 p-4 flex flex-col md:flex-row md:justify-between items-center space-y-3 md:space-y-0 dark:bg-darks bg-white rounded-xl  dark:text-dark-text">
         <h2 className="text-2xl font-medium">Quran Mazid</h2>
         <div className="w-full md:w-9/12 flex justify-between items-center space-x-2 px-4 border-2 rounded-lg dark:border-gray-500">
-          <BiSearch className="text-gray-500 dark:text-gray-300" />
+          <BiSearch className="text-gray-500 dark:text-dark-text" />
           <input
             type="text"
             // value={query}
             // onChange={(e) => setQuery(e.target.value)}
             placeholder="Search for filter"
-            className="w-full py-3 font-light text-sm focus:outline-none dark:bg-slate-600"
+            className="w-full py-3 font-light text-sm focus:outline-none dark:bg-darks"
           />
         </div>
       </div>

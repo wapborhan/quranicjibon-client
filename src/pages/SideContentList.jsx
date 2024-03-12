@@ -1,3 +1,4 @@
+import Icon from "@/components/shared/Icon";
 import { toBengaliNumber } from "bengali-number";
 import Link from "next/link";
 import React from "react";
@@ -34,11 +35,11 @@ const SideContentList = () => {
             href={`/${book?.book_name}`}
             // onClick={() => handleChange(book?.book_name)}
             key={book._id}
-            className="w-full p-5 group cursor-pointer bg-white hover:bg-green-100 flex justify-between items-center space-x-3 rounded-2xl transition-all duration-500 dark:bg-slate-700 dark:text-gray-300"
+            className="w-full p-5 group cursor-pointer bg-white flex justify-between items-center space-x-3 rounded-2xl transition-all duration-500 dark:bg-darkz dark:text-gray-300  dark:border-0 border-2 border-slate-100"
           >
             <div className="">
-              <div className="flex justify-center items-center bg-gray-200 group-hover:bg-[#2b9e76] group-hover:text-white text-gray-400 w-12 h-12 rounded-full dark:bg-slate-600 dark:text-gray-300">
-                {book?.abvr_code}
+              <div className="flex justify-center items-center  w-12 h-12">
+                <Icon title={book?.abvr_code} />
               </div>
             </div>
             <div className="w-full">
