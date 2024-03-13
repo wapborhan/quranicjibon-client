@@ -3,7 +3,7 @@ import React from "react";
 const Icon = ({ title }) => {
   return (
     <div className="h-12 w-12 group sm-max:w-10 xl:w-10  flex items-center justify-center relative">
-      <h3 className="text-dark dark:bg-barkz group-hover:bg-[#2b9e76] group-hover:text-white  dark:text-hadith-deepoffwhite  false style-Kalpurush absolute md-max:text-base text-xl font-medium  group-hover:opacity-100  xl:text-lg">
+      <h3 className="text-dark dark:bg-barkz group-hover:text-white  dark:text-hadith-deepoffwhite  false style-Kalpurush absolute md-max:text-base text-xl font-medium  group-hover:opacity-100  xl:text-lg">
         {title && title}
       </h3>
       <svg

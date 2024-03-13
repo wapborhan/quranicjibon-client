@@ -3,28 +3,7 @@ import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import SuraList from "./SuraList";
 
-const Quran = () => {
-  const books = [
-    { book_name: "", title: "Title", number_of_hadis: 1523, abvr_code: "T" },
-    { book_name: "", title: "" },
-    { book_name: "", title: "" },
-    { book_name: "", title: "" },
-    { book_name: "", title: "" },
-    { book_name: "", title: "" },
-    { book_name: "", title: "" },
-    { book_name: "", title: "" },
-    { book_name: "", title: "" },
-    { book_name: "", title: "" },
-    { book_name: "", title: "" },
-    { book_name: "", title: "" },
-    { book_name: "", title: "" },
-    { book_name: "", title: "" },
-    { book_name: "", title: "" },
-    { book_name: "", title: "" },
-    { book_name: "", title: "" },
-    { book_name: "w", title: "d" },
-    { book_name: "", title: "" },
-  ];
+const Quran = ({ suras }) => {
   const [query, setQuery] = useState("");
   return (
     <>
@@ -42,14 +21,14 @@ const Quran = () => {
         </div>
       </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-2 md:gap-4 py-5">
-        {books &&
-          books
+        {suras &&
+          suras
             .filter(
-              (book) =>
-                book?.book_name.toLowerCase().includes(query.toLowerCase()) ||
-                book?.title.toLowerCase().includes(query.toLowerCase())
+              (sura) =>
+                sura?.name_en.toLowerCase().includes(query.toLowerCase()) ||
+                sura?.name_bn.toLowerCase().includes(query.toLowerCase())
             )
-            .map((book) => <SuraList book={book} key={book._id} />)}
+            .map((sura) => <SuraList sura={sura} key={sura._id} />)}
       </div>
     </>
   );

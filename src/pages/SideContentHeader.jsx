@@ -1,4 +1,5 @@
 import React from "react";
+import { BiSearch } from "react-icons/bi";
 
 const SideContentHeader = () => {
   const state = "book";
@@ -28,12 +29,12 @@ const SideContentHeader = () => {
         </button>
       </div>
       <div>
-        <div className="flex justify-between items-center space-x-2 px-3 py-1 m-4 bg-white rounded-lg dark:bg-darkz">
-          {/* <BiSearch className="text-gray-500" /> */}
+        <div className="flex justify-between items-center space-x-2 px-3 py-1 m-4 bg-body-grey-bg rounded-lg dark:bg-darkz">
+          <BiSearch className="text-gray-500" />
           <input
             type="text"
             placeholder="Search for filter"
-            className="bg-gray-50 w-full py-2 font-light text-sm focus:outline-none dark:bg-darkz"
+            className="bg-body-grey-bg w-full py-2 font-light text-sm focus:outline-none dark:bg-darkz"
           />
         </div>
       </div>

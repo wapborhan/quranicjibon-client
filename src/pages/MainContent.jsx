@@ -1,4 +1,5 @@
 "use client";
+import Icon from "@/components/shared/Icon";
 import { toBengaliNumber } from "bengali-number";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -8,19 +9,19 @@ const MainContent = () => {
   const chapters = [
     {
       chapter_id: 1,
-      title: "",
+      title: "we",
     },
     {
       chapter_id: 2,
-      title: "",
+      title: "ew",
     },
     {
       chapter_id: 2,
-      title: "",
+      title: "ewe",
     },
     {
       chapter_id: 2,
-      title: "",
+      title: "ewe",
     },
     {
       chapter_id: 2,
@@ -33,8 +34,8 @@ const MainContent = () => {
   ];
   const book = [];
   return (
-    <div className="w-full h-full pb-16 md:pb-0 flex flex-col md:bg-white md:rounded-2xl overflow-hidden dark:bg-slate-600 dark:text-gray-300">
-      <div className="hidden h-[52px] px-4 py-5 md:flex items-center space-x-2 bg-gray-50 border-b-2 rounded-t-2xl dark:bg-slate-500 dark:border-gray-500">
+    <div className="w-full h-full pb-16 md:pb-0 flex flex-col md:bg-white md:rounded-2xl overflow-hidden dark:bg-darks dark:text-gray-300">
+      <div className="hidden h-[52px] px-4 py-5 md:flex items-center space-x-2 bg-white border-b-2 rounded-t-2xl dark:bg-darks dark:border-gray-500">
         {/* <FaBookOpen
                     size={20}
                 /> */}
@@ -44,19 +45,19 @@ const MainContent = () => {
       <div className="h-[cal(100%-52px)] md:px-4 overflow-y-auto space-y-2  pt-6 md:pt-0 pb-2 md:mt-0 dark:px-2 mb-2">
         <div
           // onClick={() => setMenu(!menu)}
-          className="md:hidden p-4 flex items-center space-x-2 bg-white rounded-xl cursor-pointer dark:bg-slate-700"
+          className="md:hidden p-4 flex items-center space-x-2 bg-white rounded-xl cursor-pointer dark:bg-darks"
         >
           {/* <AiOutlineMenu size={20} /> */}A
           <span className="text-xl">{book?.title}</span>
         </div>
-        <div className="md:mt-0 p-4 md:p-2 flex flex-col md:flex-row justify-between items-center space-y-2 bg-white md:bg-none rounded-xl md:rounded-none dark:bg-slate-700 dark:rounded-xl dark:pb-3">
+        <div className="md:mt-0 p-4 md:p-2 flex flex-col md:flex-row justify-between items-center space-y-2 bg-body-grey-bg md:bg-none rounded-lg  dark:bg-darkz  dark:pb-3">
           <h2
             // onClick={() => setOpen(!open)}
             className="md:w-1/2 text-[#2b9e76] text-2xl cursor-pointer"
           >
             {book?.title}
           </h2>
-          <div className="w-full flex justify-between items-center space-x-2 p-3 md:m-4 bg-gray-50 rounded-lg dark:bg-slate-600">
+          <div className="w-full flex justify-between items-center space-x-2 p-3 md:m-4 bg-white rounded-lg dark:bg-darks">
             {/* <BiSearch
                             className='text-gray-500 dark:text-gray-300'
                         /> */}
@@ -65,7 +66,7 @@ const MainContent = () => {
               // value={query}
               // onChange={(e) => setQuery(e.target.value)}
               placeholder="Search for filter"
-              className="bg-gray-50 w-full font-light text-sm focus:outline-none dark:bg-slate-600"
+              className="w-full font-light text-sm focus:outline-none dark:bg-darks"
             />
           </div>
           {/* {open &&
@@ -76,7 +77,7 @@ const MainContent = () => {
                         }} />
                     } */}
         </div>
-        <div className="space-y-2 md:space-y-0 dark:md:space-y-2">
+        <div className="space-y-2 ">
           {chapters &&
             chapters
               .filter((chapter) =>
@@ -86,12 +87,10 @@ const MainContent = () => {
                 <Link
                   href={`/${name}/${chapter?.chapter_id}`}
                   key={chapter._id}
-                  className="w-full p-5 group cursor-pointer bg-white hover:bg-green-100 flex justify-between items-center space-x-4 md:space-x-2 md:border-b-[0.5px] border-gray-100 rounded-xl md:hover:rounded-xl transition-all duration-500 dark:bg-slate-700 dark:border-b-0"
+                  className="w-full text-slate-400 dark:text-dark-text p-5 group cursor-pointer bg-white  flex justify-between items-center gap-5 space-x-4 md:space-x-2  border-gray-100 border-[0.3px] dark:border-0 rounded-xl md:hover:rounded-xl transition-all duration-500 dark:bg-darkz shadow-sm"
                 >
                   <div className="w-16">
-                    <div className="flex justify-center items-center bg-gray-200 group-hover:bg-[#2b9e76] group-hover:text-white text-gray-400 w-12 h-12 rounded-full dark:bg-slate-600 dark:text-gray-300">
-                      {toBengaliNumber(chapter?.chapter_id)}
-                    </div>
+                    <Icon title={chapter?.chapter_id} />
                   </div>
                   <div className="w-11/12 flex flex-col md:flex-row justify-between">
                     <p className="group-hover:text-[#2b9e76] font-medium">
