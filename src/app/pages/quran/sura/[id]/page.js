@@ -33,7 +33,10 @@ const Page = async ({ params }) => {
   return (
     <div className="px-2 h-full flex justify-between md:space-x-6 dark:px-0">
       <div className="hidden md:w-[450px] h-full md:flex flex-col bg-white rounded-2xl dark:bg-darks dark:text-gray-300">
-        <SideContentHeader content={[{ id: 1, name: "Quran" }]} suras={suras} />
+        <SideContentHeader
+          content={[{ id: 1, name: "Quran", status: "active" }]}
+          suras={suras}
+        />
         <div className="p-2 h-[cal(100%-120px)] overflow-y-auto mb-2">
           <SideContentList suras={suras} />
         </div>
