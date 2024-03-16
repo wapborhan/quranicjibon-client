@@ -1,15 +1,19 @@
 import { useState, useEffect } from "react";
 
 export default function useDarkSide() {
-  const [theme, setTheme] = useState(localStorage.theme);
+  const isBrowser = typeof window !== "undefined"; // Check if window object is available
+
+  const [theme, setTheme] = useState(isBrowser ? localStorage.theme : "light");
   const colorTheme = theme === "dark" ? "light" : "dark";
 
   useEffect(() => {
-    const root = window.document.documentElement;
-    root.classList.remove(colorTheme);
-    root.classList.add(theme);
-    localStorage.setItem("theme", theme);
-  }, [theme, colorTheme]);
+    if (isBrowser) {
+      const root = window.document.documentElement;
+      root.classList.remove(colorTheme);
+      root.classList.add(theme);
+      localStorage.setItem("theme", theme);
+    }
+  }, [theme, colorTheme, isBrowser]);
 
   return [colorTheme, setTheme];
 }
