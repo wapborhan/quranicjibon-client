@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { AiOutlineHome } from "react-icons/ai";
 import { SiNamecheap } from "react-icons/si";
-import { FiBookOpen } from "react-icons/fi";
+import { FiBookOpen, FiBook } from "react-icons/fi";
 import { PiBooksLight, PiDotsNineBold } from "react-icons/pi";
 import { BsBookmark, BsSend, BsFillMoonStarsFill } from "react-icons/bs";
 import { BiDonateBlood } from "react-icons/bi";
@@ -43,6 +43,13 @@ const SideBar = () => {
         title="Allah Names"
       >
         <SiNamecheap size={28} />
+      </Link>
+      <Link
+        href="/pages/kalema"
+        className="p-4 hover:bg-gray-100 hover:text-black rounded-xl"
+        title="Allah Names"
+      >
+        <FiBook size={28} />
       </Link>
 
       <Link
