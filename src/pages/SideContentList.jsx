@@ -1,7 +1,5 @@
 import Icon from "@/components/shared/Icon";
-import { toBengaliNumber } from "bengali-number";
 import Link from "next/link";
-import React from "react";
 
 const SideContentList = ({ suras }) => {
   return (
