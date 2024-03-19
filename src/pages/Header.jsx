@@ -7,22 +7,11 @@ import { useState } from "react";
 
 const Header = () => {
   const [colorTheme, setTheme] = useDarkSide();
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
 
   const toggleDarkMode = () => {
     setTheme(colorTheme);
-  };
-
-  const darkHandler = () => {
-    if (dark) {
-      const root = window.document.documentElement;
-      root.classList.remove("dark");
-      setDark(false);
-    } else {
-      const root = window.document.documentElement;
-      root.classList.add("dark");
-      setDark(true);
-    }
+    setDark(!dark);
   };
 
   return (
@@ -57,22 +46,10 @@ const Header = () => {
           </div>
         </div>
         <div
-          className="rounded-lg  flex items-center justify-center cursor-pointer"
+          className="rounded-lg  flex items-center justify-center cursor-pointer bg-slate-50 dark:bg-slate-200 text-slate-600 p-2"
           onClick={toggleDarkMode}
         >
-          {dark ? (
-            <CiDark
-              size={35}
-              onClick={darkHandler}
-              className="bg-gray-200 p-1 rounded cursor-pointer dark:bg-slate-700 dark:text-gray-300"
-            />
-          ) : (
-            <CiLight
-              size={35}
-              onClick={darkHandler}
-              className="bg-gray-200 p-1 rounded cursor-pointer dark:bg-slate-700 dark:text-gray-300"
-            />
-          )}
+          {dark ? <CiDark size={25} /> : <CiLight size={25} />}
         </div>
       </div>
     </>

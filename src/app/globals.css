@@ -31,6 +31,30 @@
   color: rgb(166 172 175 / var(--tw-text-opacity));
 }
 
+.dark input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  width: 100%;
+  background: #2a2a2a;
+  border-radius: 5px;
+  background-image: linear-gradient(#2b9e76, #2b9e76);
+  background-repeat: no-repeat;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  width: 100%;
+  background: #eee;
+  border-radius: 5px;
+  background-image: linear-gradient(#2b9e76, #2b9e76);
+  background-repeat: no-repeat;
+}
+
+
+
 ::-webkit-scrollbar {
   @apply w-2 my-10
 }

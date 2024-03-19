@@ -10,7 +10,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="light" color="light">
+    <html
+      lang="en"
+      className="light"
+      //  style={{ colorScheme: "dark" }}
+    >
       <body
         // className={inter.className}
         className="bg-[#ebeef2] dark:bg-hadith-dark-card relative"

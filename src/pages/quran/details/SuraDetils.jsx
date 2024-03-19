@@ -1,13 +1,20 @@
 "use client";
 import Icon from "@/components/shared/Icon";
 import { toBengaliNumber } from "bengali-number";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
 const SuraDetils = ({ ayahs, sura }) => {
   return (
     <>
-      <div className="hidden h-[52px] px-4 py-5 md:flex items-center space-x-2 bg-white border-b-2 rounded-t-2xl dark:bg-darks dark:border-gray-500">
+      <div className="hidden px-4 h-[100px] md:flex items-center space-x-2 bg-white border-b-2 rounded-t-2xl text-black dark:text-dark-text dark:bg-darks dark:border-gray-500 border-gray-200">
+        <Image
+          src="/assets/images/quran/madinah.png"
+          alt=""
+          width={100}
+          height={100}
+        />
         <span>&gt;</span>
         <div className="text-sm">{sura?.name}</div>
         <div className="text-sm">{sura?.name_en}</div>
@@ -27,15 +34,13 @@ const SuraDetils = ({ ayahs, sura }) => {
             ayahs.map((ayah) => (
               <div
                 key={ayah._id}
-                className="w-full text-slate-400 dark:text-dark-text p-5 group cursor-pointer bg-white  flex justify-between items-center gap-5 space-x-4 md:space-x-2  border-gray-100 border-[0.3px] dark:border-0 rounded-xl md:hover:rounded-xl transition-all duration-500 dark:bg-darkz shadow-sm"
+                className="w-full text-slate-400 dark:text-dark-text p-5 group  bg-white  flex justify-between  gap-5 space-x-4 md:space-x-2 items-start border-gray-100 dark:border-gray-0 border-[0.3px] dark:border-[0px] rounded-xl md:hover:rounded-xl transition-all duration-500 dark:bg-darkz shadow-sm"
               >
-                <div className="w-11/12 flexs flex-col md:flex-row justify-between">
-                  <p className="text-gray-500 text-sm dark:text-gray-300">
+                <div className="w-11/12 space-y-5 items-center md:flex-row justify-between">
+                  <p className="text-dark-text text-right text-lg dark:text-gray-300">
                     {ayah?.uthmani}
                   </p>
-                  <p className="group-hover:text-[#2b9e76] font-medium">
-                    {ayah?.text}
-                  </p>
+                  <p className=" font-medium">{ayah?.text}</p>
                   <br />
                 </div>
                 <div className="w-16">
