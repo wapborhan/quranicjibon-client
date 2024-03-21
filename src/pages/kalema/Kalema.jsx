@@ -23,7 +23,6 @@ const Kalema = ({ kalemas }) => {
     setSelectKalema(data);
   };
 
-  console.log(selectKalema);
   return (
     <>
       <div className="hidden md:w-[450px] h-full md:flex flex-col bg-white rounded-2xl dark:bg-darks dark:text-gray-300">

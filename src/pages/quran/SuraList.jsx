@@ -23,7 +23,7 @@ const SuraList = ({ sura }) => {
           </p>
         </div>
         <div className="second">
-          <p className="text-gray-500 text-lg dark:text-gray-300">
+          <p className="text-gray-500 text-2xl font-kfgq dark:text-gray-300">
             {sura?.name}
           </p>
         </div>

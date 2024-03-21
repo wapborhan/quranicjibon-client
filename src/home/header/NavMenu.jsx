@@ -18,11 +18,11 @@ const headLink = [
     title: "কালেমা",
     path: "/pages/kalema",
   },
-  {
-    id: 3,
-    title: "কুরবানি",
-    path: "/pages/qurbani",
-  },
+  // {
+  //   id: 3,
+  //   title: "কুরবানি",
+  //   path: "/pages/qurbani",
+  // },
 ];
 
 const NavMenu = () => {
@@ -39,11 +39,6 @@ const NavMenu = () => {
               </li>
             );
           })}
-          <li className="relative group">
-            <Link href="/pages/siam" className="text-black hover:text-gray-500">
-              রোযা
-            </Link>
-          </li>
         </ul>
       </div>
     </nav>

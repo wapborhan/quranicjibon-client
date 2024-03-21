@@ -10,8 +10,18 @@ const Header = () => {
   const [dark, setDark] = useState(true);
 
   const toggleDarkMode = () => {
-    setTheme(colorTheme);
     setDark(!dark);
+    if (dark) {
+      // const root = window.document.documentElement;
+      // root.classList.remove("dark");
+      // setDark(false);
+      setTheme("dark");
+    } else {
+      // const root = window.document.documentElement;
+      // root.classList.add("dark");
+      // setDark(true);
+      setTheme("light");
+    }
   };
 
   return (
@@ -46,10 +56,22 @@ const Header = () => {
           </div>
         </div>
         <div
-          className="rounded-lg  flex items-center justify-center cursor-pointer bg-slate-50 dark:bg-slate-200 text-slate-600 p-2"
+          className="rounded-lg  flex items-center justify-center cursor-pointer"
           onClick={toggleDarkMode}
         >
-          {dark ? <CiDark size={25} /> : <CiLight size={25} />}
+          {dark ? (
+            <CiDark
+              size={35}
+              // onClick={darkHandler}
+              className="bg-gray-200 p-1 rounded cursor-pointer dark:bg-slate-700 dark:text-gray-300"
+            />
+          ) : (
+            <CiLight
+              size={35}
+              // onClick={darkHandler}
+              className="bg-gray-200 p-1 rounded cursor-pointer dark:bg-slate-700 dark:text-gray-300"
+            />
+          )}
         </div>
       </div>
     </>

@@ -16,8 +16,8 @@ const KalemaDetails = ({ selectKalema }) => {
             key={selectKalema.id}
             className="w-full text-slate-400 dark:text-dark-text p-5 group  bg-white  flex justify-between gap-5 space-x-4 md:space-x-2  border-gray-100 border-[0.3px] dark:border-0 rounded-xl md:hover:rounded-xl transition-all items-start duration-500 dark:bg-darkz shadow-sm"
           >
-            <div className="w-11/12 flex lg:flex-col md:flex-row justify-between space-y-5">
-              <h3 className="text-right mb-4 font-ar">
+            <div className="w-11/12 flex gap-3 lg:flex-col md:flex-row justify-between space-y-5">
+              <h3 className="text-right leading-loose mb-4 text-2xl font-kfgq">
                 {selectKalema.kalemaAr}
               </h3>
               <p>

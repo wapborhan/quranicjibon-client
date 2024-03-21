@@ -37,7 +37,7 @@ const SuraDetils = ({ ayahs, sura }) => {
                 className="w-full text-slate-400 dark:text-dark-text p-5 group  bg-white  flex justify-between  gap-5 space-x-4 md:space-x-2 items-start border-gray-100 dark:border-gray-0 border-[0.3px] dark:border-[0px] rounded-xl md:hover:rounded-xl transition-all duration-500 dark:bg-darkz shadow-sm"
               >
                 <div className="w-11/12 space-y-5 items-center md:flex-row justify-between">
-                  <p className="text-dark-text text-right text-lg dark:text-gray-300">
+                  <p className="text-dark-text text-right text-2xl dark:text-gray-300 font-kfgq">
                     {ayah?.uthmani}
                   </p>
                   <p className=" font-medium">{ayah?.text}</p>

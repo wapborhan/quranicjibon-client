@@ -23,20 +23,20 @@ const SideBar = () => {
       >
         <FiBookOpen size={28} />
       </Link>
-      <Link
+      {/* <Link
         href="/pages/hadith"
         className="p-4 hover:bg-gray-100 hover:text-black rounded-xl"
         title="Hadith"
       >
         <PiBooksLight size={28} />
-      </Link>
-      <Link
+      </Link> */}
+      {/* <Link
         href="/pages/siam"
         className="p-4 hover:bg-gray-100 hover:text-black rounded-xl"
         title="Siam"
       >
         <BsFillMoonStarsFill size={28} />
-      </Link>
+      </Link> */}
       <Link
         href="/pages/allah-names"
         className="p-4 hover:bg-gray-100 hover:text-black rounded-xl"

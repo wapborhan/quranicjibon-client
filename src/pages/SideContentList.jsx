@@ -7,7 +7,7 @@ const SideContentList = ({ suras }) => {
       {suras &&
         suras.map((sura) => (
           <Link
-            href={`/${sura?.book_name}`}
+            href={`${sura?.index}`}
             // onClick={() => handleChange(sura?.book_name)}
             key={sura._id}
             className="w-full p-5 group cursor-pointer bg-white flex justify-between items-center space-x-3 rounded-2xl transition-all duration-500 dark:bg-darkz dark:text-gray-300  dark:border-0 border-2 border-slate-100"
