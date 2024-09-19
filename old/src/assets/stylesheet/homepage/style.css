@@ -281,7 +281,7 @@ a:focus,
 ins {
   text-decoration: none;
   outline: none;
-  color: #f50173 !important;
+  /* color: #f50173 !important; */
 }
 
 select,

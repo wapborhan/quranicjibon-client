@@ -14,7 +14,19 @@ import Counter from "@/home/counter/Counter";
 import Pillar from "@/home/pillar/Pillar";
 import Footer from "@/home/footer/Footer";
 
+async function getData() {
+  const res = await fetch(`${process.env.API_URL}/api/quran`);
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
+}
+
 export default async function Home() {
+  const suras = await getData();
+
   return (
     <>
       {/* <MainTain /> */}
@@ -22,7 +34,7 @@ export default async function Home() {
       <Banner />
       <Prayer />
       <Listen />
-      <Quran />
+      <Quran suras={suras} />
       <Counter />
       <Pillar />
       <Footer />

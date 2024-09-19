@@ -10,14 +10,20 @@ const headLink = [
   },
   {
     id: 1,
-    title: "আল্লাহর নাম",
-    path: "/pages/allah-names",
-  },
-  {
-    id: 2,
     title: "কালেমা",
     path: "/pages/kalema",
   },
+  // {
+  //   id: 2,
+  //   title: "সালাত",
+  //   path: "/pages/salat",
+  // },
+  {
+    id: 3,
+    title: "আল্লাহর নাম",
+    path: "/pages/allah-names",
+  },
+
   // {
   //   id: 3,
   //   title: "কুরবানি",

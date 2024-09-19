@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('HindSiliguri-Light.woff2') format('woff2'),
+        url('HindSiliguri-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('HindSiliguri-Medium.woff2') format('woff2'),
+        url('HindSiliguri-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('HindSiliguri-Bold.woff2') format('woff2'),
+        url('HindSiliguri-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('HindSiliguri-SemiBold.woff2') format('woff2'),
+        url('HindSiliguri-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('HindSiliguri-Regular.woff2') format('woff2'),
+        url('HindSiliguri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'kfgq';
+    src: url('KFGQPCUthmanicScriptHAFS.woff2') format('woff2'),
+        url('KFGQPCUthmanicScriptHAFS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

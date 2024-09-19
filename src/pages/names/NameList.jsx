@@ -1,12 +1,14 @@
 import Icon from "@/components/shared/Icon";
-import React from "react";
 
 const NameList = ({ name }) => {
   return (
     <div className="w-full p-5 group cursor-pointer bg-white flex justify-between items-center space-x-4 rounded-2xl transition-all duration-500 dark:bg-darks dark:text-dark-text">
       <div className="w-full flex justify-between items-center">
         <div className="frist">
-          <p className=" font-medium">উচ্চারণ - {name?.name_bn}</p>
+          <p className=" font-medium">
+            উচ্চারণ -{" "}
+            <span className=" font-HindSiliguri">{name?.name_bn}</span>
+          </p>
           <p className="text-gray-500 text-sm dark:text-gray-300">
             অর্থ - {name?.meaning_bn}
           </p>

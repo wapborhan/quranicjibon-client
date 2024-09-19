@@ -39,13 +39,16 @@ const SuraDetils = ({ ayahs, sura }) => {
                 <div className="w-11/12 space-y-5 items-center md:flex-row justify-between">
                   <p className="text-dark-text text-right text-2xl dark:text-gray-300 font-kfgq">
                     {ayah?.uthmani}
+                    <span className="font-kfgq mr-3">
+                      {parseInt(ayah.ayah_id).toLocaleString("ar-EG")}
+                    </span>
                   </p>
                   <p className=" font-medium">{ayah?.text}</p>
                   <br />
                 </div>
-                <div className="w-16">
+                {/* <div className="w-16">
                   <Icon title={ayah?.ayah_id} />
-                </div>
+                </div> */}
               </div>
             ))}
         </div>

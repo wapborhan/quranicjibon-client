@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import List from "./List";
 
-const Quran = () => {
+const Quran = ({ suras }) => {
   return (
     <section className="w-full pt-100  pb-100 opacity-100 relative">
       <div
@@ -14,7 +14,7 @@ const Quran = () => {
         }}
       ></div>
       <div
-        className="hlf-bg thm-layer opc6 pattern-bg back-blend-multiply bg-thm absolute"
+        className="hlf-bg thm-layer opc6 pattern-bg back-blend-multiply bg-thm absolute thm-bg"
         style={{
           backgroundImage: `url("/assets/images/pattern-bg.jpg")`,
         }}
@@ -27,7 +27,7 @@ const Quran = () => {
                 <Image
                   height={250}
                   width={300}
-                  className="w-full h-auto"
+                  className="w-10/12 h-auto"
                   src="/assets/images/resources/learn-img.jpg"
                   alt="Learn Image"
                 />
@@ -51,7 +51,7 @@ const Quran = () => {
                     </Link>
                   </div>
                 </div>
-                <List />
+                <List suras={suras} />
               </div>
             </div>
           </div>

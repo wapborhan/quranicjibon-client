@@ -4,7 +4,7 @@ let client;
 let db;
 
 async function connectDatabase() {
-  if (!client || !client.isConnected()) {
+  if (!client) {
     client = new MongoClient(process.env.MONGODB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -12,7 +12,9 @@ async function connectDatabase() {
     await client.connect();
   }
 
-  db = client.db(process.env.DB_NAME);
+  if (!db) {
+    db = client.db(process.env.DB_NAME);
+  }
 
   return db;
 }

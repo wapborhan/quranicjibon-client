@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap);
 @import "https://fonts.maateen.me/solaiman-lipi/font.css";
 
 
@@ -306,7 +305,7 @@ a:focus,
 ins {
   text-decoration: none;
   outline: none;
-  color: #f50173 !important;
+  /* color: #f50173 !important; */
 }
 
 select,
@@ -5918,12 +5917,12 @@ a.footlogo img {
   transform: rotate(0);
 }
 
-.pillar-box2>h3 {
+.pillar-box2>a>h3 {
   color: #fff;
   font-size: 1.875rem;
 }
 
-.pillar-box2>i {
+.pillar-box2>a>i {
   font-style: normal;
   text-transform: uppercase;
   font-size: 0.9375rem;

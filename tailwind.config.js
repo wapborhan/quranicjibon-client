@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     fontFamily: {
       kfgq: ["kfgq"],
+      HindSiliguri: ["Hind Siliguri"],
     },
     extend: {},
   },

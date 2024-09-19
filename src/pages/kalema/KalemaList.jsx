@@ -21,7 +21,7 @@ const KalemaList = ({ kalemas, onDataSubmit }) => {
             </div>
             <div className="w-full flex justify-between items-center">
               <div className="frist">
-                <p className="group-hover:text-[#2b9e76] font-medium">
+                <p className="group-hover:text-[#2b9e76] font-HindSiliguri font-medium">
                   {kalema?.name}
                 </p>
               </div>

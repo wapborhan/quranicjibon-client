@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Pillar = () => {
   return (
     <section>
@@ -68,8 +70,10 @@ const Pillar = () => {
                         {/* <FaQuran /> */}
                         <i className="flaticon-quran-1"></i>
                       </span>
-                      <h3 className="mb-0">বিশ্বাস</h3>
-                      <i className="d-block thm-clr">Faith</i>
+                      <Link href="/pages/kalema">
+                        <h3 className="mb-0">কালিমা</h3>
+                        <i className="d-block thm-clr">Faith</i>
+                      </Link>
                     </div>
                   </li>
                   <li>
@@ -77,9 +81,11 @@ const Pillar = () => {
                       <span className="d-inline-block thm-clr">
                         {/* <FaMosque /> */}
                         <i className="flaticon-mosque-1"></i>
-                      </span>
-                      <h3 className="mb-0">সালাত</h3>
-                      <i className="d-block thm-clr">Prayer</i>
+                      </span>{" "}
+                      <Link href="/">
+                        <h3 className="mb-0">সালাত</h3>
+                        <i className="d-block thm-clr">Prayer</i>
+                      </Link>
                     </div>
                   </li>
                   <li>
@@ -88,8 +94,10 @@ const Pillar = () => {
                         {/* <FaStarOfDavid /> */}
                         <i className="flaticon-star"></i>
                       </span>
-                      <h3 className="mb-0">সাওম</h3>
-                      <i className="d-block thm-clr">Restrained</i>
+                      <Link href="/">
+                        <h3 className="mb-0">সাওম</h3>
+                        <i className="d-block thm-clr">Restrained</i>
+                      </Link>
                     </div>
                   </li>
                   <li>
@@ -98,8 +106,10 @@ const Pillar = () => {
                         {/* <GiPayMoney /> */}
                         <i className="flaticon-gift-box"></i>
                       </span>
-                      <h3 className="mb-0">যাকাত</h3>
-                      <i className="d-block thm-clr">Almsgiving</i>
+                      <Link href="/">
+                        <h3 className="mb-0">যাকাত</h3>
+                        <i className="d-block thm-clr">Almsgiving</i>
+                      </Link>
                     </div>
                   </li>
                   <li>
@@ -108,8 +118,10 @@ const Pillar = () => {
                         {/* <FaKaaba /> */}
                         <i className="flaticon-kaaba"></i>
                       </span>
-                      <h3 className="mb-0">হজ্জ্ব</h3>
-                      <i className="d-block thm-clr">Pilgrimage</i>
+                      <Link href="/">
+                        <h3 className="mb-0">হজ্জ্ব</h3>
+                        <i className="d-block thm-clr">Pilgrimage</i>
+                      </Link>
                     </div>
                   </li>
                   <li>

@@ -14,7 +14,7 @@ export default function useDarkSide() {
       root.classList.remove(colorTheme);
       root.classList.add(theme);
       localStorage.setItem("Theme", theme);
-      console.log(colorTheme);
+      // console.log(colorTheme);
     }
   }, [theme, colorTheme, isBrowser]);
 

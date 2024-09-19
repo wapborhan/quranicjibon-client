@@ -2,10 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lateef:wght@200&display=swap');
 
-@font-face {
-  font-family: kfgq;
-  src: url(../assets/fonts/KFGQ_hafs.ttf) format("truetype")
-}
+@import url("../assets/fonts/fonts.css");
 
 @tailwind base;
 @tailwind components;
