@@ -1,5 +1,4 @@
 import Settings from "@/components/shared/Settings";
-import MainContent from "../../../../../../old/MainContent";
 import SideContentHeader from "@/pages/SideContentHeader";
 import SideContentList from "@/pages/SideContentList";
 import SuraDetils from "@/pages/quran/details/SuraDetils";
