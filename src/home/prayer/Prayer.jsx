@@ -14,7 +14,7 @@ const Prayer = () => {
     getTodayTimings(latitude, longitude).then((res) => {
       setPrayerTime(res.timings);
     });
-  }, [latitude, longitude]);
+  }, [latitude, longitude, getTodayTimings]);
 
   return (
     <section>
