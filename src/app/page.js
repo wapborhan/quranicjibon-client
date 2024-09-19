@@ -16,12 +16,12 @@ import Footer from "@/home/footer/Footer";
 
 async function getData() {
   const res = await fetch(`${process.env.API_URL}/api/quran`);
-
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
+  const text = await res.text(); // log the raw response first
+  try {
+    return JSON.parse(text); // attempt to parse as JSON
+  } catch (error) {
+    console.error("Error parsing JSON", error);
   }
-
-  return res.json();
 }
 
 export default async function Home() {
