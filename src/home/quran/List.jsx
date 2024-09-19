@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 const List = ({ suras }) => {
-  const splitSUras = suras.slice(0, 6);
+  const splitSUras = suras;
   return (
     <div className="learn-post-wrap w-full">
       <div className="grid grid-cols-2 gap-10">

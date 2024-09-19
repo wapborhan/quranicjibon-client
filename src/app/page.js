@@ -18,7 +18,8 @@ async function getData() {
   const res = await fetch(`${process.env.API_URL}/api/quran`);
   const text = await res.text(); // log the raw response first
   try {
-    return JSON.parse(text); // attempt to parse as JSON
+    const data = JSON.parse(text); // attempt to parse as JSON
+    return data.slice(0, 6); // return only the first 6 items
   } catch (error) {
     console.error("Error parsing JSON", error);
   }
