@@ -4,38 +4,41 @@ import SideContentList from "@/pages/SideContentList";
 import SuraDetils from "@/pages/quran/details/SuraDetils";
 import axiosInstance from "@/utils/axiosInstance";
 
-const getSuras = async () => {
-  try {
-    const res = await axiosInstance.get("/quran");
-    return res.data;
-  } catch (error) {
-    console.error("Error fetching Allah names:", error);
-    return []; // Return an empty array in case of failure to prevent crashes
-  }
-};
-const getSura = async (id) => {
-  try {
-    const res = await axiosInstance.get(`/quran/${id}`);
-    return res.data;
-  } catch (error) {
-    console.error("Error fetching Allah names:", error);
-    return []; // Return an empty array in case of failure to prevent crashes
-  }
-};
-const getSuraDetails = async (id) => {
-  try {
-    const res = await axiosInstance.get(`/quran/sura/${id}`);
-    return res.data;
-  } catch (error) {
-    console.error("Error fetching Allah names:", error);
-    return []; // Return an empty array in case of failure to prevent crashes
-  }
-};
+// const getSuras = async () => {
+//   try {
+//     const res = await axiosInstance.get("/quran");
+//     return res.data;
+//   } catch (error) {
+//     console.error("Error fetching Allah names:", error);
+//     return []; // Return an empty array in case of failure to prevent crashes
+//   }
+// };
+// const getSura = async (id) => {
+//   try {
+//     const res = await axiosInstance.get(`/quran/${id}`);
+//     return res.data;
+//   } catch (error) {
+//     console.error("Error fetching Allah names:", error);
+//     return []; // Return an empty array in case of failure to prevent crashes
+//   }
+// };
+// const getSuraDetails = async (id) => {
+//   try {
+//     const res = await axiosInstance.get(`/quran/sura/${id}`);
+//     return res.data;
+//   } catch (error) {
+//     console.error("Error fetching Allah names:", error);
+//     return []; // Return an empty array in case of failure to prevent crashes
+//   }
+// };
 
 const Page = async ({ params }) => {
-  const suras = await getSuras();
-  const sura = await getSura(params.id);
-  const ayahs = await getSuraDetails(params.id);
+  // const suras = await getSuras();
+  // const sura = await getSura(params.id);
+  // const ayahs = await getSuraDetails(params.id);
+  const suras = [];
+  const sura = [];
+  const ayahs = [];
 
   return (
     <div className="px-2 h-full flex justify-between md:space-x-6 dark:px-0">

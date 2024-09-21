@@ -15,19 +15,20 @@ import Pillar from "@/home/pillar/Pillar";
 import Footer from "@/home/footer/Footer";
 import axiosInstance from "@/utils/axiosInstance";
 
-const getHomeData = async () => {
-  try {
-    const response = await axiosInstance.get("/quran");
-    const data = response.data.slice(0, 6);
-    return data;
-  } catch (error) {
-    console.error("Error fetching Allah names:", error);
-    return []; // Return an empty array in case of failure to prevent crashes
-  }
-};
+// const getHomeData = async () => {
+//   try {
+//     const response = await axiosInstance.get("/quran");
+//     const data = response.data.slice(0, 6);
+//     return data;
+//   } catch (error) {
+//     console.error("Error fetching Allah names:", error);
+//     return []; // Return an empty array in case of failure to prevent crashes
+//   }
+// };
 
 export default async function Home() {
-  const data = await getHomeData();
+  // const data = await getHomeData();
+  const data = [];
 
   return (
     <>
