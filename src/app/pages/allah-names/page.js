@@ -3,7 +3,7 @@ import NameList from "@/pages/names/NameList";
 //
 
 const page = async () => {
-  const res = await fetch(`${process.env.API_URL}/api/allah-name`);
+  const res = await fetch(`https://quranicjibon.vercel.app/api/allah-name`);
   const names = await res.json();
 
   return (

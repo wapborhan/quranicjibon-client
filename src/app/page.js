@@ -15,28 +15,21 @@ import Pillar from "@/home/pillar/Pillar";
 import Footer from "@/home/footer/Footer";
 
 export default async function Home() {
-  try {
-    let data = await fetch(`${process.env.API_URL}/api/quran`);
-    let textResponse = await data.text(); // Get raw text response
-    console.log(textResponse); // Log it to see what's being returned
+  let data = await fetch(`https://quranicjibon.vercel.app/api/quran`);
+  let suras = await data.json();
+  const limitSuras = suras.slice(0, 6);
 
-    let suras = JSON.parse(textResponse); // Parse it as JSON if valid
-    const limitSuras = suras.slice(0, 6);
-
-    return (
-      <>
-        {/* <MainTain /> */}
-        <Header />
-        <Banner />
-        <Prayer />
-        <Listen />
-        <Quran suras={limitSuras} />
-        <Counter />
-        <Pillar />
-        <Footer />
-      </>
-    );
-  } catch (error) {
-    console.error("Error fetching suras:", error);
-  }
+  return (
+    <>
+      {/* <MainTain /> */}
+      <Header />
+      <Banner />
+      <Prayer />
+      <Listen />
+      <Quran suras={limitSuras} />
+      <Counter />
+      <Pillar />
+      <Footer />
+    </>
+  );
 }

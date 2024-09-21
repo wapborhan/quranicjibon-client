@@ -1,7 +1,7 @@
 import Quran from "@/pages/quran/Quran";
 
 const page = async () => {
-  const res = await fetch(`${process.env.API_URL}/api/quran`);
+  const res = await fetch(`https://quranicjibon.vercel.app/api/quran`);
   const suras = await res.json();
 
   return (

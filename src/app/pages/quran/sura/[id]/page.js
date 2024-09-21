@@ -4,12 +4,14 @@ import SideContentList from "@/pages/SideContentList";
 import SuraDetils from "@/pages/quran/details/SuraDetils";
 
 const Page = async ({ params }) => {
-  const suras = await (await fetch(`${process.env.API_URL}/api/quran/`)).json();
+  const suras = await (
+    await fetch(`https://quranicjibon.vercel.app/api/quran/`)
+  ).json();
   const sura = await (
-    await fetch(`${process.env.API_URL}/api/quran/sura/${params.id}`)
+    await fetch(`https://quranicjibon.vercel.app/api/quran/sura/${params.id}`)
   ).json();
   const ayahs = await (
-    await fetch(`${process.env.API_URL}/api/quran/sura/${params.id}`)
+    await fetch(`https://quranicjibon.vercel.app/api/quran/sura/${params.id}`)
   ).json();
 
   return (
