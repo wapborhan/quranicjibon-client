@@ -1,17 +1,10 @@
 import NameList from "@/pages/names/NameList";
 
-async function getData() {
-  const res = await fetch(`${process.env.API_URL}/api/allah-name`);
-
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-
-  return res.json();
-}
+//
 
 const page = async () => {
-  const names = await getData();
+  const res = await fetch(`${process.env.API_URL}/api/allah-name`);
+  const names = await res.json();
 
   return (
     <div className="w-full lg:w-9/12 md:w-9/12 px-2 pb-10 h-full mx-auto overflow-y-auto">

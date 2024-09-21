@@ -3,34 +3,14 @@ import SideContentHeader from "@/pages/SideContentHeader";
 import SideContentList from "@/pages/SideContentList";
 import SuraDetils from "@/pages/quran/details/SuraDetils";
 
-async function getSuras() {
-  const res = await fetch(`${process.env.API_URL}/api/quran/`);
-  if (!res.ok) {
-    console.log("Failed to fetch data");
-  }
-  return res.json();
-}
-
-async function getSura(id) {
-  const res = await fetch(`${process.env.API_URL}/api/quran/${id}`);
-  if (!res.ok) {
-    console.log("Failed to fetch data");
-  }
-  return res.json();
-}
-
-async function getSingleSura(id) {
-  const res = await fetch(`${process.env.API_URL}/api/quran/sura/${id}`);
-  if (!res.ok) {
-    console.log("Failed to fetch data");
-  }
-  return res.json();
-}
-
 const Page = async ({ params }) => {
-  const sura = await getSura(params.id);
-  const suras = await getSuras();
-  const ayahs = await getSingleSura(params.id);
+  const suras = await (await fetch(`${process.env.API_URL}/api/quran/`)).json();
+  const sura = await (
+    await fetch(`${process.env.API_URL}/api/quran/sura/${params.id}`)
+  ).json();
+  const ayahs = await (
+    await fetch(`${process.env.API_URL}/api/quran/sura/${params.id}`)
+  ).json();
 
   return (
     <div className="px-2 h-full flex justify-between md:space-x-6 dark:px-0">

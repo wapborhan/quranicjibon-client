@@ -14,19 +14,10 @@ import Counter from "@/home/counter/Counter";
 import Pillar from "@/home/pillar/Pillar";
 import Footer from "@/home/footer/Footer";
 
-async function getData() {
-  const res = await fetch(`${process.env.API_URL}/api/quran`);
-  const text = await res.text(); // log the raw response first
-  try {
-    const data = JSON.parse(text); // attempt to parse as JSON
-    return data.slice(0, 6); // return only the first 6 items
-  } catch (error) {
-    console.error("Error parsing JSON", error);
-  }
-}
-
 export default async function Home() {
-  const suras = await getData();
+  let data = await fetch(`${process.env.API_URL}/api/quran`);
+  let suras = await data.json();
+  const limitSuras = suras.slice(0, 6);
 
   return (
     <>
@@ -35,7 +26,7 @@ export default async function Home() {
       <Banner />
       <Prayer />
       <Listen />
-      <Quran suras={suras} />
+      <Quran suras={limitSuras} />
       <Counter />
       <Pillar />
       <Footer />
