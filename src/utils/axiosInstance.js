@@ -1,11 +1,10 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: process.env.API_URL, // Set your base URL here
-  timeout: 10000, // Optional: set a timeout
+  baseURL: `${process.env.NEXT_PUBLIC_BASE_URL}/api`,
+  // timeout: 10000, // Optional: set a timeout
   headers: {
     "Content-Type": "application/json",
-    // Add any other default headers here
   },
 });
 

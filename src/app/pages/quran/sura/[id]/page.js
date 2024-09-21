@@ -4,15 +4,38 @@ import SideContentList from "@/pages/SideContentList";
 import SuraDetils from "@/pages/quran/details/SuraDetils";
 import axiosInstance from "@/utils/axiosInstance";
 
+const getSuras = async () => {
+  try {
+    const res = await axiosInstance.get("/quran");
+    return res.data;
+  } catch (error) {
+    console.error("Error fetching Allah names:", error);
+    return []; // Return an empty array in case of failure to prevent crashes
+  }
+};
+const getSura = async (id) => {
+  try {
+    const res = await axiosInstance.get(`/quran/${id}`);
+    return res.data;
+  } catch (error) {
+    console.error("Error fetching Allah names:", error);
+    return []; // Return an empty array in case of failure to prevent crashes
+  }
+};
+const getSuraDetails = async (id) => {
+  try {
+    const res = await axiosInstance.get(`/quran/sura/${id}`);
+    return res.data;
+  } catch (error) {
+    console.error("Error fetching Allah names:", error);
+    return []; // Return an empty array in case of failure to prevent crashes
+  }
+};
+
 const Page = async ({ params }) => {
-  const [surasRes, suraRes, ayahsRes] = await Promise.all([
-    axiosInstance.get("/api/quran"),
-    axiosInstance.get(`/api/quran/${params.id}`),
-    axiosInstance.get(`/api//quran/sura/${params.id}`),
-  ]);
-  const suras = surasRes.data;
-  const sura = suraRes.data;
-  const ayahs = ayahsRes.data;
+  const suras = await getSuras();
+  const sura = await getSura(params.id);
+  const ayahs = await getSuraDetails(params.id);
 
   return (
     <div className="px-2 h-full flex justify-between md:space-x-6 dark:px-0">

@@ -2,12 +2,11 @@ import Link from "next/link";
 import React from "react";
 
 const List = ({ suras }) => {
-  const splitSUras = suras;
   return (
     <div className="learn-post-wrap w-full">
       <div className="grid grid-cols-2 gap-10">
         {suras &&
-          splitSUras.map((item, idx) => (
+          suras.map((item, idx) => (
             <div className="col-md-6 " key={idx}>
               <div className="learn-post mb-2 flex flex-wrap items-center">
                 <div className="learn-post-img">
