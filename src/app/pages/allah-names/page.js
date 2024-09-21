@@ -1,10 +1,12 @@
 import NameList from "@/pages/names/NameList";
+import axiosInstance from "@/utils/axiosInstance";
 
 //
 
 const page = async () => {
-  const res = await fetch(`https://quranicjibon.vercel.app/api/allah-name`);
-  const names = await res.json();
+  const res = await axiosInstance.get("/api/allah-name");
+  // const res = await fetch(`https://quranicjibon.vercel.app/api/allah-name`);
+  const names = await res.data;
 
   return (
     <div className="w-full lg:w-9/12 md:w-9/12 px-2 pb-10 h-full mx-auto overflow-y-auto">

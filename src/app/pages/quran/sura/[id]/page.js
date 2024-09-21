@@ -2,17 +2,17 @@ import Settings from "@/components/shared/Settings";
 import SideContentHeader from "@/pages/SideContentHeader";
 import SideContentList from "@/pages/SideContentList";
 import SuraDetils from "@/pages/quran/details/SuraDetils";
+import axiosInstance from "@/utils/axiosInstance";
 
 const Page = async ({ params }) => {
-  const suras = await (
-    await fetch(`https://quranicjibon.vercel.app/api/quran/`)
-  ).json();
-  const sura = await (
-    await fetch(`https://quranicjibon.vercel.app/api/quran/sura/${params.id}`)
-  ).json();
-  const ayahs = await (
-    await fetch(`https://quranicjibon.vercel.app/api/quran/sura/${params.id}`)
-  ).json();
+  const [surasRes, suraRes, ayahsRes] = await Promise.all([
+    axiosInstance.get("/api/quran"),
+    axiosInstance.get(`/api/quran/${params.id}`),
+    axiosInstance.get(`/api//quran/sura/${params.id}`),
+  ]);
+  const suras = surasRes.data;
+  const sura = suraRes.data;
+  const ayahs = ayahsRes.data;
 
   return (
     <div className="px-2 h-full flex justify-between md:space-x-6 dark:px-0">

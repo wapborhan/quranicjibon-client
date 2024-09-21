@@ -13,11 +13,11 @@ import Quran from "@/home/quran/Quran";
 import Counter from "@/home/counter/Counter";
 import Pillar from "@/home/pillar/Pillar";
 import Footer from "@/home/footer/Footer";
+import axiosInstance from "@/utils/axiosInstance";
 
 export default async function Home() {
-  let data = await fetch(`https://quranicjibon.vercel.app/api/quran`);
-  let suras = await data.json();
-  const limitSuras = suras.slice(0, 6);
+  const response = await axiosInstance.get("/api/quran");
+  const limitSuras = response.data.slice(0, 6);
 
   return (
     <>
