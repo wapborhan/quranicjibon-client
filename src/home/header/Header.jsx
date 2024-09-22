@@ -2,73 +2,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import NavMenu from "./NavMenu";
-import useTodayPrayerTime from "@/hooks/useTodayPrayerTime";
-import { useEffect, useState } from "react";
-import { timingFormatter } from "@/components/shared/timingFormatter";
+
+import MobileMenu from "./MobileMenu";
+import Topbar from "./Topbar";
 
 const Header = () => {
-  const [prayerTime, setPrayerTime] = useState();
-  const [today, setToday] = useState();
-  const latitude = "23.908775911770977";
-  const longitude = "89.12264749493718";
-  const { getTodayTimings } = useTodayPrayerTime();
-
-  useEffect(() => {
-    getTodayTimings(latitude, longitude).then((res) => {
-      setPrayerTime(res.timings);
-      setToday(res?.date?.hijri);
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [latitude, longitude]);
-
-  // const hijriDay = today?.day + today?.month.en;
-
-  // console.log(today);
-  // console.log("date", hijriDay);
-
   return (
     <>
       <header className="stick style1 w-full relative z-50">
-        <div className="topbars bg-color1 flex flex-wrap justify-center w-full pl-[26.5625rem] px-[1.25rem] bg-[#212121]">
-          <ul className="topbars-info-list mb-0 list-unstyled flex">
-            <li>
-              <i className="thm-clr flaticon-sun"></i>
-              সূর্যোদয়:
-              <span className="thm-clr">
-                {prayerTime && timingFormatter(prayerTime?.Sunrise)}
-              </span>
-            </li>
-            <li>
-              <i className="thm-clr flaticon-moon"></i>
-              সূর্যাস্ত:{" "}
-              <span className="thm-clr">
-                {" "}
-                {prayerTime && timingFormatter(prayerTime?.Sunset)}
-              </span>
-            </li>
-          </ul>
-          <div className="social-links inline-flex text-white">
-            <div className="dateshow">
-              {new Intl.DateTimeFormat("bn-BD-u-ca-islamic", {
-                day: "numeric",
-                month: "long",
-                weekday: "long",
-                year: "numeric",
-                timeZone: "Asia/Dhaka",
-                // calendar: "islamic-bangla",
-              }).format(Date.now())}
-            </div>
-            <div className="datehide">
-              {new Intl.DateTimeFormat("bn-BD-u-ca-islamic", {
-                day: "numeric",
-                month: "long",
-                weekday: "long",
-                timeZone: "Asia/Dhaka",
-                // calendar: "islamic-bangla",
-              }).format(Date.now())}
-            </div>
-          </div>
-        </div>
+        <Topbar />
         <div className="logo-menu-wrap flex flex-wrap justify-between w-full">
           <div className="logo relative thm-layer opc7 back-blend-multiply thm-bg">
             <h1 className="mb-0 h-full">
@@ -86,9 +28,16 @@ const Header = () => {
               </Link>
             </h1>
           </div>
-          <NavMenu />
+          <nav className="flex flex-wrap items-center justify-center">
+            <div className="header-left">
+              <ul className="mb-0 list-none flex gap-5">
+                <NavMenu />
+              </ul>
+            </div>
+          </nav>
         </div>
       </header>
+      <MobileMenu />
     </>
   );
 };

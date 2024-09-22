@@ -40,7 +40,7 @@ const Listen = () => {
 
   return (
     <section>
-      <div className="w-full pt-170 pb-120 relative">
+      <div className="w-full pt-170 pt-64 relative">
         <div
           className="fixed-bg"
           style={{
@@ -54,10 +54,10 @@ const Listen = () => {
           src="/assets/images/sec-top-mckp5.png"
           alt="Sec Top Mockup 5"
         />
-        <div className="container mx-auto">
+        <div className="container mx-auto py-20 px-8">
           <div className="about-wrap3 w-full">
             <div className="flex flex-wrap items-center">
-              <div className="lg:w-5/12 order-2 lg:order-2">
+              <div className="lg:w-5/12 w-full mx-auto order-1 lg:order-2">
                 <div className="plyr-wrp v3 w-full">
                   <h3
                     className="mb-0 text-center pat-bg dark-layer2 opc5 back-blend-multiply bg-color1"
@@ -115,7 +115,7 @@ const Listen = () => {
                   </div>
                 </div>
               </div>
-              <div className="lg:w-7/12 order-1 lg:order-1">
+              <div className="lg:w-7/12 order-2 lg:order-1">
                 <div className="about-inner3 w-full">
                   <div className="text-4xl thm-clr mb-4">
                     <span>স্বাগতম Quranic Jibon এ</span>

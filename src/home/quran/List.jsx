@@ -4,7 +4,7 @@ import React from "react";
 const List = ({ suras }) => {
   return (
     <div className="learn-post-wrap w-full">
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid lg:grid-cols-2 md:grid-cols-2  grid-cols-1 lg:gap-10 gap-3">
         {suras &&
           suras.map((item, idx) => (
             <div className="col-md-6 " key={idx}>

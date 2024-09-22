@@ -15,7 +15,7 @@ const Page = async () => {
   const kalemas = await getKalemaData();
 
   return (
-    <div className="px-2 h-full flex justify-between md:space-x-6 dark:px-0">
+    <div className="px-2 h-full flexs justify-between md:space-x-6 dark:px-0">
       <Kalema kalemas={kalemas} />
     </div>
   );

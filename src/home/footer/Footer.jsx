@@ -4,7 +4,7 @@ const Footer = () => {
   const d = new Date();
   return (
     <footer>
-      <div className="w-full pt-50 thm-layer pb-30 opc8 relative">
+      <div className="w-full pt-50 thm-layer px-8 pb-30 opc8 relative">
         <div
           className="fixed-bg patern-bg back-blend-multiply thm-bg"
           style={{
@@ -42,15 +42,18 @@ const Footer = () => {
           </div>
           <div className="bottom-bar2 text-center w-full">
             <p className="mb-0 text-center font-ar">
-              Quranic Jibon - Copyright {d.getFullYear()}. Developed by{" "}
-              <a
-                className="text-light"
-                href="https://srdreamlab.com"
-                title="SR Dream Lab"
-                target="_blank"
-              >
-                SR Dream Lab
-              </a>
+              &#169; Copyright {d.getFullYear()} Quranic Jibon - V_2.1.1.
+              Developed by{" "}
+              <span>
+                <a
+                  className="text-light"
+                  href="https://srdreamlab.com"
+                  title="SR Dream Lab"
+                  target="_blank"
+                >
+                  SR Dream Lab
+                </a>
+              </span>
             </p>
           </div>
         </div>

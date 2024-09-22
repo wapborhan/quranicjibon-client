@@ -11,7 +11,7 @@ const Pillar = () => {
           }}
         ></div>
         <div className="quote-pillars-wrap w-full">
-          <div className="grid grid-cols-2 mrg">
+          <div className="grid lg:grid-cols-2 grid-cols-1 mrg">
             <div className="col-md-12 col-sm-12 col-lg-5">
               <div className="quote-wrap flex items-end justify-center relative w-full">
                 <div
@@ -46,7 +46,7 @@ const Pillar = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 col-md-12 col-sm-12 col-lg-7">
-              <div className="pillars-wrap2 w-full">
+              <div className="pillars-wrap2 px-8 w-full">
                 <div className="sec-title v2 left-icon w-full">
                   <div className="sec-title-inner inline-block">
                     <i className="flaticon-rub-el-hizb thm-clr">
@@ -63,7 +63,7 @@ const Pillar = () => {
                     </p>
                   </div>
                 </div>
-                <ul className="pillars-list2 flex flex-wrap mb-0 list-unstyled">
+                <ul className="pillars-list2 flex !px-8 flex-wrap mb-0 list-unstyled">
                   <li>
                     <div className="pillar-box2 relative w-100">
                       <span className="d-inline-block thm-clr">

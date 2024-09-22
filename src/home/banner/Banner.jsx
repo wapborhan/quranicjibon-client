@@ -21,7 +21,7 @@ const Banner = () => {
                     মুসলিম সম্প্রদায়, পবিত্র কুরআনের উপর ভিত্তি করে একটি ব্যাপক
                     ইসলামী জীবনধারা প্রচার করছে
                   </p>
-                  <Link className="thm-btn thm-bg rounded" href="/pages/sura">
+                  <Link className="thm-btn thm-bg rounded" href="/pages/quran">
                     আল কুরআন
                     <span></span>
                     <span></span>

@@ -19,15 +19,15 @@ const Quran = ({ suras }) => {
           backgroundImage: `url("/assets/images/pattern-bg.jpg")`,
         }}
       ></div>
-      <div className="container mx-auto">
+      <div className="container mx-auto px-8">
         <div className="learn-wrap w-full">
-          <div className="grid grid-cols-2">
+          <div className="grid lg:grid-cols-2 grid-cols-1">
             <div className="col-span">
               <div className="learn-img w-full">
                 <Image
                   height={250}
                   width={300}
-                  className="w-10/12 h-auto"
+                  className="lg:w-10/12 w-full h-auto"
                   src="/assets/images/resources/learn-img.jpg"
                   alt="Learn Image"
                 />

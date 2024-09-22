@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const headLink = [
   {
@@ -33,21 +31,17 @@ const headLink = [
 
 const NavMenu = () => {
   return (
-    <nav className="flex flex-wrap items-center justify-center">
-      <div className="header-left">
-        <ul className="mb-0 list-none flex gap-5">
-          {headLink.map((link) => {
-            return (
-              <li className="group" key={link.id}>
-                <Link href={link?.path} className="text-black ">
-                  {link?.title}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </nav>
+    <>
+      {headLink.map((link) => {
+        return (
+          <li className="group" key={link.id}>
+            <Link href={link?.path} className="text-black">
+              {link?.title}
+            </Link>
+          </li>
+        );
+      })}
+    </>
   );
 };
 
