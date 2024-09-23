@@ -1,5 +1,14 @@
 @font-face {
     font-family: 'Anek Bangla';
+    src: url('AnekBangla-ExtraBold.woff2') format('woff2'),
+        url('AnekBangla-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Anek Bangla';
     src: url('AnekBangla-Bold.woff2') format('woff2'),
         url('AnekBangla-Bold.woff') format('woff');
     font-weight: bold;
@@ -7,6 +16,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Anek Bangla';
+    src: url('AnekBangla-ExtraLight.woff2') format('woff2'),
+        url('AnekBangla-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
 
 @font-face {
     font-family: 'Anek Bangla';
@@ -44,14 +61,12 @@
     font-display: swap;
 }
 
-
-
-
 @font-face {
-    font-family: 'kfgq';
-    src: url('KFGQPCUthmanicScriptHAFS.woff2') format('woff2'),
-        url('KFGQPCUthmanicScriptHAFS.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Anek Bangla';
+    src: url('AnekBangla-Thin.woff2') format('woff2'),
+        url('AnekBangla-Thin.woff') format('woff');
+    font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
+

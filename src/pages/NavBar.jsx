@@ -14,24 +14,16 @@ const NavBar = () => {
       <ActiveLink href="/" title="Home" isActive={isActive("/")}>
         <AiOutlineHome size={28} />
       </ActiveLink>
-      <ActiveLink
-        href="/pages/quran"
-        title="Quran"
-        isActive={isActive("/pages/quran")}
-      >
+      <ActiveLink href="/quran" title="Quran" isActive={isActive("/quran")}>
         <FiBookOpen size={28} />
       </ActiveLink>
-      <ActiveLink
-        href="/pages/kalema"
-        title="Kalema"
-        isActive={isActive("/pages/kalema")}
-      >
+      <ActiveLink href="/kalema" title="Kalema" isActive={isActive("/kalema")}>
         <FiBook size={28} />
       </ActiveLink>
       <ActiveLink
-        href="/pages/allah-names"
+        href="/allah-names"
         title="Allah Names"
-        isActive={isActive("/pages/allah-names")}
+        isActive={isActive("/allah-names")}
       >
         <SiNamecheap size={28} />
       </ActiveLink>

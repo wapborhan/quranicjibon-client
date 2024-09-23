@@ -1,8 +1,6 @@
 import Header from "@/pages/Header";
 import MobileMenu from "@/pages/MobileMenu";
 import SideBar from "@/pages/SideBar";
-import Link from "next/link";
-import React from "react";
 
 const layout = ({ children }) => {
   return (

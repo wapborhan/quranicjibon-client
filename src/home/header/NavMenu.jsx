@@ -4,12 +4,12 @@ const headLink = [
   {
     id: 0,
     title: "আল কুরআন",
-    path: "/pages/quran",
+    path: "/quran",
   },
   {
     id: 1,
     title: "কালেমা",
-    path: "/pages/kalema",
+    path: "/kalema",
   },
   // {
   //   id: 2,
@@ -19,7 +19,7 @@ const headLink = [
   {
     id: 3,
     title: "আল্লাহর নাম",
-    path: "/pages/allah-names",
+    path: "/allah-names",
   },
 
   // {

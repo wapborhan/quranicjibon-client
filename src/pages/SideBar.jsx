@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 
 const SideBar = () => {
   return (
-    <div className="relative hidden w-24 !mt-20 p-4 pb-32 md:flex flex-col justify-between items-center dark:text-dark-text">
+    <div className="relative hidden w-24 !mt-20 p-4 pb-32 md:flex flex-col justify-start gap-5 items-center dark:text-dark-text">
       <NavBar />
       <Link
         href="/donate"

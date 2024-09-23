@@ -1,11 +1,10 @@
-// import { Inter } from "next/font/google";
 import "./globals.css";
-
-// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Quranic Jibon",
   description: "জীবন গড়ি কুরআনের আলোকে।",
+  keywords: "Quran, Islam, life",
+  author: "Borhan Uddin",
 };
 
 export default function RootLayout({ children }) {
@@ -15,10 +14,13 @@ export default function RootLayout({ children }) {
       className="light"
       //  style={{ colorScheme: "dark" }}
     >
-      <body
-        // className={inter.className}
-        className="bg-[#ebeef2] dark:bg-hadith-dark-card relative"
-      >
+      {/* <head>
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords} />
+        <meta name="author" content={metadata.author} />
+        <meta name="viewport" content={metadata.viewport} />
+      </head> */}
+      <body className="bg-[#ebeef2] dark:bg-hadith-dark-card relative">
         {children}
       </body>
     </html>

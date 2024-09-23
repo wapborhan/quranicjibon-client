@@ -22,7 +22,7 @@ const getHomeData = async () => {
     return data;
   } catch (error) {
     console.error("Error fetching Allah names:", error);
-    return []; // Return an empty array in case of failure to prevent crashes
+    return [];
   }
 };
 

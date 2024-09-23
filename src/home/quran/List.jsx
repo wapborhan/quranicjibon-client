@@ -21,19 +21,17 @@ const List = ({ suras }) => {
                   )}
                 </div>
                 <div className="learn-post-info">
-                  <h4 className="mb-1">
-                    <span className="text-white" title={item.name}>
-                      {item.name}
-                    </span>
-                  </h4>
-                  <span className="block">{item.name_bn}</span>
                   <Link
-                    href={`/pages/quran/sura/${item.index}`}
+                    href={`/quran/sura/${item.index}`}
                     className="cursor-pointer"
                   >
-                    Read
-                    <i className="fas fa-angle-double-right"></i>
+                    <h4 className="mb-1">
+                      <span className="text-white" title={item.name}>
+                        {item.name}
+                      </span>
+                    </h4>
                   </Link>
+                  <span className="block">{item.name_bn}</span>
                 </div>
               </div>
             </div>

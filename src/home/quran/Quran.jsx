@@ -37,15 +37,15 @@ const Quran = ({ suras }) => {
               <div className="learn-inner w-full">
                 <div className="learn-top flex flex-wrap items-center justify-between w-full">
                   <div className="learn-top-inner ">
-                    <h3 className="mb-0 text-white">
-                      <i className="flaticon-rub-el-hizb ">
+                    <h3 className="mb-0 text-white  font-HindSiliguri ">
+                      <i className="flaticon-rub-el-hizb">
                         {/* <GiRubElHizb /> */}
                       </i>
                       আল কুরআন (সুরা ক্রমে)
                     </h3>
                   </div>
                   <div className="learn-top-inner">
-                    <Link href="/pages/sura" className="text-decoration-none">
+                    <Link href="/quran" className="text-decoration-none">
                       সম্পূর্ণ কুরআন
                       <i className="fas fa-angle-double-right"></i>
                     </Link>
