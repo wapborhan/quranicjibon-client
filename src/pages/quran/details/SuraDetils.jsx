@@ -20,9 +20,14 @@ const SuraDetils = ({ ayahs, sura, loading }) => {
           </div>
         </div>
       ) : (
-        <div className="hidden h-[80px] p-4 w-full md:grid lg:grid-cols-3 items-center  bg-white border-b-2 rounded-t-2xl text-black dark:text-dark-text dark:bg-darks dark:border-gray-500 border-gray-200">
+        <div className="hidden  px-4 pt-4 w-full md:grid lg:grid-cols-3 items-center  bg-white border-b-2 rounded-t-2xl text-black dark:text-dark-text dark:bg-darks dark:border-gray-500 border-gray-200">
           {sura.type === "Meccan" ? (
-            "Image"
+            <Image
+              src="/assets/images/quran/makkah_dark.png"
+              alt=""
+              width={100}
+              height={100}
+            />
           ) : (
             <Image
               src="/assets/images/quran/madinah.png"
@@ -59,12 +64,12 @@ const SuraDetils = ({ ayahs, sura, loading }) => {
                 <>
                   <div
                     key={ayah._id}
-                    className={`w-full text-slate-400 dark:text-dark-text p-5 group  bg-white  flex justify-between  gap-5 space-x-4 md:space-x-2 items-start border-gray-100 dark:border-gray-0 border-[0.3px] dark:border-[0px] rounded-xl md:hover:rounded-xl transition-all duration-500 dark:bg-darkz shadow-sm ${
+                    className={`w-full dark:text-dark-text p-5 group  bg-white  flex justify-between  gap-5 space-x-4 md:space-x-2 items-start border-gray-100 dark:border-gray-0 border-[0.3px] dark:border-[0px] rounded-xl md:hover:rounded-xl transition-all duration-500 dark:bg-darkz shadow-sm ${
                       loading && "animate-pulse"
                     }`}
                   >
                     <div className="w-full space-y-5 items-center md:flex-row justify-between">
-                      <p className="text-dark-text text-right text-2xl dark:text-gray-300 font-kfgq">
+                      <p className="text-dark-text text-right text-2xl dark:!text-white font-kfgq">
                         {loading ? (
                           <div className="h-4 bg-gray-200 w-10/12 ml-auto full"></div>
                         ) : (

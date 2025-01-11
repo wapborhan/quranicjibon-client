@@ -52,7 +52,7 @@ const Suras = ({ suras }) => {
         </div>
       </div>
 
-      <div className="w-10/12 h-full pb-16 md:pb-0 flex flex-col md:bg-white md:rounded-2xl overflow-hidden dark:bg-darks dark:text-gray-300 mx-auto">
+      <div className="lg:w-10/12 w-full  h-full pb-16 md:pb-0 flex flex-col md:bg-white md:rounded-2xl overflow-hidden dark:bg-darks dark:text-gray-300 mx-auto">
         <SuraDetils ayahs={ayahs} sura={selectsura} loading={loading} />
       </div>
       <div className="hidden md:w-[450px] h-full md:flex flex-col bg-white rounded-2xl dark:bg-darks dark:text-gray-300">
